@@ -312,12 +312,12 @@ document.addEventListener('DOMContentLoaded',function(){
     },{passive:true});
   });
 
-  /* ===== SCROLL-SCRUB VIDEOS (Approach A) ===== */
+  /* ===== SCROLL-SCRUB VIDEOS (Sticky) ===== */
   const scrubVideos=Array.from(document.querySelectorAll('video[data-scroll-video]'));
   if(scrubVideos.length){
     const scrubData=[];
     scrubVideos.forEach(v=>{
-      const section=v.closest('section');
+      const section=v.closest('[data-sticky-video-container]')||v.closest('section');
       if(!section)return;
       v.pause();v.muted=true;v.playsInline=true;v.preload='auto';
       scrubData.push({v,section});
@@ -332,9 +332,11 @@ document.addEventListener('DOMContentLoaded',function(){
             const rect=section.getBoundingClientRect();
             const visible=rect.bottom>0&&rect.top<wh;
             if(!visible)return;
-            const progress=Math.max(0,Math.min(1,(wh-rect.top)/(wh+rect.height)));
+            const sectionTop=section.offsetTop;
+            const sectionHeight=section.offsetHeight;
+            const progress=Math.max(0,Math.min(1,(window.scrollY-sectionTop)/(sectionHeight-wh)));
             const target=progress*v.duration;
-            if(Math.abs(v.currentTime-target)>0.03){v.currentTime=target;}
+            if(Math.abs(v.currentTime-target)>0.05){v.currentTime=target;}
           });
           ticking=false;
         });
