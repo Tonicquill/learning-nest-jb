@@ -312,6 +312,40 @@ document.addEventListener('DOMContentLoaded',function(){
     },{passive:true});
   });
 
+  /* ===== SCROLL-SCRUB VIDEOS (Approach A) ===== */
+  const scrubVideos=Array.from(document.querySelectorAll('video[data-scroll-video]'));
+  if(scrubVideos.length){
+    const scrubState=new Map();
+    scrubVideos.forEach(v=>{
+      const section=v.closest('section');
+      if(!section)return;
+      v.pause();
+      v.muted=true;
+      v.playsInline=true;
+      v.preload='auto';
+      scrubState.set(v,{section,active:false,raf:null});
+      const io=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          const state=scrubState.get(v);
+          if(!state)return;
+          state.active=e.isIntersecting;
+          if(state.active&&v.duration&&!state.raf){state.raf=requestAnimationFrame(()=>updateScrub(v));}
+        });
+      },{threshold:0});
+      io.observe(section);
+    });
+    function updateScrub(v){
+      const state=scrubState.get(v);
+      if(!state||!state.active||!v.duration){if(state)state.raf=null;return;}
+      const rect=state.section.getBoundingClientRect();
+      const wh=window.innerHeight;
+      const progress=Math.max(0,Math.min(1,(wh-rect.top)/(wh+rect.height)));
+      const targetTime=progress*v.duration;
+      if(Math.abs(v.currentTime-targetTime)>0.05){v.currentTime=targetTime;}
+      state.raf=requestAnimationFrame(()=>updateScrub(v));
+    }
+  }
+
   /* ===== STAGGER REVEAL OBSERVER ===== */
   document.querySelectorAll('.stagger-reveal').forEach(el=>{
     const io=new IntersectionObserver(entries=>{
