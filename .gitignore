@@ -1,0 +1,9 @@
+.claude/
+.playwright-mcp/
+assets/facebook_thumbs/
+*.png
+*.log
+node_modules/
+.vscode/
+.idea/
+__pycache__/
