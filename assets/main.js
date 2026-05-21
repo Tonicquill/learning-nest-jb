@@ -315,35 +315,35 @@ document.addEventListener('DOMContentLoaded',function(){
   /* ===== SCROLL-SCRUB VIDEOS (Approach A) ===== */
   const scrubVideos=Array.from(document.querySelectorAll('video[data-scroll-video]'));
   if(scrubVideos.length){
-    const scrubState=new Map();
+    const scrubData=[];
     scrubVideos.forEach(v=>{
       const section=v.closest('section');
       if(!section)return;
-      v.pause();
-      v.muted=true;
-      v.playsInline=true;
-      v.preload='auto';
-      scrubState.set(v,{section,active:false,raf:null});
-      const io=new IntersectionObserver(entries=>{
-        entries.forEach(e=>{
-          const state=scrubState.get(v);
-          if(!state)return;
-          state.active=e.isIntersecting;
-          if(state.active&&v.duration&&!state.raf){state.raf=requestAnimationFrame(()=>updateScrub(v));}
-        });
-      },{threshold:0});
-      io.observe(section);
+      v.pause();v.muted=true;v.playsInline=true;v.preload='auto';
+      scrubData.push({v,section});
     });
-    function updateScrub(v){
-      const state=scrubState.get(v);
-      if(!state||!state.active||!v.duration){if(state)state.raf=null;return;}
-      const rect=state.section.getBoundingClientRect();
-      const wh=window.innerHeight;
-      const progress=Math.max(0,Math.min(1,(wh-rect.top)/(wh+rect.height)));
-      const targetTime=progress*v.duration;
-      if(Math.abs(v.currentTime-targetTime)>0.05){v.currentTime=targetTime;}
-      state.raf=requestAnimationFrame(()=>updateScrub(v));
+    let ticking=false;
+    function onScrollScrub(){
+      if(!ticking){
+        requestAnimationFrame(()=>{
+          const wh=window.innerHeight;
+          scrubData.forEach(({v,section})=>{
+            if(!v.duration)return;
+            const rect=section.getBoundingClientRect();
+            const visible=rect.bottom>0&&rect.top<wh;
+            if(!visible)return;
+            const progress=Math.max(0,Math.min(1,(wh-rect.top)/(wh+rect.height)));
+            const target=progress*v.duration;
+            if(Math.abs(v.currentTime-target)>0.03){v.currentTime=target;}
+          });
+          ticking=false;
+        });
+        ticking=true;
+      }
     }
+    window.addEventListener('scroll',onScrollScrub,{passive:true});
+    window.addEventListener('resize',onScrollScrub,{passive:true});
+    onScrollScrub();
   }
 
   /* ===== STAGGER REVEAL OBSERVER ===== */
