@@ -160,10 +160,31 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .section-sky .section-subtitle{color:rgba(255,255,255,0.8)}
 .section-dark{background:var(--ink-soft);color:var(--white)}
 .section-dark .section-label{color:var(--sunrise)}
+.section-bg-photo{position:relative;background-image:var(--bg);background-size:cover;background-position:center;background-attachment:fixed}
+.section-bg-photo::before{content:'';position:absolute;inset:0;background:rgba(17,24,39,0.82);z-index:0}
+.section-bg-photo .container{position:relative;z-index:1}
+@media(max-width:768px){.section-bg-photo{background-attachment:scroll}}
+
+/* ----- BADGES ----- */
+.badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;align-items:center;justify-items:center}
+@media(max-width:768px){.badge-grid{grid-template-columns:repeat(2,1fr);gap:24px}}
+.badge-item{text-align:center}
+.badge-ring{width:120px;height:120px;border-radius:50%;border:2px solid var(--sunrise);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;position:relative;background:rgba(249,161,7,0.05)}
+.badge-ring::before{content:'';position:absolute;inset:4px;border-radius:50%;border:1px solid rgba(249,161,7,0.3)}
+.badge-icon{font-size:36px;color:var(--sunrise);font-family:var(--font-display);font-weight:900}
+.badge-label{font-family:var(--font-display);font-size:12px;font-weight:600;color:#fff;letter-spacing:0.05em;line-height:1.4}
+.badge-sublabel{font-size:11px;color:var(--gray-light);margin-top:4px}
 
 /* ----- CARDS ----- */
 .card{background:var(--white);border:1px solid var(--gray-border);border-radius:14px;padding:32px;transition:all 0.3s var(--ease-fluid)}
 .card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);border-color:transparent;transform:translateY(-2px)}
+.card-bg{position:relative;overflow:hidden;color:#fff;border:none}
+.card-bg::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;opacity:0.25;transition:opacity 0.5s var(--ease-fluid);background-image:var(--bg)}
+.card-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.75) 100%);z-index:1}
+.card-bg:hover::before{opacity:0.35}
+.card-bg .card-icon{z-index:2;position:relative;background:rgba(255,255,255,0.12);color:#fff}
+.card-bg h3,.card-bg p{z-index:2;position:relative;color:#fff}
+.card-bg p{color:rgba(255,255,255,0.75)}
 .card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:22px}
 .card-icon.sky{background:rgba(74,144,217,0.12);color:var(--sky)}
 .card-icon.sunrise{background:rgba(249,161,7,0.12);color:var(--sunrise)}
@@ -230,6 +251,9 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .footer-social{display:flex;gap:14px}
 .footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;transition:all 0.2s}
 .footer-social a:hover{background:var(--sunrise);color:var(--ink)}
+.footer-qr{display:flex;align-items:center;gap:12px;margin-top:16px}
+.footer-qr img{width:80px;height:80px;border-radius:8px;background:#fff;padding:4px}
+.footer-qr span{font-size:11px;color:var(--gray-light);line-height:1.4;max-width:120px}
 
 /* ----- WHATSAPP FLOAT ----- */
 .whatsapp-float{position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#25D366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:90;box-shadow:0 4px 16px rgba(37,211,102,0.35);transition:all 0.3s var(--ease-fluid)}
