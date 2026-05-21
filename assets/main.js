@@ -316,27 +316,31 @@ document.addEventListener('DOMContentLoaded',function(){
   const scrubVideos=Array.from(document.querySelectorAll('video[data-scroll-video]'));
   if(scrubVideos.length){
     const scrubData=[];
+    let readyCount=0;
+    function initScrub(v,section){
+      v.pause();v.muted=true;v.playsInline=true;v.preload='auto';
+      const rect=section.getBoundingClientRect();
+      const sectionTop=rect.top+window.scrollY;
+      const sectionHeight=section.offsetHeight;
+      scrubData.push({v,section,sectionTop,sectionHeight});
+    }
     scrubVideos.forEach(v=>{
       const section=v.closest('[data-sticky-video-container]')||v.closest('section');
       if(!section)return;
-      v.pause();v.muted=true;v.playsInline=true;v.preload='auto';
-      scrubData.push({v,section});
+      if(v.readyState>=1){initScrub(v,section);}
+      else{v.addEventListener('loadedmetadata',()=>initScrub(v,section),{once:true});}
     });
     let ticking=false;
     function onScrollScrub(){
       if(!ticking){
         requestAnimationFrame(()=>{
           const wh=window.innerHeight;
-          scrubData.forEach(({v,section})=>{
-            if(!v.duration)return;
-            const rect=section.getBoundingClientRect();
-            const visible=rect.bottom>0&&rect.top<wh;
-            if(!visible)return;
-            const sectionTop=section.offsetTop;
-            const sectionHeight=section.offsetHeight;
-            const progress=Math.max(0,Math.min(1,(window.scrollY-sectionTop)/(sectionHeight-wh)));
-            const target=progress*v.duration;
-            if(Math.abs(v.currentTime-target)>0.05){v.currentTime=target;}
+          const sy=window.scrollY;
+          scrubData.forEach(d=>{
+            if(!d.v.duration)return;
+            const progress=Math.max(0,Math.min(1,(sy-d.sectionTop)/(d.sectionHeight-wh)));
+            const target=progress*d.v.duration;
+            if(Math.abs(d.v.currentTime-target)>0.03){d.v.currentTime=target;}
           });
           ticking=false;
         });
@@ -344,7 +348,14 @@ document.addEventListener('DOMContentLoaded',function(){
       }
     }
     window.addEventListener('scroll',onScrollScrub,{passive:true});
-    window.addEventListener('resize',onScrollScrub,{passive:true});
+    window.addEventListener('resize',()=>{
+      scrubData.forEach(d=>{
+        const rect=d.section.getBoundingClientRect();
+        d.sectionTop=rect.top+window.scrollY;
+        d.sectionHeight=d.section.offsetHeight;
+      });
+      onScrollScrub();
+    },{passive:true});
     onScrollScrub();
   }
 
