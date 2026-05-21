@@ -236,7 +236,9 @@ tr:nth-child(even){background:var(--gray-bg)}
 tr:hover{background:rgba(74,144,217,0.04)}
 
 /* ----- PLACEHOLDER NOTE ----- */
-.placeholder-note{display:inline-block;background:rgba(255,107,107,0.08);color:var(--coral);font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.placeholder-note{display:inline-block;background:rgba(255,0,0,0.06);color:#ff0000;font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-left:4px;vertical-align:middle;border:1px solid rgba(255,0,0,0.25)}
+.placeholder-note::before{content:'[ ';color:#ff0000}
+.placeholder-note::after{content:' ]';color:#ff0000}
 
 /* ----- TABS ----- */
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--gray-border);margin-bottom:32px;overflow-x:auto}
