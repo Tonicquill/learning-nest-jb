@@ -240,6 +240,32 @@ tr:hover{background:rgba(74,144,217,0.04)}
 .placeholder-note::before{content:'[ ';color:#ff0000}
 .placeholder-note::after{content:' ]';color:#ff0000}
 
+/* ----- FUNNEL FLOWCHART ----- */
+.process-flow{display:flex;gap:0;align-items:stretch;justify-content:center;margin-top:48px;position:relative}
+.process-step{flex:1;text-align:center;padding:28px 16px;background:#fff;border-radius:16px;border:1px solid var(--gray-border);position:relative;transition:transform .25s,box-shadow .25s;margin:0 8px}
+.process-step:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.08)}
+.process-number{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;font-size:16px;color:#fff;margin:0 auto 14px}
+.process-step:nth-child(1) .process-number{background:var(--sky)}
+.process-step:nth-child(2) .process-number{background:var(--sunrise)}
+.process-step:nth-child(3) .process-number{background:var(--coral)}
+.process-step:nth-child(4) .process-number{background:var(--green)}
+.process-step:nth-child(5) .process-number{background:var(--sky)}
+.process-step:nth-child(6) .process-number{background:var(--sunrise)}
+.process-icon{font-size:28px;margin-bottom:10px;display:block}
+.process-step h3{font-family:var(--font-display);font-size:15px;font-weight:700;margin-bottom:8px}
+.process-step p{font-size:13px;color:var(--gray);line-height:1.6;margin-bottom:0}
+.process-step .step-action{font-size:11px;color:var(--sky);font-weight:600;margin-top:8px;display:block}
+.process-connector{position:absolute;top:50%;right:-16px;width:24px;height:2px;background:var(--gray-border);transform:translateY(-50%);z-index:2}
+.process-connector::after{content:'';position:absolute;right:0;top:-4px;width:0;height:0;border-left:6px solid var(--gray-border);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.process-step:last-child .process-connector{display:none}
+@media(max-width:900px){
+.process-flow{flex-direction:column;gap:16px;max-width:420px;margin-left:auto;margin-right:auto}
+.process-step{margin:0;display:flex;gap:16px;text-align:left;align-items:flex-start;padding:20px}
+.process-number{flex-shrink:0;margin:0}
+.process-icon{display:none}
+.process-connector{display:none}
+}
+
 /* ----- TABS ----- */
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--gray-border);margin-bottom:32px;overflow-x:auto}
 .tab-btn{padding:12px 24px;font-family:var(--font-display);font-size:14px;font-weight:600;color:var(--gray);white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.2s}
