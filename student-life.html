@@ -6,9 +6,23 @@
 <title>Student Life | Edusky Private School</title>
 <meta name="description" content="Student clubs, SkyPoints, school newspaper, Media Club, and community life at Edusky Private School. Where students become creators.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -22,6 +36,9 @@
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html" class="active">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="blog/">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -30,7 +47,16 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="curriculum.html">Curriculum</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="student-life.html">Student Life</a>
+  <a href="eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="blog/">News</a>
+  <a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
@@ -212,8 +238,23 @@
   </div>
 </section>
 
+<!-- ACHIEVEMENTS TEASER -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label reveal">Achievements</p>
+    <h2 class="section-title reveal reveal-delay-1">Student <span class="st-sunrise">Spotlights</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">Every win matters — from the classroom to the stage, the field to the community.</p>
+    <div class="grid-3" style="margin-top:32px">
+      <div class="card reveal reveal-delay-1"><div class="card-icon sky">&#127891;</div><h3>Academic Excellence</h3><p>Top performer in Standard 3. Personalised attention turned a struggling reader into a class representative.</p></div>
+      <div class="card reveal reveal-delay-2"><div class="card-icon sunrise">&#127908;</div><h3>Arts Champion</h3><p>First SkyPoints media content creator. Student-shot video featured on Edusky TikTok.</p></div>
+      <div class="card reveal reveal-delay-3"><div class="card-icon coral">&#127939;</div><h3>Sports Spirit</h3><p>Led the school futsal team with leadership beyond their age.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:32px"><a href="achievements.html" class="btn btn-sky reveal">See All Achievements</a></div>
+  </div>
+</section>
+
 <!-- GALLERY -->
-<section class="section section-alt" id="gallery">
+<section class="section" id="gallery">
   <div class="container">
     <p class="section-label reveal">Moments</p>
     <h2 class="section-title reveal reveal-delay-1">Life at <span class="st-sunrise">Edusky</span></h2>
@@ -251,11 +292,66 @@
         <span style="font-family:var(--font-display);font-size:13px">Celebrations</span>
       </div>
     </div>
+
+    <div style="text-align:center;margin-top:32px"><a href="gallery.html" class="btn btn-sky reveal">View Full Gallery</a></div>
+  </div>
+</section>
+
+<!-- STUDENT COUNCIL -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label reveal">Leadership</p>
+    <h2 class="section-title reveal reveal-delay-1">Student <span class="st-green">Council</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">Edusky students learn to lead early. The council plans events, voices concerns, and represents their peers.</p>
+    <div class="grid-2" style="margin-top:32px">
+      <div class="card reveal reveal-delay-1"><div class="card-icon sky">&#127941;</div><h3>Council Roles</h3><p>President, Vice President, Secretary, and Class Representatives elected each term. Campaigns are short, kind, and focused on ideas.</p></div>
+      <div class="card reveal reveal-delay-2"><div class="card-icon sunrise">&#128161;</div><h3>What They Do</h3><p>Organise spirit days, suggest canteen improvements, lead assembly presentations, and help welcome new students.</p></div>
+    </div>
+    <p style="text-align:center;margin-top:28px"><span class="placeholder-note">Student council structure to be formalised in Term 2 2026.</span></p>
+  </div>
+</section>
+
+<!-- BEYOND THE CLASSROOM -->
+<section class="section">
+  <div class="container">
+    <p class="section-label reveal">Real World</p>
+    <h2 class="section-title reveal reveal-delay-1">Beyond the <span class="st-coral">Classroom</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">Textbooks open doors. Experience builds bridges. We put students in rooms where real decisions are made.</p>
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card reveal reveal-delay-1">
+        <div class="card-icon sky">&#129309;</div>
+        <h3>CSR & Volunteering</h3>
+        <p>Students run workshops for underprivileged communities: reading programs, basic computing, creative arts. Not simulation. Real service.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="card-icon sunrise">&#127758;</div>
+        <h3>Expos & Booths</h3>
+        <p>Edusky students represent the school at education fairs, community expos, and inter-school events. They pitch, present, and answer questions from strangers.</p>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <div class="card-icon coral">&#127908;</div>
+        <h3>Expert Talks & Career Corners</h3>
+        <p>Monthly sessions with professionals: engineers, doctors, artists, entrepreneurs. Students ask hard questions and see what real careers look like.</p>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:32px">
+      <div class="card reveal reveal-delay-1">
+        <div class="card-icon green">&#128187;</div>
+        <h3>Media & Content Creation</h3>
+        <p>Students publish for real audiences — TikTok, Instagram, the school website. Metrics matter. Engagement is feedback. This is digital literacy with consequences.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="card-icon sky">&#128188;</div>
+        <h3>Student Enterprise</h3>
+        <p>Small fundraising projects run by students: bake sales, craft markets, event ticketing. Budgeting, pricing, profit — economics by doing.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:28px"><span class="placeholder-note">First external expo visit planned for Q3 2026. CSR partnership with local charity pending confirmation.</span></p>
   </div>
 </section>
 
 <!-- EVENTS / COMMUNITY -->
-<section class="section" id="community">
+<section class="section section-alt" id="community">
   <div class="container">
     <p class="section-label reveal">Community</p>
     <h2 class="section-title reveal reveal-delay-1">Events & <span class="st-green">Workshops</span></h2>
@@ -271,7 +367,7 @@
       <div class="card reveal reveal-delay-2" style="border-left:4px solid var(--sunrise)">
         <div class="card-icon sunrise">&#127919;</div>
         <h3>Expert Speaker Series</h3>
-        <p>Pediatric psychologist, occupational therapist, or child psychiatrist speaks at Edusky. Topics: understanding ADHD, managing screen time, building emotional resilience. Open to the public.</p>
+        <p>Pediatric psychologist, occupational therapist, or child psychiatrist speaks at Edusky. Topics: understanding your child's development, managing screen time, building emotional resilience. Open to the public.</p>
         <p style="font-size:12px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">First session to be scheduled. Film with speaker consent for YouTube content.</span></p>
       </div>
       <div class="card reveal reveal-delay-3" style="border-left:4px solid var(--green)">
@@ -286,6 +382,7 @@
         <p style="font-size:12px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">Alumni audit and outreach pending. Low effort, high return over time.</span></p>
       </div>
     </div>
+    <div style="text-align:center;margin-top:32px"><a href="events.html" class="btn btn-sky reveal">See All Events</a></div>
   </div>
 </section>
 
@@ -302,6 +399,9 @@
   </div>
 </footer>
 
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js"></script>
 </body>

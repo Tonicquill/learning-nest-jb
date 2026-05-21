@@ -6,9 +6,23 @@
 <title>Admissions & Fees | Edusky Private School</title>
 <meta name="description" content="Enrol at Edusky for 2026. Step-by-step admissions process, fee structure, trial week, required documents, and FAQ. Small class sizes, big heart.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -22,6 +36,9 @@
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html" class="active">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="blog/">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -30,7 +47,16 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="curriculum.html">Curriculum</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="student-life.html">Student Life</a>
+  <a href="eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="blog/">News</a>
+  <a href="contact.html">Contact</a>
   <a href="#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
@@ -107,6 +133,25 @@
   </div>
 </section>
 
+<!-- FEE CALCULATOR -->
+<section class="section" id="calculator">
+  <div class="container">
+    <p class="section-label reveal">Estimate</p>
+    <h2 class="section-title reveal reveal-delay-1">Fee <span class="st-sky">Calculator</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">Select your child's Standard and options for an estimated annual total.</p>
+    <div class="fee-calc reveal reveal-delay-2" style="margin-top:32px;max-width:600px">
+      <div class="form-group"><label>Standard</label><select id="calcStandard" onchange="updateFee()"><option value="1">Standard 1</option><option value="2">Standard 2</option><option value="3">Standard 3</option><option value="4">Standard 4</option><option value="5">Standard 5</option><option value="6">Standard 6</option></select></div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:16px">
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="calcMeals" onchange="updateFee()"> Meals</label>
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="calcTransport" onchange="updateFee()"> Transport</label>
+        <label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="calcSibling" onchange="updateFee()"> Sibling discount (10%)</label>
+      </div>
+      <div class="fee-calc-total" style="margin-top:24px">Estimated Total: <strong id="feeTotal">RM 0</strong></div>
+      <p style="font-size:11px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">Calculator uses estimated figures. Contact us for exact pricing.</span></p>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -117,12 +162,41 @@
       <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What curriculum does Edusky follow?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">We follow the KSSR (Kurikulum Standard Sekolah Rendah), Malaysia's national primary curriculum approved by the Ministry of Education. Our SMIPS registration code is JDA1001. Medium of instruction is Bahasa Malaysia with English.</div></div></div>
       <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What are the school hours?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">School runs Monday to Friday, 8:00 AM to 6:00 PM. Extended hours accommodate working parents — your child is supervised the entire time.</div></div></div>
       <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What is the maximum class size?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">We maintain a maximum teacher-student ratio of approximately 1:10. This is core to our philosophy — every child is known individually, not processed in batches.</div></div></div>
-      <div class="accordion reveal reveal-delay-2"><button class="accordion-header">Does Edusky accept children with learning differences?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Yes. We are intentionally neurodiverse-friendly. Children with ADHD, autism spectrum, dyslexia, and other learning differences are welcomed and supported. Our small class sizes mean teachers can differentiate instruction effectively.</div></div></div>
+      <div class="accordion reveal reveal-delay-2"><button class="accordion-header">Does Edusky accept children who need extra support?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Yes. We are an intentionally small school, which means teachers have the time and space to understand each child individually. Children who learn at a different pace, need extra patience, or benefit from a calmer environment often thrive here. Our small class sizes let us differentiate instruction naturally — not as a special programme, but as standard practice.</div></div></div>
       <div class="accordion reveal reveal-delay-2"><button class="accordion-header">What ages does Edusky accept?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Standard 1 through Standard 6, typically ages 7 to 12. For younger children or secondary-level needs, please contact us — we can discuss options within the Edusky Education Group ecosystem.</div></div></div>
       <div class="accordion reveal reveal-delay-2"><button class="accordion-header">Is there a trial period?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Yes. We offer a trial week — your child attends real classes before you make any long-term commitment. This removes the biggest barrier to enrollment: uncertainty. You see if Edusky fits; your child experiences it firsthand.</div></div></div>
       <div class="accordion reveal reveal-delay-3"><button class="accordion-header">How do I pay fees?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Fees can be paid by bank transfer, cheque, or online banking. We issue official receipts for all payments. <span class="placeholder-note">Payment details to be confirmed.</span></div></div></div>
       <div class="accordion reveal reveal-delay-3"><button class="accordion-header">Is there after-school care?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Our school day runs until 6:00 PM, which already covers working-parent hours. After-school tuition and enrichment programmes are available on-site for children who stay beyond regular hours.</div></div></div>
       <div class="accordion reveal reveal-delay-3"><button class="accordion-header">Are you affiliated with Wilford Private School?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">No. Edusky and Wilford are separate, independently operated schools. We happen to be on the same street — we are at No. 71, they are at No. 65. We respect our neighbours and focus on what makes Edusky unique: our micro-school philosophy.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN DAYS -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label reveal">Visit Us</p>
+    <h2 class="section-title reveal reveal-delay-1">Upcoming <span class="st-sunrise">Open Days</span></h2>
+    <div class="grid-3" style="margin-top:32px">
+      <div class="card reveal reveal-delay-1"><h3>12 July 2026</h3><p>Saturday morning tour. Meet teachers, see classrooms, ask questions. No appointment needed.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2012%20July" class="btn btn-outline" target="_blank">RSVP</a></div>
+      <div class="card reveal reveal-delay-2"><h3>15 August 2026</h3><p>Enrolment clinic. Bring documents, get on-the-spot assessment, and secure a place for 2026.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2015%20August" class="btn btn-outline" target="_blank">RSVP</a></div>
+      <div class="card reveal reveal-delay-3"><h3>5 September 2026</h3><p>Student-led campus tour. See the school through the eyes of current students.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%205%20September" class="btn btn-outline" target="_blank">RSVP</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIRTUAL TOUR -->
+<section class="section">
+  <div class="container" style="text-align:center">
+    <p class="section-label reveal">Explore</p>
+    <h2 class="section-title reveal reveal-delay-1">Take a <span class="st-sky">Virtual Tour</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">A 5-minute walkthrough of our classrooms, hall, and outdoor spaces. Coming soon.</p>
+    <div class="reveal reveal-delay-3" style="margin-top:24px">
+      <div style="max-width:700px;margin:0 auto;border-radius:16px;overflow:hidden;background:var(--gray-bg);min-height:320px;display:flex;align-items:center;justify-content:center;flex-direction:column">
+        <span style="font-size:48px;margin-bottom:12px">&#127909;</span>
+        <p style="color:var(--gray)">Virtual tour video placeholder</p>
+        <p style="font-size:12px;color:var(--gray-light);margin-top:8px"><span class="placeholder-note">Film campus walkthrough and upload to YouTube / embed here</span></p>
+      </div>
     </div>
   </div>
 </section>
@@ -167,6 +241,10 @@
     <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
+
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js"></script>
 </body>

@@ -6,9 +6,23 @@
 <title>News & Blog | Edusky Private School</title>
 <meta name="description" content="Latest news, event recaps, student achievements, and announcements from Edusky Private School.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=1">
+<link rel="stylesheet" href="../assets/style.css?v=2">
 </head>
 <body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -22,6 +36,9 @@
       <li><a href="../curriculum.html">Curriculum</a></li>
       <li><a href="../admissions.html">Admissions</a></li>
       <li><a href="../student-life.html">Student Life</a></li>
+      <li><a href="../eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="../gallery.html">Gallery</a></li>
+      <li><a href="../events.html">Events</a></li>
       <li><a href="index.html" class="active">News</a></li>
       <li><a href="../contact.html">Contact</a></li>
     </ul>
@@ -30,7 +47,16 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../curriculum.html">Curriculum</a><a href="../admissions.html">Admissions</a><a href="../student-life.html">Student Life</a><a href="index.html">News</a><a href="../contact.html">Contact</a>
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../curriculum.html">Curriculum</a>
+  <a href="../admissions.html">Admissions</a>
+  <a href="../student-life.html">Student Life</a>
+  <a href="../eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="../gallery.html">Gallery</a>
+  <a href="../events.html">Events</a>
+  <a href="index.html">News</a>
+  <a href="../contact.html">Contact</a>
   <a href="../admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
@@ -144,6 +170,10 @@
     <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
+
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="../assets/main.js"></script>

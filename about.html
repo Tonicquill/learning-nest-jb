@@ -6,9 +6,23 @@
 <title>About Us | Edusky Private School</title>
 <meta name="description" content="Meet Dr. Sean Ng and the Edusky team. Our mission, values, and why we choose to be small. A micro-school in Johor Bahru since 2014.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -22,6 +36,9 @@
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="blog/">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -35,6 +52,9 @@
   <a href="curriculum.html">Curriculum</a>
   <a href="admissions.html">Admissions</a>
   <a href="student-life.html">Student Life</a>
+  <a href="eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
   <a href="blog/">News</a>
   <a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
@@ -55,13 +75,13 @@
     <div class="grid-2" style="align-items:start">
       <div class="reveal">
         <p class="section-label">Mission</p>
-        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">To empower every child through <span style="color:var(--sky)">personalised education</span> in a nurturing community</h2>
-        <p style="color:var(--gray);line-height:1.7;font-size:15px">We believe quality education is not about how many students you can fit in a classroom. It is about how deeply you can know each one — their strengths, their struggles, their passions, and their potential.</p>
+        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">We do not run a school. We run a <span style="color:var(--sky)">promise</span> to every family who walks in.</h2>
+        <p style="color:var(--gray);line-height:1.7;font-size:15px">Johor Bahru parents are tired of crowded classrooms, WhatsApp messages that go unanswered, and teachers who do not know their child's name. We know because we are parents here too. Our mission is simple: deliver a primary education where every child is known personally, where children develop at their own pace, and where families feel like partners — not customers.</p>
       </div>
       <div class="reveal reveal-delay-1">
         <p class="section-label">Vision</p>
-        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">To be Johor's most <span style="color:var(--sunrise)">trusted micro-school</span> — where small is not a compromise but a philosophy</h2>
-        <p style="color:var(--gray);line-height:1.7;font-size:15px">A school where neurodiverse learners thrive, where students create as much as they consume, and where every family feels like they belong to a community, not a institution.</p>
+        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">A school where small is the <span style="color:var(--sunrise)">strategy</span>, not the compromise</h2>
+        <p style="color:var(--gray);line-height:1.7;font-size:15px">We want Edusky to become the first name Johor parents think of when they need a school that sees the whole child. Not the biggest brand. The most trusted one. A place where a child who learns differently gets patience, not pressure. Where a shy child finds a voice. Where parents get updates that matter — not noise.</p>
       </div>
     </div>
   </div>
@@ -78,9 +98,9 @@
       <div class="reveal reveal-delay-1">
         <h2 style="font-size:clamp(26px,3vw,38px);line-height:1.15;margin-bottom:16px">Dr. Sean Ng</h2>
         <p style="color:var(--sky);font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px">Founder & Principal</p>
-        <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Dr. Sean Ng holds a doctorate and has over a decade of experience in education. He founded Edusky with a simple conviction: that education should see the whole child — academically, emotionally, and socially.</p>
-        <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Under his leadership, Edusky has grown from a single classroom into a multi-service education provider, offering primary schooling, language training, corporate programmes, and community initiatives across Johor Bahru.</p>
-        <p style="color:var(--gray);line-height:1.7">His vision for Edusky is an education group where every arm — school, language centre, training, enrichment, community — feeds into every other, creating a complete ecosystem for lifelong learning.</p>
+        <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Dr. Sean started Edusky in 2014 with one classroom and a conviction born from frustration: he had watched too many children shrink in oversized classrooms where compliance was valued over curiosity. He wanted a place where a dyslexic child could learn at their own pace, where a parent could walk in unannounced and be greeted by name, and where the measure of success was not a league table but a child's willingness to show up each morning excited to learn.</p>
+        <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">He knows the geography of Johor parenting intimately: the traffic on Jalan Adda, the pressure of dual-income households, the silent worry about screen time and social media, and the desperate search for a school that will not write off a "difficult" child. That awareness is baked into every decision at Edusky — from our WhatsApp-first communication to our 6 PM school day that respects working parents.</p>
+        <p style="color:var(--gray);line-height:1.7">Under his leadership, Edusky has grown from a single classroom into a multi-service education provider, offering primary schooling, language training, corporate programmes, and community initiatives across Johor Bahru. His vision is an education group where every arm feeds into every other, creating a complete ecosystem for lifelong learning.</p>
         <a href="#" class="badge badge-sky" style="margin-top:16px">LinkedIn Profile <span class="placeholder-note">to be linked</span></a>
       </div>
     </div>
@@ -97,17 +117,17 @@
       <div class="card reveal reveal-delay-1" style="text-align:center;padding:40px 28px">
         <div class="card-icon sky" style="margin:0 auto 20px">&#127891;</div>
         <h3>Empowering Education</h3>
-        <p>We don't just teach subjects. We build confidence, curiosity, and character. Every lesson is designed to empower — not just to inform.</p>
+        <p>We teach children how to think, not what to think. In a world where AI can recite facts, we build confidence, creativity, and the ability to ask better questions. Every lesson is designed to empower — not just to inform.</p>
       </div>
       <div class="card reveal reveal-delay-2" style="text-align:center;padding:40px 28px">
         <div class="card-icon sunrise" style="margin:0 auto 20px">&#9878;</div>
         <h3>Discipline & Integrity</h3>
-        <p>Structure creates safety. Clear expectations, consistent follow-through, and genuine accountability build responsible young people.</p>
+        <p>Warmth without boundaries creates chaos. Boundaries without warmth create fear. We aim for the middle: clear expectations, consistent follow-through, and relationships strong enough to hold accountability.</p>
       </div>
       <div class="card reveal reveal-delay-3" style="text-align:center;padding:40px 28px">
         <div class="card-icon coral" style="margin:0 auto 20px">&#127942;</div>
         <h3>Excellence</h3>
-        <p>Small does not mean settling. We pursue excellence in academics, character, and community — measured one child at a time, not by rankings.</p>
+        <p>Excellence at Edusky is not about topping a district ranking. It is about a child who used to hide in the back row now raising their hand. It is about a parent who finally sleeps well knowing their child is safe and seen.</p>
       </div>
     </div>
   </div>
@@ -177,6 +197,47 @@
       <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
         <div style="height:160px;overflow:hidden"><img src="assets/tiktok/tt-055.jpg" alt="Year End Concert at school hall" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><h3>School Hall & Events</h3><p style="font-size:13px;color:var(--gray)">Multi-purpose space for assemblies, performances, and community gatherings.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label reveal">Our Journey</p>
+    <h2 class="section-title reveal reveal-delay-1">From <span class="st-sky">One Classroom</span> to a Community</h2>
+    <div class="timeline reveal reveal-delay-2" style="margin-top:36px;max-width:650px">
+      <div class="timeline-item"><h3>2014</h3><p>Edusky Learning Academy founded by Dr. Sean Ng. A single classroom with a conviction: every child deserves to be known.</p></div>
+      <div class="timeline-item"><h3>2016</h3><p>Expanded to multi-standard primary. First cohort of Standard 1–6 students.</p></div>
+      <div class="timeline-item"><h3>2019</h3><p>Facilities upgraded. Chinese investor delegation visits and positively assesses campus.</p></div>
+      <div class="timeline-item"><h3>2022</h3><p>Rebranded as Edusky Private School. SMIPS registration JDA1001. MOE-registered KSSR curriculum.</p></div>
+      <div class="timeline-item"><h3>2025</h3><p>Media Club, SkyPoints, and Student Production System launched. Student content now drives the brand.</p></div>
+      <div class="timeline-item"><h3>2026</h3><p>Micro-school model formalised. Community programmes, parent network, and alumni outreach begin.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS & AFFILIATIONS -->
+<section class="section">
+  <div class="container">
+    <p class="section-label reveal">Recognition</p>
+    <h2 class="section-title reveal reveal-delay-1">Awards & <span class="st-sunrise">Affiliations</span></h2>
+    <div class="grid-3" style="margin-top:36px">
+      <div class="card reveal reveal-delay-1" style="text-align:center;padding:40px 28px">
+        <div class="card-icon sky" style="margin:0 auto 20px">&#127942;</div>
+        <h3>MOE Registered</h3>
+        <p>SMIPS Code JDA1001. Approved to deliver KSSR national curriculum under Ministry of Education guidelines.</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align:center;padding:40px 28px">
+        <div class="card-icon sunrise" style="margin:0 auto 20px">&#129309;</div>
+        <h3>Community Partners</h3>
+        <p>Collaborations with local charities, parent workshops, and expert speaker series. Building trust beyond the classroom.</p>
+      </div>
+      <div class="card reveal reveal-delay-3" style="text-align:center;padding:40px 28px">
+        <div class="card-icon green" style="margin:0 auto 20px">&#127941;</div>
+        <h3>Investor Assessment</h3>
+        <p>Campus positively assessed by international education investors. Infrastructure ready for scaling if desired — but we choose small.</p>
       </div>
     </div>
   </div>
@@ -269,6 +330,9 @@
   </div>
 </footer>
 
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js"></script>
 </body>

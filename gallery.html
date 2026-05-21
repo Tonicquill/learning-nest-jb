@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Gallery | Edusky Private School</title>
+<meta name="description" content="Browse moments from Edusky Private School — classrooms, events, celebrations, sports, and student life in Johor Bahru.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
+
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.webp" alt="Edusky Logo" onerror="this.style.display='none'">
+      Edusky Private School
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog/">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="admissions.html#enrol" class="nav-cta">Enrol Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>Edusky in Pictures</h1>
+    <p>Real moments from a small school with a big heart. Classrooms, concerts, celebrations, and everyday joy.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="section-label reveal">Gallery</p>
+    <h2 class="section-title reveal reveal-delay-1">Moments That <span class="st-sky">Matter</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2">Click any photo to expand. Use arrow keys to navigate.</p>
+
+    <div class="gallery-filters reveal reveal-delay-2">
+      <button class="gallery-filter-btn active" data-filter="all">All</button>
+      <button class="gallery-filter-btn" data-filter="events">Events</button>
+      <button class="gallery-filter-btn" data-filter="classrooms">Classrooms</button>
+      <button class="gallery-filter-btn" data-filter="students">Students</button>
+      <button class="gallery-filter-btn" data-filter="celebrations">Celebrations</button>
+      <button class="gallery-filter-btn" data-filter="outdoor">Outdoor</button>
+      <button class="gallery-filter-btn" data-filter="sports">Sports</button>
+      <button class="gallery-filter-btn" data-filter="facilities">Facilities</button>
+    </div>
+
+    <div class="masonry reveal reveal-delay-3">
+      <div class="masonry-item" data-category="events"><img src="assets/tiktok/tt-055.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">Year End Concert</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-169.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Concert Backstage</div></div>
+      <div class="masonry-item" data-category="events"><img src="assets/facebook/fb-084.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">School Event</div></div>
+      <div class="masonry-item" data-category="events"><img src="assets/facebook/fb-081.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">Performance Night</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/facebook/fb-025.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Learning in Action</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/instagram/ig-010.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Classroom Moments</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-003.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Student Work</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-005.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Lab Session</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-172.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Student Portrait</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-178.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Smile &amp; Study</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/facebook/fb-030.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Day in the Life</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/facebook/fb-196.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Proud Moment</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-020.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Celebration Day</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-002.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Festive Spirit</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-156.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Achievement Ceremony</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/facebook/fb-079.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Playground</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/facebook/fb-080.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Outdoor Fun</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/instagram/ig-010.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">School Grounds</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-079.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Sports Day</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-080.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Team Play</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/instagram/ig-172.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Active Students</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/tiktok/tt-267.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Game On</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-005.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Science Corner</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/instagram/ig-156.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">School Hall</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/facebook/fb-025.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Resource Room</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-003.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Creative Space</div></div>
+      <div class="masonry-item" data-category="events"><img src="assets/instagram/ig-178.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">School Gathering</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-156.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Happy Learner</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-267.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Group Study</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-084.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Award Time</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/tiktok/tt-055.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Campus Walk</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/instagram/ig-002.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Reading Nook</div></div>
+    </div>
+
+    <p style="font-size:11px;color:var(--gray-light);margin-top:20px;text-align:center"><span class="placeholder-note">Gallery curation in progress. Replace missing thumbnails with full-resolution images once sorted.</span></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">&times;</div>
+  <div class="lightbox-prev" id="lightboxPrev">&#8249;</div>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+  <div class="lightbox-next" id="lightboxNext">&#8250;</div>
+</div>
+
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+
+<div class="newsletter-modal" id="newsletterModal">
+  <div class="newsletter-box">
+    <div class="nl-close">&times;</div>
+    <h3>Stay in the Loop</h3>
+    <p>Get Edusky updates, event invites, and student stories in your inbox.</p>
+    <div class="form-group"><input type="email" placeholder="Your email address"></div>
+    <button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button>
+  </div>
+</div>
+
+<div class="cookie-banner" id="cookieBanner" style="display:none">
+  <span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span>
+  <button id="cookieAccept">Got it</button>
+</div>
+
+<a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
+<script src="assets/main.js"></script>
+</body>
+</html>

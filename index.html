@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Edusky Private School | Small by Design. Big on Heart.</title>
-<meta name="description" content="Edusky Private School — An intentional micro-school in Johor Bahru. KSSR curriculum, small class sizes, neurodiverse-friendly. Every child known by name.">
+<meta name="description" content="Edusky Private School — An intentional micro-school in Johor Bahru. KSSR curriculum, small class sizes, individual attention. Every child known by name.">
 <meta property="og:title" content="Edusky Private School | Small by Design. Big on Heart.">
-<meta property="og:description" content="An intentional micro-school in Johor Bahru. KSSR curriculum, small class sizes, neurodiverse-friendly. Every child known by name.">
+<meta property="og:description" content="An intentional micro-school in Johor Bahru. KSSR curriculum, small class sizes, individual attention. Every child known by name.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/school-building.jpg">
 <meta property="og:url" content="https://edusky.com.my/">
@@ -17,7 +17,7 @@
 <link rel="icon" type="image/webp" href="assets/logo.webp">
 <link rel="preload" as="image" href="assets/school-building.jpg">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -26,7 +26,7 @@
   "alternateName":["Sekolah Rendah Edusky","Edusky Learning Academy"],
   "url":"https://edusky.com.my/",
   "logo":"assets/logo.webp",
-  "description":"An intentional micro-school in Johor Bahru offering KSSR curriculum for Standards 1-6. Small class sizes, neurodiverse-friendly, community-embedded education.",
+  "description":"An intentional micro-school in Johor Bahru offering KSSR curriculum for Standards 1-6. Small class sizes, individual attention, community-embedded education.",
   "foundingDate":"2014",
   "founder":{"@type":"Person","name":"Dr. Sean Ng"},
   "address":{"@type":"PostalAddress","streetAddress":"71, Jalan Adda 3/1, Taman Adda Heights","addressLocality":"Johor Bahru","postalCode":"81100","addressCountry":"MY"},
@@ -43,6 +43,20 @@
 </head>
 <body>
 
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
+
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
@@ -56,6 +70,9 @@
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="blog/">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -71,6 +88,9 @@
   <a href="curriculum.html">Curriculum</a>
   <a href="admissions.html">Admissions</a>
   <a href="student-life.html">Student Life</a>
+  <a href="eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
   <a href="blog/">News</a>
   <a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
@@ -88,7 +108,7 @@
       <span class="hl-white">Small by Design.</span><br>
       <span class="hl-sunrise">Big on Heart.</span>
     </h1>
-    <p class="hero-desc">An intentional micro-school where every child is known by name — not by roll number. KSSR curriculum, neurodiverse-friendly, community-embedded.</p>
+    <p class="hero-desc">An intentional micro-school where every child is known by name — not by roll number. KSSR curriculum, personalised attention, community-embedded.</p>
     <div class="hero-actions">
       <a href="admissions.html#enrol" class="btn btn-primary">Enrol for 2026</a>
       <a href="about.html" class="btn btn-white">Discover Our Story</a>
@@ -129,8 +149,8 @@
       </div>
       <div class="card reveal reveal-delay-2">
         <div class="card-icon sky">&#9829;</div>
-        <h3>Neurodiverse-Friendly</h3>
-        <p>Children with ADHD, autism spectrum, and learning differences are not rejected or warehoused here. They are seen, supported, and celebrated.</p>
+        <h3>Individual Attention</h3>
+        <p>Every child develops at their own pace. Our small classes give teachers the time to understand each student personally — their strengths, their challenges, and what makes them light up.</p>
       </div>
       <div class="card reveal reveal-delay-3">
         <div class="card-icon green">&#127793;</div>
@@ -176,7 +196,7 @@
       <div class="card reveal reveal-delay-4" style="border-left:4px solid var(--coral)">
         <div class="card-icon coral">&#129309;</div>
         <h3>Community Programmes</h3>
-        <p>CSR volunteering, parent education workshops, expert speaker series (child psychology, ADHD, screen time), alumni network. Open to the public.</p>
+        <p>CSR volunteering, parent education workshops, expert speaker series (child psychology, screen time, resilience), alumni network. Open to the public.</p>
         <a href="student-life.html#community" class="badge badge-coral" style="margin-top:12px">Get Involved &rarr;</a>
       </div>
     </div>
@@ -233,6 +253,28 @@
       <div class="stat-item reveal reveal-delay-3">
         <div class="stat-val sunrise">KSSR</div>
         <div class="stat-label" style="color:rgba(255,255,255,0.7)">MOE-Registered Curriculum</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECADE OF TRUST -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2 reveal" style="align-items:center;gap:48px">
+      <div>
+        <p class="section-label">Since 2014</p>
+        <h2 style="font-size:clamp(26px,3vw,38px);line-height:1.15;margin-bottom:16px">Over a <span style="color:var(--sunrise)">decade</span> of knowing children</h2>
+        <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Edusky was founded in 2014 by Dr. Sean Ng — not as a franchise, not as a venture, but as a conviction. One classroom, one teacher, one promise: that every child deserves to be known personally.</p>
+        <p style="color:var(--gray);line-height:1.7;margin-bottom:20px">Ten years later, that conviction has grown into a full primary school, a language centre, a tuition hub, and a community of families who still get WhatsApp replies within the hour. Longevity matters in education. It means we have seen children grow from Standard 1 to secondary school. It means our systems are tested, our teachers are experienced, and our reputation is earned — not bought.</p>
+        <div style="display:flex;gap:24px;flex-wrap:wrap">
+          <div><strong style="font-size:28px;color:var(--sunrise);font-family:var(--font-display)">10+</strong><p style="font-size:13px;color:var(--gray)">Years Operating</p></div>
+          <div><strong style="font-size:28px;color:var(--sky);font-family:var(--font-display)">2014</strong><p style="font-size:13px;color:var(--gray)">Year Founded</p></div>
+          <div><strong style="font-size:28px;color:var(--green);font-family:var(--font-display)">JDA1001</strong><p style="font-size:13px;color:var(--gray)">SMIPS Code</p></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1" style="border-radius:20px;overflow:hidden;min-height:300px">
+        <img src="assets/facebook/fb-169.jpg" alt="Dr. Sean Ng with students" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
     </div>
   </div>
@@ -315,6 +357,10 @@
     </div>
   </div>
 </footer>
+
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>

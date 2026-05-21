@@ -6,9 +6,23 @@
 <title>Contact Us | Edusky Private School</title>
 <meta name="description" content="Visit Edusky Private School in Taman Adda Heights, Johor Bahru. Call, WhatsApp, email, or visit us. We respond within 24 hours.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
+
+<div class="planning-overlay" id="planningOverlay"></div>
+<div class="planning-modal" id="planningModal">
+  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
+  <h2>Builder Team Briefing</h2>
+  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
+  <div class="planning-list">
+    <strong>What's live:</strong> Core pages, real images, accurate contact info.<br>
+    <strong>What's placeholder:</strong> Fees, teacher bios, student profiles, blog posts, forms.<br>
+    <strong>What's dream:</strong> Alumni, parent directory, events, achievements, gallery, ECA clubs.<br>
+    <strong>Policy:</strong> Anything marked "not for public yet" stays internal. Cut excess before launch.
+  </div>
+  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
+</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -22,6 +36,9 @@
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
+      <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="blog/">News</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
@@ -30,7 +47,16 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="curriculum.html">Curriculum</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="student-life.html">Student Life</a>
+  <a href="eca-clubs.html">ECA &amp; Clubs</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="events.html">Events</a>
+  <a href="blog/">News</a>
+  <a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
@@ -125,12 +151,83 @@
   </div>
 </section>
 
+<!-- TEAM CONTACT GRID -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="section-label reveal">Who to Contact</p>
+    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:36px">Reach the <span class="st-sky">right person</span></h2>
+    <div class="grid-3">
+      <div class="card reveal reveal-delay-1" style="text-align:center">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--sky);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px">&#127891;</div>
+        <h3>Dr. Sean Ng</h3>
+        <p style="font-size:13px;color:var(--gray);margin-bottom:12px">Founder & Principal</p>
+        <p style="font-size:14px;color:var(--gray)">Strategic questions, partnerships, media enquiries, or just want to meet the person who started it all.</p>
+        <p style="margin-top:12px"><a href="https://wa.me/60167733518" class="badge badge-sky">WhatsApp</a></p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align:center">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--sunrise);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px">&#128221;</div>
+        <h3>Admissions Office</h3>
+        <p style="font-size:13px;color:var(--gray);margin-bottom:12px">Enrolment & School Tours</p>
+        <p style="font-size:14px;color:var(--gray)">Fee questions, trial-week scheduling, document requirements, and campus visits.</p>
+        <p style="margin-top:12px"><a href="tel:+6073642678" class="badge badge-sunrise">07-364 2678</a></p>
+      </div>
+      <div class="card reveal reveal-delay-3" style="text-align:center">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px">&#128187;</div>
+        <h3>Admin & Operations</h3>
+        <p style="font-size:13px;color:var(--gray);margin-bottom:12px">General Enquiries</p>
+        <p style="font-size:14px;color:var(--gray)">Attendance, transport, meals, uniforms, billing, and day-to-day coordination.</p>
+        <p style="margin-top:12px"><a href="mailto:enquiries@edusky.com.my" class="badge badge-green">Email</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MAP -->
-<section class="section section-alt" style="padding:0">
-  <div style="width:100%;height:400px;background:var(--gray-bg);display:flex;align-items:center;justify-content:center;flex-direction:column">
-    <span style="font-size:48px;margin-bottom:12px">&#128205;</span>
-    <p style="color:var(--gray);font-family:var(--font-display)">Google Maps Embed</p>
-    <p style="font-size:13px;color:var(--gray-light);margin-top:8px"><span class="placeholder-note">Replace with &lt;iframe src="https://maps.google.com/maps?q=Edusky+Private+School+Johor+Bahru&amp;output=embed"&gt;</span></p>
+<section class="section" style="padding:0">
+  <iframe src="https://www.google.com/maps?q=71+Jalan+Adda+3%2F1+Taman+Adda+Heights+81100+Johor+Bahru&output=embed" width="100%" height="400" style="border:0;filter:grayscale(0.2)" allowfullscreen="" loading="lazy" title="Edusky Private School Location"></iframe>
+</section>
+
+<!-- DIRECTIONS & PARKING -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="grid-2" style="gap:48px;align-items:start">
+      <div class="reveal">
+        <p class="section-label">Getting Here</p>
+        <h2 style="font-size:clamp(22px,2.5vw,32px);line-height:1.15;margin-bottom:16px">Driving <span style="color:var(--sky)">Directions</span></h2>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">From JB City Centre / CIQ</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Head east on Jalan Tun Abdul Razak. Take Jalan Adda Utama into Taman Adda Heights. Turn left at Jalan Adda 3/1. Edusky is on your right, No. 71. ~15 minutes.</p>
+          </div>
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">From Aeon Mall Dato' Onn / EDL Highway</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Exit at Bandar Dato' Onn interchange. Head toward Taman Adda Heights via Jalan Adda Utama. Turn right at Jalan Adda 3/1. ~8 minutes.</p>
+          </div>
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">From Mount Austin / Tebrau</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Head west on Jalan Mutiara Emas. Connect to Jalan Adda Utama. Turn right at Jalan Adda 3/1. ~10 minutes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="section-label">Logistics</p>
+        <h2 style="font-size:clamp(22px,2.5vw,32px);line-height:1.15;margin-bottom:16px">Parking & <span style="color:var(--sunrise)">Access</span></h2>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">Parking</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Street parking along Jalan Adda 3/1. Drop-off bay directly in front of the school gate. Please do not block neighbour driveways.</p>
+          </div>
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">School Bus</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Optional transport covering Taman Adda Heights, Bandar Dato' Onn, and nearby estates. <span class="placeholder-note">Routes to be finalised based on demand.</span></p>
+          </div>
+          <div class="card" style="padding:16px 20px">
+            <strong style="font-size:15px">Accessibility</strong>
+            <p style="font-size:13px;color:var(--gray);margin:6px 0 0">Single-storey campus with step-free access to all classrooms and facilities. Contact us in advance if mobility assistance is needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -164,11 +261,15 @@
       <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
       <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
       <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a></div></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div></div>
     </div>
     <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
+
+<div class="back-to-top" aria-label="Back to top">&#8593;</div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js"></script>
