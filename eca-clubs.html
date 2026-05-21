@@ -23,7 +23,8 @@
   </div>
   <div class="planning-rationale">
     <strong>Why this matters:</strong> ECA pages are decision-drivers for parents choosing between schools. "Does my child get to do more than worksheets?" Clubs show breadth and care. The Media Club is the content engine — students learn photography, editing, and storytelling while producing authentic school marketing material. It is a genuine educational win-win: real-world skills plus reduced content burden. The "propose a club" CTA invites parent investment and community ownership.<br>
-    <strong>Watch out for:</strong> Do not promise clubs that lack committed leads. A cancelled club disappoints children and angers parents. STEM and Nature clubs are marked correctly as pilot/proposed — keep those labels until confirmed. The student council must be real, not ceremonial. A fake council undermines student trust.
+    <strong>Watch out for:</strong> Do not promise clubs that lack committed leads. A cancelled club disappoints children and angers parents. STEM and Nature clubs are marked correctly as pilot/proposed — keep those labels until confirmed. The student council must be real, not ceremonial. A fake council undermines student trust.<br>
+    <strong>How hero videos work:</strong> This page shows <em>real Edusky footage</em> in the hero — the "Homeschool Registration 2021" video. For every other page, the hero uses a placeholder stock video. The system is interchangeable: swap the MP4 filename in the HTML, or even use a still image, and the scroll effect works identically. Capture short clips of students running, laughing, presenting — drop them in, done.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -55,11 +56,18 @@
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1>ECA, Clubs &amp; Societies</h1>
-    <p>Every child finds their thing. From media to music, code to cricket — discover what sparks joy beyond the classroom.</p>
+<section class="page-hero" data-sticky-video-container>
+  <div class="page-hero-sticky">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+      <source src="videos/hero-eca.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Real Edusky footage. Any video or image can slot in here — just swap the file.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
+    <div class="page-hero-content">
+      <h1>ECA, Clubs &amp; Societies</h1>
+      <p>Every child finds their thing. From media to music, code to cricket — discover what sparks joy beyond the classroom.</p>
+    </div>
   </div>
 </section>
 

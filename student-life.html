@@ -23,7 +23,8 @@
   </div>
   <div class="planning-rationale">
     <strong>Why this matters:</strong> This page sells the "life after the bell" — the emotional reason parents choose private school. The Student Production System (Media Club, SkyPoints, Newspaper) is a win-win: students gain real-world content creation skills while producing authentic marketing assets for the school. It reduces our content burden and builds student ownership.<br>
-    <strong>Watch out for:</strong> SkyPoints and student IDs require tech infrastructure that does not exist. CSR without a confirmed partner is an empty promise. Media consent must be signed BEFORE any student face appears publicly — one lawsuit kills everything.
+    <strong>Watch out for:</strong> SkyPoints and student IDs require tech infrastructure that does not exist. CSR without a confirmed partner is an empty promise. Media consent must be signed BEFORE any student face appears publicly — one lawsuit kills everything.<br>
+    <strong>How hero videos work:</strong> The pinned video hero is a placeholder stock video. It scrolls and scrubs as visitors scroll down. To replace it, simply drop any MP4 or image into the <code>videos/</code> folder and change the filename in this HTML. The ECA page already uses real Edusky footage as a demo.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -69,8 +70,9 @@
     <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-079.jpg">
       <source src="videos/hero-student-life.mp4" type="video/mp4">
     </video>
-    <div class="page-hero-overlay"></div>
-    <div class="hero-video-notice" id="heroVideoNotice"><span>馓; Placeholder video — student footage coming soon</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
     <div class="page-hero-content">
       <h1>Student Life</h1>
       <p>Every student carries a production studio in their pocket. We channel creativity into community, content, and confidence.</p>

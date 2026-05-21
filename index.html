@@ -56,7 +56,8 @@
   </div>
   <div class="planning-rationale">
     <strong>Why this matters:</strong> The homepage is the conversion engine. The "10+ years" trust signal and "every child known" positioning directly counter the biggest objection: "you are small = risky." Testimonials are the emotional close. Partner logos add institutional legitimacy.<br>
-    <strong>Watch out for:</strong> Fake or unconsented testimonials are a liability. Overpromising on partner logos that do not exist yet looks desperate. The hero image must stay current — an old building photo ages the brand.
+    <strong>Watch out for:</strong> Fake or unconsented testimonials are a liability. Overpromising on partner logos that do not exist yet looks desperate. The hero image must stay current — an old building photo ages the brand.<br>
+    <strong>How hero videos work:</strong> The pinned video hero is a placeholder system. Drop any MP4, JPG, or even a still image into the <code>videos/</code> folder, update the filename in the HTML, and it plays as users scroll. No coding needed. The ECA page already uses real Edusky footage — other pages show stock placeholder until we capture more.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -108,38 +109,39 @@
         <source src="videos/hero-home.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-video-notice" id="heroVideoNotice"><span>馓; Placeholder video — student footage coming soon</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="hero-content-scrollable">
     <div class="hero-content">
-    <p class="hero-badge">Johor Bahru &middot; Est. 2014</p>
-    <h1 class="hero-headline">
-      <span class="hl-white">Small by Design.</span><br>
-      <span class="hl-sunrise">Big on Heart.</span>
-    </h1>
-    <p class="hero-desc">An intentional micro-school where every child is known by name — not by roll number. KSSR curriculum, personalised attention, community-embedded.</p>
-    <div class="hero-actions">
-      <a href="admissions.html#enrol" class="btn btn-primary">Enrol for 2026</a>
-      <a href="about.html" class="btn btn-white">Discover Our Story</a>
+      <p class="hero-badge">Johor Bahru &middot; Est. 2014</p>
+      <h1 class="hero-headline">
+        <span class="hl-white">Small by Design.</span><br>
+        <span class="hl-sunrise">Big on Heart.</span>
+      </h1>
+      <p class="hero-desc">An intentional micro-school where every child is known by name — not by roll number. KSSR curriculum, personalised attention, community-embedded.</p>
+      <div class="hero-actions">
+        <a href="admissions.html#enrol" class="btn btn-primary">Enrol for 2026</a>
+        <a href="about.html" class="btn btn-white">Discover Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div class="reveal">
+          <div class="hs-val hs-sunrise" data-count="10">10+</div>
+          <div class="hs-label hs-white">Years in Education</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="hs-val hs-sky">1:10</div>
+          <div class="hs-label hs-white">Teacher-Student Ratio</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="hs-val hs-white">KSSR</div>
+          <div class="hs-label hs-white">National Curriculum</div>
+        </div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="reveal">
-        <div class="hs-val hs-sunrise" data-count="10">10+</div>
-        <div class="hs-label hs-white">Years in Education</div>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <div class="hs-val hs-sky">1:10</div>
-        <div class="hs-label hs-white">Teacher-Student Ratio</div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <div class="hs-val hs-white">KSSR</div>
-        <div class="hs-label hs-white">National Curriculum</div>
-      </div>
+    <div class="hero-scroll">
+      <span>Discover</span>
+      <div class="hero-scroll-arrow"></div>
     </div>
-  </div>
-  <div class="hero-scroll">
-    <span>Discover</span>
-    <div class="hero-scroll-arrow"></div>
-  </div>
   </div>
 </section>
 
