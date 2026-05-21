@@ -6,7 +6,7 @@
 <title>Photo Gallery | Edusky Private School</title>
 <meta name="description" content="Browse moments from Edusky Private School — classrooms, events, celebrations, sports, and student life in Johor Bahru.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
   <div class="planning-rationale">
     <strong>Why this matters:</strong> Visual proof beats any copy. 60 real images of smiling children and actual classrooms remove doubt faster than a thousand words. Parents filter by category to find what THEY care about: a sports parent checks "Outdoor/Sports," an arts parent checks "Celebrations." It is self-service persuasion.<br>
     <strong>Watch out for:</strong> Low-res thumbnails make us look cheap. Images without media consent are a legal risk. A gallery full of stock photos kills authenticity — every photo must be ours.
+    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -55,11 +56,18 @@
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1>Edusky in Pictures</h1>
-    <p>Real moments from a small school with a big heart. Classrooms, concerts, celebrations, and everyday joy.</p>
+<section class="page-hero" data-sticky-video-container>
+  <div class="page-hero-sticky">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+      <source src="videos/hero-home.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
+    <div class="page-hero-content">
+      <h1>Edusky in Pictures</h1>
+      <p>Real moments from a small school with a big heart. Classrooms, concerts, celebrations, and everyday joy.</p>
+    </div>
   </div>
 </section>
 
@@ -157,6 +165,6 @@
 </div>
 
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
-<script src="assets/main.js?v=3"></script>
+<script src="assets/main.js?v=7"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <title>Contact Us | Edusky Private School</title>
 <meta name="description" content="Visit Edusky Private School in Taman Adda Heights, Johor Bahru. Call, WhatsApp, email, or visit us. We respond within 24 hours.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
   <div class="planning-rationale">
     <strong>Why this matters:</strong> Direct contact is the conversion point. The team grid reduces anxiety by letting parents choose WHO to talk to. The map removes "where is this place?" friction. Directions from landmarks prove local insider knowledge — we know JB geography intimately.<br>
     <strong>Watch out for:</strong> A form that goes nowhere (alert only) is a conversion killer. Parents who take the time to fill it expect a response, not a popup. Bus routes promised but not delivered = broken trust.
+    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -64,11 +65,18 @@
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1>Get in Touch</h1>
-    <p>We respond within 24 hours. Prefer to talk? Call or WhatsApp us directly.</p>
+<section class="page-hero" data-sticky-video-container>
+  <div class="page-hero-sticky">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+      <source src="videos/hero-home.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
+    <div class="page-hero-content">
+      <h1>Get in Touch</h1>
+      <p>We respond within 24 hours. Prefer to talk? Call or WhatsApp us directly.</p>
+    </div>
   </div>
 </section>
 
@@ -276,6 +284,6 @@
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
-<script src="assets/main.js?v=3"></script>
+<script src="assets/main.js?v=7"></script>
 </body>
 </html>

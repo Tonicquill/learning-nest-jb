@@ -6,7 +6,7 @@
 <title>Events | Edusky Private School</title>
 <meta name="description" content="Upcoming and past events at Edusky Private School — open days, holiday camps, workshops, concerts, and community gatherings.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
   <div class="planning-rationale">
     <strong>Why this matters:</strong> Events are lead magnets. Open days convert browsers into visitors. Holiday camps generate non-enrolment revenue and expose non-Edusky families to the brand. The calendar creates urgency: "next open day is 12 July — I need to decide by then." Each event is a new page Google can index.<br>
     <strong>Watch out for:</strong> Announcing events without confirmed dates = broken trust if cancelled. Empty past-archive makes us look like we never do anything. Overpromising speakers who bail = disappointment.
+    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -55,11 +56,18 @@
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1>School Events</h1>
-    <p>Open days, camps, concerts, and community moments. Something is always happening at Edusky.</p>
+<section class="page-hero" data-sticky-video-container>
+  <div class="page-hero-sticky">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+      <source src="videos/hero-home.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
+    <div class="page-hero-content">
+      <h1>School Events</h1>
+      <p>Open days, camps, concerts, and community moments. Something is always happening at Edusky.</p>
+    </div>
   </div>
 </section>
 
@@ -198,6 +206,6 @@
 <div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
-<script src="assets/main.js?v=3"></script>
+<script src="assets/main.js?v=7"></script>
 </body>
 </html>

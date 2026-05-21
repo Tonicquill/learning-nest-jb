@@ -6,7 +6,7 @@
 <title>Parent Network | Edusky Private School</title>
 <meta name="description" content="Edusky Parent Network — business directory, parent voices, workshops, and community resources.">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=2">
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
   <div class="planning-rationale">
     <strong>Why this matters:</strong> Parent network is a retention and referral engine. When parents find value beyond their child's education — a tuition teacher, a baker, a dental clinic — they stay longer and tell friends. Workshops position Edusky as a parenting partner, not just a school. The WhatsApp group is free community-building with near-zero cost. The directory is SEO gold: "school Adda Heights" plus "parent business" captures local search intent.<br>
     <strong>Watch out for:</strong> Privacy is paramount. Never publish parent contact details without explicit consent. Moderate the WhatsApp group actively — drama spreads fast. Workshop speakers must be vetted; a bad speaker damages credibility. Directory businesses are not school endorsements — disclaim clearly.
+    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
   </div>
   <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
 </div>
@@ -55,11 +56,18 @@
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <h1>Parent Network</h1>
-    <p>A community built by parents, for parents. Connect, support, and grow together.</p>
+<section class="page-hero" data-sticky-video-container>
+  <div class="page-hero-sticky">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+      <source src="videos/hero-home.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
+  </div>
+  <div class="page-hero-content-scrollable">
+    <div class="page-hero-content">
+      <h1>Parent Network</h1>
+      <p>A community built by parents, for parents. Connect, support, and grow together.</p>
+    </div>
   </div>
 </section>
 
@@ -211,6 +219,6 @@
 <div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
-<script src="assets/main.js?v=3"></script>
+<script src="assets/main.js?v=7"></script>
 </body>
 </html>
