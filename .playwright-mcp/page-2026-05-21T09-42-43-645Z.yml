@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Edusky Logo Edusky Private School" [ref=e4] [cursor=pointer]:
+        - /url: ../index.html
+        - img "Edusky Logo" [ref=e5]
+        - text: Edusky Private School
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Home" [ref=e8] [cursor=pointer]:
+            - /url: ../index.html
+        - listitem [ref=e9]:
+          - link "About" [ref=e10] [cursor=pointer]:
+            - /url: ../about.html
+        - listitem [ref=e11]:
+          - link "Curriculum" [ref=e12] [cursor=pointer]:
+            - /url: ../curriculum.html
+        - listitem [ref=e13]:
+          - link "Admissions" [ref=e14] [cursor=pointer]:
+            - /url: ../admissions.html
+        - listitem [ref=e15]:
+          - link "Student Life" [ref=e16] [cursor=pointer]:
+            - /url: ../student-life.html
+        - listitem [ref=e17]:
+          - link "News" [ref=e18] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e19]:
+          - link "Contact" [ref=e20] [cursor=pointer]:
+            - /url: ../contact.html
+      - link "Enrol Now" [ref=e21] [cursor=pointer]:
+        - /url: ../admissions.html#enrol
+  - generic [ref=e24]:
+    - heading "News & Updates" [level=1] [ref=e25]
+    - paragraph [ref=e26]: What is happening at Edusky — event recaps, student stories, achievements, and announcements.
+  - generic [ref=e28]:
+    - paragraph [ref=e29]: Latest
+    - heading "From the School" [level=2] [ref=e30]
+    - paragraph [ref=e31]: Every post is a new page Google can index — and a new reason for parents to trust Edusky.
+    - generic [ref=e32]:
+      - article [ref=e33]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: Enrolment · June 2026
+          - heading "2026 Enrollment Now Open" [level=3] [ref=e37]:
+            - link "2026 Enrollment Now Open" [ref=e38] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e39]: Places available for Standards 1–6. Small class sizes, personalised attention, and a trial week before you commit. Come visit us and see what small feels like.
+      - article [ref=e40]:
+        - generic [ref=e42]:
+          - paragraph [ref=e43]: Student Life · June 2026
+          - heading "Media Club Launches" [level=3] [ref=e44]:
+            - link "Media Club Launches" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e46]: "Our student content team is now filming, photographing, and writing. First project: a school tour video shot entirely by students on their own phones."
+      - article [ref=e47]:
+        - generic [ref=e49]:
+          - paragraph [ref=e50]: Community · June 2026
+          - heading "SkyPoints Incentive System" [level=3] [ref=e51]:
+            - link "SkyPoints Incentive System" [ref=e52] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e53]: Earn points for creating content, volunteering, and representing Edusky. First leaderboard goes live this month. Top contributors win certificates, vouchers, and a fee micro-scholarship.
+      - article [ref=e54]:
+        - generic [ref=e56]:
+          - paragraph [ref=e57]: Programmes · July 2026
+          - 'heading "Holiday Camps: Young Leaders & Creative Arts" [level=3] [ref=e58]':
+            - 'link "Holiday Camps: Young Leaders & Creative Arts" [ref=e59] [cursor=pointer]':
+              - /url: "#"
+          - paragraph [ref=e60]: Open to Edusky and non-Edusky students. Public speaking, team challenges, drama, music, and a final showcase. RM 150–300 per child per week.
+      - article [ref=e61]:
+        - generic [ref=e63]:
+          - paragraph [ref=e64]: Profiles · July 2026
+          - heading "\"Life Outside Edusky\" — First Student Profile" [level=3] [ref=e65]:
+            - link "\"Life Outside Edusky\" — First Student Profile" [ref=e66] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e67]: Meet our movie collector. A story about passion, taste, and what it means to be seen as a whole child — not just a report card.
+      - article [ref=e68]:
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: Press · TBD
+          - heading "The Edusky Gazette — Issue 1" [level=3] [ref=e72]:
+            - link "The Edusky Gazette — Issue 1" [ref=e73] [cursor=pointer]:
+              - /url: "#"
+          - paragraph [ref=e74]:
+            - text: Our student-run newspaper. News, opinion, interviews, creative writing, puzzles. 4–8 pages, produced by students, distributed to parents and visitors.
+            - generic [ref=e75]: "Target: within 6 weeks"
+    - generic [ref=e76]:
+      - paragraph [ref=e77]: Want to see older posts or subscribe?
+      - link "Subscribe via WhatsApp" [ref=e78] [cursor=pointer]:
+        - /url: https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20subscribe%20to%20Edusky%20updates
+  - generic [ref=e80]:
+    - paragraph [ref=e81]: Stay Connected
+    - heading "Follow us on social media" [level=2] [ref=e82]
+    - paragraph [ref=e83]: TikTok, Instagram, and Facebook are updated weekly with student content, events, and behind-the-scenes moments.
+    - generic [ref=e84]:
+      - link "Facebook" [ref=e85] [cursor=pointer]:
+        - /url: https://www.facebook.com/ela.johor.bahru/
+      - link "Instagram" [ref=e86] [cursor=pointer]:
+        - /url: https://www.instagram.com/eduskyjb/
+      - link "TikTok" [ref=e87] [cursor=pointer]:
+        - /url: https://www.tiktok.com/@eduskyprivateschool
+  - contentinfo [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - generic [ref=e92]: Edusky Private School
+          - paragraph [ref=e93]: An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.
+          - paragraph [ref=e94]: "SMIPS Code: JDA1001 · MOE-Registered"
+          - paragraph [ref=e95]: Operated by Edusky Learning Academy Sdn Bhd (2014)
+        - generic [ref=e96]:
+          - heading "Quick Links" [level=4] [ref=e97]
+          - paragraph [ref=e98]:
+            - link "About Us" [ref=e99] [cursor=pointer]:
+              - /url: ../about.html
+          - paragraph [ref=e100]:
+            - link "Curriculum" [ref=e101] [cursor=pointer]:
+              - /url: ../curriculum.html
+          - paragraph [ref=e102]:
+            - link "Admissions" [ref=e103] [cursor=pointer]:
+              - /url: ../admissions.html
+          - paragraph [ref=e104]:
+            - link "Student Life" [ref=e105] [cursor=pointer]:
+              - /url: ../student-life.html
+          - paragraph [ref=e106]:
+            - link "News" [ref=e107] [cursor=pointer]:
+              - /url: index.html
+        - generic [ref=e108]:
+          - heading "Contact" [level=4] [ref=e109]
+          - paragraph [ref=e110]:
+            - text: 71, Jalan Adda 3/1
+            - text: Taman Adda Heights
+            - text: 81100 Johor Bahru, Johor
+          - paragraph [ref=e111]:
+            - link "07-364 2678" [ref=e112] [cursor=pointer]:
+              - /url: tel:+6073642678
+          - paragraph [ref=e113]:
+            - link "016-773 3518" [ref=e114] [cursor=pointer]:
+              - /url: https://wa.me/60167733518
+          - paragraph [ref=e115]:
+            - link "enquiries@edusky.com.my" [ref=e116] [cursor=pointer]:
+              - /url: mailto:enquiries@edusky.com.my
+        - generic [ref=e117]:
+          - heading "Follow Us" [level=4] [ref=e118]
+          - generic [ref=e119]:
+            - link "Facebook" [ref=e120] [cursor=pointer]:
+              - /url: https://www.facebook.com/ela.johor.bahru/
+              - text: f
+            - link "Instagram" [ref=e121] [cursor=pointer]:
+              - /url: https://www.instagram.com/eduskyjb/
+              - text: ‿
+            - link "TikTok" [ref=e122] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@eduskyprivateschool
+              - text: ♫
+            - link "YouTube" [ref=e123] [cursor=pointer]:
+              - /url: https://www.youtube.com/@eduskylearningacademy6728
+              - text: ▶
+      - generic [ref=e124]:
+        - generic [ref=e125]: © 2025 Edusky Private School. All rights reserved.
+        - generic [ref=e126]: Built with hope for every child.
+  - link "Chat on WhatsApp" [ref=e127] [cursor=pointer]:
+    - /url: https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School
+    - text: ✉

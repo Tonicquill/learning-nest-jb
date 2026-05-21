@@ -1,0 +1,38 @@
+[    3165ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://www.instagram.com/eduskyjb/:0
+[    3311ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[    3311ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[    3311ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[    3311ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[    5318ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://www.instagram.com/graphql/query/?doc_id=18113378221181848&variables=%7B%22include_chaining%22%3Afalse%2C%22include_highlight_reels%22%3Afalse%2C%22include_live_status%22%3Afalse%2C%22include_logged_out_extras%22%3Atrue%2C%22include_reel%22%3Afalse%2C%22include_suggested_users%22%3Afalse%2C%22user_id%22%3A%223017817471%22%7D:0
+[    5320ms] [ERROR] ErrorUtils caught an error:
+
+ [Caught in: unexpected]
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {clientTime: 1779353151, extra: Object, guardList: Array(0), hash: hfnt31, isNormalizedError: true} @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:78
+[   30442ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://www.instagram.com/accounts/signupviafb/?code=AakYlPbpkp4ISCPe9_96DKb5dBuBJmquZpsSPUy0BSINIKAywsOgkNuUQ8M7fvJQppvV4BZ439Ew-ustAaQbHv_3SSSogK05EXKncBn-bsuLmRTVx_Wuw4CdC_feQS8mm9pRnM0jvFldMBJVeqrG4ZeAi8uxH6NMtQwnq-MwBmT5KlWoDJVxOriBTpHBhwfWvw&state=AToZOzrEZ14aa-8wz7T2tyACQjlpcNQJ8FdAx8fNBOSOikNOT2-TET__nOqYXfpg1SoTI9Lttzd6Q_Ha5wW9G_yhF0i2icUHZZ_NOc8v8KN-Fw32XyWOo9saEkeutOS_NRNiouQVTOv6wSaAvr9aGA2DZ7s3Ih6zYembvx4cE0eZs32KqHrxtGJZElr5I-ZhTlhDajHT57wXUE9DZ7Ypz-_jlMuiW5KArU287hakNUriW7-C75Tza6fJNSY:0
+[   30576ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   30576ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   30576ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   30576ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   32386ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.instagram.com/:0
+[   33240ms] [ERROR] ErrorUtils caught an error:
+
+signal is aborted without reason [Caught in: Passkey authentication failed]
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 2973, clientTime: 1779353179, extra: Object, guardList: Array(0), hash: swstmt} @ https://static.cdninstagram.com/rsrc.php/v4/y1/r/vbcF5SslJdk.js:78
+[   42719ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.cdninstagram.com/rsrc.php/v4/yW/r/HBubAIRpXMX.js:244
+[   42719ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy-paste something here to enable an Instagram feature or "hack" someone's account, it is a scam and will give them access to your Instagram account. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/yW/r/HBubAIRpXMX.js:244
+[   42719ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.cdninstagram.com/rsrc.php/v4/yW/r/HBubAIRpXMX.js:244
+[   42719ms] [LOG] 
+%c  @ https://static.cdninstagram.com/rsrc.php/v4/yW/r/HBubAIRpXMX.js:244

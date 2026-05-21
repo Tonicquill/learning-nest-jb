@@ -1,0 +1,39 @@
+[    4633ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ :0
+[    4633ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it's a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px;  @ :0
+[    4633ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ :0
+[    4633ms] [LOG] 
+%c  @ :0
+[   27607ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   27607ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it's a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   27607ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   27607ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/vbcF5SslJdk.js:244
+[   27687ms] [ERROR] ErrorUtils caught an error:
+
+terminate stream because StartStreamFailure with msg : UNAUTHENTICATED [Caught in: Subscription error in preprocessResponse]
+
+Subsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 180, clientTime: 1779351573, extra: Object, guardList: Array(0), hash: xp4h0s} @ https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/vbcF5SslJdk.js:78
+[   67126ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   67126ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it's a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   67126ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   67126ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   67620ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/1nstLPoxAAp.js:320
+[   87178ms] [ERROR] Permissions policy violation: unload is not allowed in this document. @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/1nstLPoxAAp.js:320
+[   87874ms] [LOG] 
+%cStop! font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   87874ms] [LOG] 
+%cThis is a browser feature intended for developers. If someone told you to copy and paste something here to enable a Facebook feature or "hack" someone's account, it's a scam and will give them access to your Facebook account. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   87874ms] [LOG] 
+%cSee https://www.facebook.com/selfxss for more information. font-family:helvetica; font-size:20px;  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244
+[   87874ms] [LOG] 
+%c  @ https://static.xx.fbcdn.net/rsrc.php/v4/yW/r/HBubAIRpXMX.js?_nc_eui2=AeF2XyX1nedvInd7GMaGkxuQWLOSyRYAv4NYs5LJFgC_gzzU2S0TjEgNVzRfp3l0R3o:244

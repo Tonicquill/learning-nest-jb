@@ -1,0 +1,261 @@
+- generic [ref=e1]:
+  - generic [ref=e11]:
+    - generic [ref=e13]:
+      - link [ref=e16] [cursor=pointer]:
+        - /url: /
+        - img [ref=e19]
+      - generic [ref=e24]:
+        - link [ref=e26] [cursor=pointer]:
+          - /url: /accounts/login/?next=%2Feduskyjb%2F&source=desktop_nav
+          - text: Log In
+        - link [ref=e28] [cursor=pointer]:
+          - /url: /accounts/emailsignup/
+          - text: Sign Up
+    - main [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - button [disabled] [ref=e34]:
+            - link [disabled] [ref=e36]:
+              - img [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - heading [level=2] [ref=e41]: eduskyjb
+              - button [ref=e43] [cursor=pointer]:
+                - img [ref=e45]
+            - generic [ref=e50]: Edusky Private School
+            - list [ref=e52]:
+              - listitem [ref=e53]:
+                - link [ref=e55] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e56]:
+                    - generic [ref=e57]: "695"
+                    - text: posts
+              - listitem [ref=e58]:
+                - link [ref=e60] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: "310"
+                    - text: followers
+              - listitem [ref=e63]:
+                - link [ref=e65] [cursor=pointer]:
+                  - /url: "#"
+                  - generic [ref=e66]:
+                    - generic [ref=e67]: "675"
+                    - text: following
+            - generic [ref=e73]: "Primary 1 - 6 Let's make our children's learning meaningful & fun! Contact us: ⬇️⬇️"
+        - menu [ref=e74]:
+          - generic [ref=e76]:
+            - list [ref=e78]:
+              - listitem [ref=e79]
+              - listitem [ref=e80]
+              - listitem [ref=e81]:
+                - menuitem [ref=e83] [cursor=pointer]:
+                  - link [ref=e84]:
+                    - /url: /stories/highlights/18308756119223156/
+                    - button [disabled] [ref=e85]:
+                      - img [ref=e88]
+                  - generic [ref=e91]: DEEPAVALI 2025
+              - listitem [ref=e92]:
+                - menuitem [ref=e94] [cursor=pointer]:
+                  - link [ref=e95]:
+                    - /url: /stories/highlights/18083581291771238/
+                    - button [disabled] [ref=e96]:
+                      - img [ref=e99]
+                  - generic [ref=e102]: TEACHER’S DAY
+              - listitem [ref=e103]:
+                - menuitem [ref=e105] [cursor=pointer]:
+                  - link [ref=e106]:
+                    - /url: /stories/highlights/18017641559708160/
+                    - button [disabled] [ref=e107]:
+                      - img [ref=e110]
+                  - generic [ref=e113]: SPORTS DAY 2025
+              - listitem [ref=e114]:
+                - menuitem [ref=e116] [cursor=pointer]:
+                  - link [ref=e117]:
+                    - /url: /stories/highlights/18080587765377489/
+                    - button [disabled] [ref=e118]:
+                      - img [ref=e121]
+                  - generic [ref=e124]: MERDEKA
+              - listitem [ref=e125]:
+                - menuitem [ref=e127] [cursor=pointer]:
+                  - link [ref=e128]:
+                    - /url: /stories/highlights/18343591453118415/
+                    - button [disabled] [ref=e129]:
+                      - img [ref=e132]
+                  - generic [ref=e135]: MINI SPORTS DAY
+              - listitem [ref=e136]:
+                - menuitem [ref=e138] [cursor=pointer]:
+                  - link [ref=e139]:
+                    - /url: /stories/highlights/17999544289902950/
+                    - button [disabled] [ref=e140]:
+                      - img [ref=e143]
+                  - generic [ref=e146]: ECA
+              - listitem [ref=e147]:
+                - menuitem [ref=e149] [cursor=pointer]:
+                  - link [ref=e150]:
+                    - /url: /stories/highlights/18133718437106227/
+                    - button [disabled] [ref=e151]:
+                      - img [ref=e154]
+                  - generic [ref=e157]: ENTREPRENEUR DAY
+            - button [ref=e158] [cursor=pointer]
+        - tablist [ref=e161]:
+          - link [ref=e163] [cursor=pointer]:
+            - /url: /eduskyjb/
+            - img [ref=e165]
+          - link [ref=e176] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e178]
+          - link [ref=e181] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e183]
+        - article [ref=e187]:
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - link [ref=e192] [cursor=pointer]:
+                - /url: /eduskyjb/p/DRofcZDAaqr/
+                - img [ref=e195]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e198] [cursor=pointer]:
+                - /url: /eduskyjb/reel/DQLNhKaARiZ/
+                - img [ref=e201]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e204] [cursor=pointer]:
+                - /url: /eduskyjb/p/DP1PZCugfbh/
+                - img [ref=e207]
+                - generic:
+                  - generic:
+                    - img
+            - generic [ref=e209]:
+              - link [ref=e211] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYlF0aVgY--/
+                - img [ref=e214]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e217] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYefChJgciB/
+                - img [ref=e220]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e223] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYYZHZ-hyxt/
+                - img [ref=e226]
+            - generic [ref=e228]:
+              - link [ref=e230] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYT_SvjgfsP/
+                - img [ref=e233]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e236] [cursor=pointer]:
+                - /url: /eduskyjb/reel/DYTE-ZjhwpM/
+                - img [ref=e239]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e242] [cursor=pointer]:
+                - /url: /eduskyjb/reel/DYOyvFDhxzi/
+                - img [ref=e245]
+                - generic:
+                  - generic:
+                    - img
+            - generic [ref=e247]:
+              - link [ref=e249] [cursor=pointer]:
+                - /url: /eduskyjb/reel/DYMJdnIhtOm/
+                - img [ref=e252]
+                - generic:
+                  - generic:
+                    - img
+              - link [ref=e255] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYJLPGbjuL-/
+                - img [ref=e258]
+              - link [ref=e261] [cursor=pointer]:
+                - /url: /eduskyjb/p/DYDpoumAU_O/
+                - img [ref=e264]
+                - generic:
+                  - generic:
+                    - img
+          - progressbar [ref=e267]:
+            - img [ref=e268]
+    - contentinfo [ref=e281]:
+      - generic [ref=e282]:
+        - generic [ref=e284]:
+          - link [ref=e286] [cursor=pointer]:
+            - /url: https://about.meta.com/
+            - generic [ref=e287]: Meta
+          - link [ref=e289] [cursor=pointer]:
+            - /url: https://about.instagram.com/
+            - generic [ref=e290]: About
+          - link [ref=e292] [cursor=pointer]:
+            - /url: https://about.instagram.com/blog/
+            - generic [ref=e293]: Blog
+          - link [ref=e295] [cursor=pointer]:
+            - /url: https://about.instagram.com/about-us/careers
+            - generic [ref=e296]: Jobs
+          - link [ref=e298] [cursor=pointer]:
+            - /url: https://help.instagram.com/
+            - generic [ref=e299]: Help
+          - link [ref=e301] [cursor=pointer]:
+            - /url: https://developers.facebook.com/docs/instagram
+            - generic [ref=e302]: API
+          - link [ref=e304] [cursor=pointer]:
+            - /url: /legal/privacy/
+            - generic [ref=e305]: Privacy
+          - link [ref=e307] [cursor=pointer]:
+            - /url: /legal/terms/
+            - generic [ref=e308]: Terms
+          - link [ref=e310] [cursor=pointer]:
+            - /url: /explore/locations/
+            - generic [ref=e311]: Locations
+          - link [ref=e313] [cursor=pointer]:
+            - /url: /popular/
+            - generic [ref=e314]: Popular
+          - link [ref=e316] [cursor=pointer]:
+            - /url: /web/lite/
+            - generic [ref=e317]: Instagram Lite
+          - link [ref=e319] [cursor=pointer]:
+            - /url: https://www.meta.ai/?utm_source=foa_web_footer
+            - generic [ref=e320]: Meta AI
+          - link [ref=e322] [cursor=pointer]:
+            - /url: https://www.threads.com/
+            - generic [ref=e323]: Threads
+          - link [ref=e325] [cursor=pointer]:
+            - /url: https://www.facebook.com/help/instagram/261704639352628
+            - generic [ref=e326]: Contact Uploading & Non-Users
+          - link [ref=e328] [cursor=pointer]:
+            - /url: /accounts/meta_verified/?entrypoint=web_footer
+            - generic [ref=e329]: Meta Verified
+        - generic [ref=e330]:
+          - generic [ref=e331] [cursor=pointer]:
+            - generic [ref=e332]:
+              - generic [ref=e333]: English
+              - img [ref=e336]
+            - combobox [ref=e338]
+          - generic [ref=e340]: © 2026 Instagram from Meta
+  - dialog [ref=e352]:
+    - generic [ref=e353]:
+      - button "Close" [active] [ref=e355] [cursor=pointer]:
+        - img "Close" [ref=e357]
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - link "Bryan Loh Tzeker's profile picture" [ref=e364] [cursor=pointer]:
+            - img "Bryan Loh Tzeker's profile picture" [ref=e365]
+          - generic [ref=e367]:
+            - generic [ref=e368]: Bryan, continue with your Facebook account
+            - generic [ref=e370]: Use your Facebook account to log in or sign up for Instagram.
+            - generic [ref=e372]:
+              - text: By continuing, you agree to Instagram's
+              - link "Terms of Use" [ref=e373] [cursor=pointer]:
+                - /url: https://help.instagram.com/581066165581870/?locale=en_US
+              - text: and
+              - link "Privacy Policy" [ref=e374] [cursor=pointer]:
+                - /url: https://privacycenter.instagram.com/policy/
+              - text: .
+        - generic [ref=e375]:
+          - button "Continue with Facebook" [ref=e378] [cursor=pointer]
+          - button "Log in" [ref=e381] [cursor=pointer]

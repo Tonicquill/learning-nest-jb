@@ -1,0 +1,558 @@
+- generic [active] [ref=e1]:
+  - img
+  - generic [ref=e2]:
+    - region "Notifications alt+T"
+    - generic [ref=e3]:
+      - generic [ref=e290]:
+        - generic [ref=e292]:
+          - link "Go to TikTok For You feed" [ref=e294] [cursor=pointer]:
+            - /url: /
+            - img [ref=e295]
+            - strong: TikTok
+          - searchbox "Search" [ref=e300] [cursor=pointer]:
+            - generic [ref=e301]:
+              - img [ref=e304]
+              - generic [ref=e306]: Search
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - link "For You" [ref=e310] [cursor=pointer]:
+              - /url: /
+              - listitem "For You" [ref=e311]:
+                - generic [ref=e312]:
+                  - img [ref=e315]
+                  - generic [ref=e317]: For You
+            - link "Explore" [ref=e319] [cursor=pointer]:
+              - /url: /explore
+              - listitem "Explore" [ref=e320]:
+                - generic [ref=e321]:
+                  - img [ref=e324]
+                  - generic [ref=e327]: Explore
+            - link "Following" [ref=e329] [cursor=pointer]:
+              - /url: /following
+              - listitem "Following" [ref=e330]:
+                - generic [ref=e331]:
+                  - img [ref=e335]
+                  - generic [ref=e337]: Following
+            - link "LIVE" [ref=e340] [cursor=pointer]:
+              - /url: /live
+              - listitem "LIVE" [ref=e341]:
+                - generic [ref=e342]:
+                  - img [ref=e345]
+                  - generic [ref=e348]: LIVE
+            - link "Upload" [ref=e350] [cursor=pointer]:
+              - /url: /tiktokstudio/upload?from=webapp&tab=video
+              - listitem "Upload" [ref=e351]:
+                - generic [ref=e352]:
+                  - img [ref=e355]
+                  - generic [ref=e358]: Upload
+            - link "Profile" [ref=e360] [cursor=pointer]:
+              - /url: /@
+              - listitem "Profile" [ref=e361]:
+                - generic [ref=e362]:
+                  - img [ref=e365]
+                  - generic [ref=e367]: Profile
+            - listitem "More" [ref=e369] [cursor=pointer]:
+              - generic [ref=e370]:
+                - img [ref=e374]
+                - generic [ref=e377]: More
+          - button "Log in" [ref=e380] [cursor=pointer]:
+            - generic [ref=e382]: Log in
+          - generic [ref=e384]:
+            - heading "Company" [level=4] [ref=e385] [cursor=pointer]
+            - heading "Program" [level=4] [ref=e386] [cursor=pointer]
+            - heading "Terms & Policies" [level=4] [ref=e387] [cursor=pointer]
+            - generic [ref=e388]: © 2026 TikTok
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e41]:
+              - generic [ref=e42]:
+                - generic [ref=e44]:
+                  - heading "eduskyprivateschool" [level=1] [ref=e46]
+                  - heading "eduskyprivateschool" [level=2] [ref=e48]
+                - heading "152 Following 292 Followers 3436 Likes" [level=3] [ref=e49]:
+                  - generic [ref=e50] [cursor=pointer]:
+                    - strong [ref=e51]: "152"
+                    - generic [ref=e52]: Following
+                  - generic [ref=e53] [cursor=pointer]:
+                    - strong [ref=e54]: "292"
+                    - generic [ref=e55]: Followers
+                  - generic [ref=e56]:
+                    - strong [ref=e57]: "3436"
+                    - generic [ref=e58]: Likes
+              - generic [ref=e389]:
+                - button "Follow eduskyprivateschool" [ref=e391] [cursor=pointer]:
+                  - generic [ref=e395]: Follow
+                - link "Message" [ref=e396] [cursor=pointer]:
+                  - /url: /
+                  - button "Message" [ref=e398]:
+                    - generic [ref=e402]: Message
+                - button [ref=e404] [cursor=pointer]:
+                  - img [ref=e408]
+                - button "Share" [ref=e411] [cursor=pointer]:
+                  - img [ref=e415]
+                - button "Actions" [ref=e418] [cursor=pointer]:
+                  - img [ref=e422]
+              - generic [ref=e64]:
+                - heading "Private School in JB Let's make our children's learning meaningful & fun!" [level=2] [ref=e65]
+                - link "linktr.ee/eduskyschool" [ref=e67] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/link/v2?aid=1988&lang=en&scene=bio_url&target=https%3A%2F%2Flinktr.ee%2Feduskyschool
+                  - img [ref=e68]
+                  - generic [ref=e71]: linktr.ee/eduskyschool
+            - generic:
+              - button "Actions"
+          - generic [ref=e424]:
+            - generic [ref=e425]:
+              - generic [ref=e426] [cursor=pointer]:
+                - paragraph [ref=e427]: Suggested accounts
+                - img [ref=e428]
+              - button "View All" [ref=e430] [cursor=pointer]:
+                - paragraph [ref=e431]: View all
+            - generic [ref=e432]:
+              - generic [ref=e433]:
+                - link "Avatar for upinipin.official" [ref=e434] [cursor=pointer]:
+                  - /url: /@upinipin.official
+                  - img "Avatar for upinipin.official" [ref=e436]
+                - generic [ref=e438]:
+                  - link "Upin & Ipin Official" [ref=e440] [cursor=pointer]:
+                    - /url: /@upinipin.official
+                    - generic [ref=e441]:
+                      - paragraph [ref=e442]: Upin & Ipin Official
+                      - img [ref=e443]
+                  - paragraph [ref=e449] [cursor=pointer]: 22.2M followers
+                - button "Follow Upin & Ipin Official" [ref=e452] [cursor=pointer]:
+                  - generic [ref=e456]: Follow
+              - generic [ref=e457]:
+                - link "Avatar for cahayaicha__" [ref=e458] [cursor=pointer]:
+                  - /url: /@cahayaicha__
+                  - img "Avatar for cahayaicha__" [ref=e460]
+                - generic [ref=e462]:
+                  - link "Cahaya icha" [ref=e464] [cursor=pointer]:
+                    - /url: /@cahayaicha__
+                    - generic [ref=e465]:
+                      - paragraph [ref=e466]: Cahaya icha
+                      - img [ref=e467]
+                  - paragraph [ref=e473] [cursor=pointer]: 11.1M followers
+                - button "Follow Cahaya icha" [ref=e476] [cursor=pointer]:
+                  - generic [ref=e480]: Follow
+              - generic [ref=e481]:
+                - link "Avatar for tokopedia" [ref=e482] [cursor=pointer]:
+                  - /url: /@tokopedia
+                  - img "Avatar for tokopedia" [ref=e484]
+                - generic [ref=e486]:
+                  - link "Tokopedia Official" [ref=e488] [cursor=pointer]:
+                    - /url: /@tokopedia
+                    - generic [ref=e489]:
+                      - paragraph [ref=e490]: Tokopedia Official
+                      - img [ref=e491]
+                  - paragraph [ref=e497] [cursor=pointer]: 10.8M followers
+                - button "Follow Tokopedia Official" [ref=e500] [cursor=pointer]:
+                  - generic [ref=e504]: Follow
+              - generic [ref=e505]:
+                - link "Avatar for yourrkayesss" [ref=e506] [cursor=pointer]:
+                  - /url: /@yourrkayesss
+                  - img "Avatar for yourrkayesss" [ref=e508]
+                - generic [ref=e510]:
+                  - link "yourrkayesss" [ref=e512] [cursor=pointer]:
+                    - /url: /@yourrkayesss
+                    - generic [ref=e513]:
+                      - paragraph [ref=e514]: yourrkayesss
+                      - img [ref=e515]
+                  - paragraph [ref=e521] [cursor=pointer]: 10.5M followers
+                - button "Follow yourrkayesss" [ref=e524] [cursor=pointer]:
+                  - generic [ref=e528]: Follow
+              - generic [ref=e529]:
+                - link "Avatar for ruthbellpan" [ref=e530] [cursor=pointer]:
+                  - /url: /@ruthbellpan
+                  - img "Avatar for ruthbellpan" [ref=e532]
+                - generic [ref=e534]:
+                  - link "🌻Ruthbell" [ref=e536] [cursor=pointer]:
+                    - /url: /@ruthbellpan
+                    - generic [ref=e537]:
+                      - paragraph [ref=e538]: 🌻Ruthbell
+                      - img [ref=e539]
+                  - paragraph [ref=e545] [cursor=pointer]: 9.9M followers
+                - button "Follow 🌻Ruthbell" [ref=e548] [cursor=pointer]:
+                  - generic [ref=e552]: Follow
+              - generic [ref=e553]:
+                - link "Avatar for zillazainnie" [ref=e554] [cursor=pointer]:
+                  - /url: /@zillazainnie
+                  - img "Avatar for zillazainnie" [ref=e556]
+                - generic [ref=e558]:
+                  - link "Zainab kamara" [ref=e560] [cursor=pointer]:
+                    - /url: /@zillazainnie
+                    - paragraph [ref=e562]: Zainab kamara
+                  - paragraph [ref=e565] [cursor=pointer]: 7.7M followers
+                - button "Follow Zainab kamara" [ref=e568] [cursor=pointer]:
+                  - generic [ref=e572]: Follow
+              - generic [ref=e573]:
+                - link "Avatar for ali_khanking" [ref=e574] [cursor=pointer]:
+                  - /url: /@ali_khanking
+                  - img "Avatar for ali_khanking" [ref=e576]
+                - generic [ref=e578]:
+                  - link "ALI KHAN KING" [ref=e580] [cursor=pointer]:
+                    - /url: /@ali_khanking
+                    - generic [ref=e581]:
+                      - paragraph [ref=e582]: ALI KHAN KING
+                      - img [ref=e583]
+                  - paragraph [ref=e589] [cursor=pointer]: 7.4M followers
+                - button "Follow ALI KHAN KING" [ref=e592] [cursor=pointer]:
+                  - generic [ref=e596]: Follow
+              - generic [ref=e597]:
+                - link "Avatar for khairulaming" [ref=e598] [cursor=pointer]:
+                  - /url: /@khairulaming
+                  - img "Avatar for khairulaming" [ref=e600]
+                - generic [ref=e602]:
+                  - link "Khairulaming" [ref=e604] [cursor=pointer]:
+                    - /url: /@khairulaming
+                    - generic [ref=e605]:
+                      - paragraph [ref=e606]: Khairulaming
+                      - img [ref=e607]
+                  - paragraph [ref=e613] [cursor=pointer]: 7M followers
+                - button "Follow Khairulaming" [ref=e616] [cursor=pointer]:
+                  - generic [ref=e620]: Follow
+              - generic [ref=e621]:
+                - link "Avatar for ustazebitlew" [ref=e622] [cursor=pointer]:
+                  - /url: /@ustazebitlew
+                  - img "Avatar for ustazebitlew" [ref=e624]
+                - generic [ref=e626]:
+                  - link "Ebit Lew" [ref=e628] [cursor=pointer]:
+                    - /url: /@ustazebitlew
+                    - generic [ref=e629]:
+                      - paragraph [ref=e630]: Ebit Lew
+                      - img [ref=e631]
+                  - paragraph [ref=e637] [cursor=pointer]: 6.7M followers
+                - button "Follow Ebit Lew" [ref=e640] [cursor=pointer]:
+                  - generic [ref=e644]: Follow
+              - generic [ref=e645]:
+                - link "Avatar for alexhkf" [ref=e646] [cursor=pointer]:
+                  - /url: /@alexhkf
+                  - img "Avatar for alexhkf" [ref=e648]
+                - generic [ref=e650]:
+                  - link "알렉스 Alex" [ref=e652] [cursor=pointer]:
+                    - /url: /@alexhkf
+                    - generic [ref=e653]:
+                      - paragraph [ref=e654]: 알렉스 Alex
+                      - img [ref=e655]
+                  - paragraph [ref=e661] [cursor=pointer]: 6.6M followers
+                - button "Follow 알렉스 Alex" [ref=e664] [cursor=pointer]:
+                  - generic [ref=e668]: Follow
+              - generic [ref=e669]:
+                - link "Avatar for masterchrisleong" [ref=e670] [cursor=pointer]:
+                  - /url: /@masterchrisleong
+                  - img "Avatar for masterchrisleong" [ref=e672]
+                - generic [ref=e674]:
+                  - link "Chris Leong" [ref=e676] [cursor=pointer]:
+                    - /url: /@masterchrisleong
+                    - generic [ref=e677]:
+                      - paragraph [ref=e678]: Chris Leong
+                      - img [ref=e679]
+                  - paragraph [ref=e685] [cursor=pointer]: 6.5M followers
+                - button "Follow Chris Leong" [ref=e688] [cursor=pointer]:
+                  - generic [ref=e692]: Follow
+              - generic [ref=e693]:
+                - link "Avatar for boboiboy" [ref=e694] [cursor=pointer]:
+                  - /url: /@boboiboy
+                  - img "Avatar for boboiboy" [ref=e696]
+                - generic [ref=e698]:
+                  - link "Monsta Studios" [ref=e700] [cursor=pointer]:
+                    - /url: /@boboiboy
+                    - generic [ref=e701]:
+                      - paragraph [ref=e702]: Monsta Studios
+                      - img [ref=e703]
+                  - paragraph [ref=e709] [cursor=pointer]: 6.4M followers
+                - button "Follow Monsta Studios" [ref=e712] [cursor=pointer]:
+                  - generic [ref=e716]: Follow
+              - generic [ref=e717]:
+                - link "Avatar for im_siowei" [ref=e718] [cursor=pointer]:
+                  - /url: /@im_siowei
+                  - img "Avatar for im_siowei" [ref=e720]
+                - generic [ref=e722]:
+                  - link "im_siowei" [ref=e724] [cursor=pointer]:
+                    - /url: /@im_siowei
+                    - generic [ref=e725]:
+                      - paragraph [ref=e726]: im_siowei
+                      - img [ref=e727]
+                  - paragraph [ref=e733] [cursor=pointer]: 6.4M followers
+                - button "Follow im_siowei" [ref=e736] [cursor=pointer]:
+                  - generic [ref=e740]: Follow
+              - generic [ref=e741]:
+                - link "Avatar for kadamsidik00" [ref=e742] [cursor=pointer]:
+                  - /url: /@kadamsidik00
+                  - img "Avatar for kadamsidik00" [ref=e744]
+                - generic [ref=e746]:
+                  - link "Kadam Sidik" [ref=e748] [cursor=pointer]:
+                    - /url: /@kadamsidik00
+                    - paragraph [ref=e750]: Kadam Sidik
+                  - paragraph [ref=e753] [cursor=pointer]: 6.3M followers
+                - button "Follow Kadam Sidik" [ref=e756] [cursor=pointer]:
+                  - generic [ref=e760]: Follow
+              - generic [ref=e761]:
+                - link "Avatar for cloutykee" [ref=e762] [cursor=pointer]:
+                  - /url: /@cloutykee
+                  - img "Avatar for cloutykee" [ref=e764]
+                - generic [ref=e766]:
+                  - link "Kee" [ref=e768] [cursor=pointer]:
+                    - /url: /@cloutykee
+                    - generic [ref=e769]:
+                      - paragraph [ref=e770]: Kee
+                      - img [ref=e771]
+                  - paragraph [ref=e777] [cursor=pointer]: 6.2M followers
+                - button "Follow Kee" [ref=e780] [cursor=pointer]:
+                  - generic [ref=e784]: Follow
+              - generic [ref=e785]:
+                - link "Avatar for puteriisarii" [ref=e786] [cursor=pointer]:
+                  - /url: /@puteriisarii
+                  - img "Avatar for puteriisarii" [ref=e788]
+                - generic [ref=e790]:
+                  - link "Puteri Sari" [ref=e792] [cursor=pointer]:
+                    - /url: /@puteriisarii
+                    - generic [ref=e793]:
+                      - paragraph [ref=e794]: Puteri Sari
+                      - img [ref=e795]
+                  - paragraph [ref=e801] [cursor=pointer]: 6.2M followers
+                - button "Follow Puteri Sari" [ref=e804] [cursor=pointer]:
+                  - generic [ref=e808]: Follow
+              - generic [ref=e809]:
+                - link "Avatar for 501awani" [ref=e810] [cursor=pointer]:
+                  - /url: /@501awani
+                  - img "Avatar for 501awani" [ref=e812]
+                - generic [ref=e814]:
+                  - link "🇲🇾Astro AWANI🇲🇾" [ref=e816] [cursor=pointer]:
+                    - /url: /@501awani
+                    - generic [ref=e817]:
+                      - paragraph [ref=e818]: 🇲🇾Astro AWANI🇲🇾
+                      - img [ref=e819]
+                  - paragraph [ref=e825] [cursor=pointer]: 6.1M followers
+                - button "Follow 🇲🇾Astro AWANI🇲🇾" [ref=e828] [cursor=pointer]:
+                  - generic [ref=e832]: Follow
+              - generic [ref=e833]:
+                - link "Avatar for utusantvofficial" [ref=e834] [cursor=pointer]:
+                  - /url: /@utusantvofficial
+                  - img "Avatar for utusantvofficial" [ref=e836]
+                - generic [ref=e838]:
+                  - link "UtusanTV" [ref=e840] [cursor=pointer]:
+                    - /url: /@utusantvofficial
+                    - generic [ref=e841]:
+                      - paragraph [ref=e842]: UtusanTV
+                      - img [ref=e843]
+                  - paragraph [ref=e849] [cursor=pointer]: 6M followers
+                - button "Follow UtusanTV" [ref=e852] [cursor=pointer]:
+                  - generic [ref=e856]: Follow
+              - generic [ref=e857]:
+                - link "Avatar for bossjames_oe" [ref=e858] [cursor=pointer]:
+                  - /url: /@bossjames_oe
+                  - img "Avatar for bossjames_oe" [ref=e860]
+                - generic [ref=e862]:
+                  - link "Boss James" [ref=e864] [cursor=pointer]:
+                    - /url: /@bossjames_oe
+                    - generic [ref=e865]:
+                      - paragraph [ref=e866]: Boss James
+                      - img [ref=e867]
+                  - paragraph [ref=e873] [cursor=pointer]: 5.8M followers
+                - button "Follow Boss James" [ref=e876] [cursor=pointer]:
+                  - generic [ref=e880]: Follow
+              - generic [ref=e881]:
+                - link "Avatar for ayiyaaaaaaaa" [ref=e882] [cursor=pointer]:
+                  - /url: /@ayiyaaaaaaaa
+                  - img "Avatar for ayiyaaaaaaaa" [ref=e884]
+                - generic [ref=e886]:
+                  - link "aya balqis" [ref=e888] [cursor=pointer]:
+                    - /url: /@ayiyaaaaaaaa
+                    - paragraph [ref=e890]: aya balqis
+                  - paragraph [ref=e893] [cursor=pointer]: 5.6M followers
+                - button "Follow aya balqis" [ref=e896] [cursor=pointer]:
+                  - generic [ref=e900]: Follow
+            - img [ref=e904] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e906]:
+            - generic [ref=e907]:
+              - tab "Videos" [selected] [ref=e908] [cursor=pointer]:
+                - img [ref=e909]
+                - generic [ref=e911]: Videos
+              - tab "Reposts" [ref=e912] [cursor=pointer]:
+                - img [ref=e913]
+                - generic [ref=e915]: Reposts
+              - tab "Liked" [ref=e916] [cursor=pointer]:
+                - img [ref=e917]
+                - generic [ref=e919]: Liked
+            - generic [ref=e922]:
+              - button "Latest" [ref=e923] [cursor=pointer]:
+                - generic [ref=e925]: Latest
+              - button "Popular" [ref=e926] [cursor=pointer]:
+                - generic [ref=e928]: Popular
+              - button "Oldest" [ref=e929] [cursor=pointer]:
+                - generic [ref=e931]: Oldest
+          - generic [ref=e77]:
+            - button "Watch in full screen" [ref=e80] [cursor=pointer]:
+              - link "Selamat Hari Raya from Edusky family! ✨✨✨✨ created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 1382 Pinned" [ref=e932]:
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7493385952795135239
+                - generic [ref=e84]:
+                  - img "Selamat Hari Raya from Edusky family! ✨✨✨✨ created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e88]
+                  - generic [ref=e933]:
+                    - img [ref=e934]
+                    - strong [ref=e936]: "1382"
+                - generic [ref=e939]: Pinned
+            - button "Watch in full screen" [ref=e93] [cursor=pointer]:
+              - 'link "Tengah pening nak cari sekolah yang terbaik untuk anak korang? Nakkan syllabus KSSR & KSSA tapi masih nak keselesaan & kualiti pembelajaran yang tinggi? Jom sertai Open Day kami setiap hari Jumaat 10pagi-12tgh hari di Sekolah Rendah Edusky! Sila klik link di bio untuk maklumat lanjut 😊 #johor #johorbahru #fyp #pov #sekolah #privateschool #learning #foryou #foryoupage created by eduskyprivateschool with yo suzuki(akisai)’s Funny video \"Carmen Prelude\" Arranging weakness(836530) 51.6K Pinned" [ref=e940]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7447012655161806098
+                - generic [ref=e97]:
+                  - 'img "Tengah pening nak cari sekolah yang terbaik untuk anak korang? Nakkan syllabus KSSR & KSSA tapi masih nak keselesaan & kualiti pembelajaran yang tinggi? Jom sertai Open Day kami setiap hari Jumaat 10pagi-12tgh hari di Sekolah Rendah Edusky! Sila klik link di bio untuk maklumat lanjut 😊 #johor #johorbahru #fyp #pov #sekolah #privateschool #learning #foryou #foryoupage created by eduskyprivateschool with yo suzuki(akisai)’s Funny video \"Carmen Prelude\" Arranging weakness(836530)" [ref=e101]'
+                  - generic [ref=e941]:
+                    - img [ref=e942]
+                    - strong [ref=e944]: 51.6K
+                - generic [ref=e947]: Pinned
+            - button "Watch in full screen" [ref=e104] [cursor=pointer]:
+              - 'link "Today''s English lesson: Expressing ability using ''can'' and ''can''t''. A quick guide to using ''can'' and ''can''t'' to describe what''s possible and what''s not. Simple but essential! #LearnEnglish #LanguageFun created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 35.5K Pinned" [ref=e948]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7497165003133390087
+                - generic [ref=e108]:
+                  - 'img "Today''s English lesson: Expressing ability using ''can'' and ''can''t''. A quick guide to using ''can'' and ''can''t'' to describe what''s possible and what''s not. Simple but essential! #LearnEnglish #LanguageFun created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e112]'
+                  - generic [ref=e949]:
+                    - img [ref=e950]
+                    - strong [ref=e952]: 35.5K
+                - generic [ref=e955]: Pinned
+            - button "Watch in full screen" [ref=e115] [cursor=pointer]:
+              - 'link "POV: When the students take over for Teacher’s Day! 🎭🎬 From \"Canteen\" chronicles to classroom drama, our students absolutely nailed their performances! It takes a lot of guts and creativity to perform like this, and we couldn’t be prouder of their growth. At EduSky, we believe learning should be as engaging as a standing ovation. We provide the tools, the environment, and the support students need to truly excel. Ready to reach for the clouds? ☁️✨ Enroll with EduSky now! #EduSky #TeachersDay2026 #StudentLife #CreativeLearning #PerformanceArt created by eduskyprivateschool with ZydSounds’s Great Job 454" [ref=e956]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7642126391747562770
+                - generic [ref=e119]:
+                  - 'img "POV: When the students take over for Teacher’s Day! 🎭🎬 From \"Canteen\" chronicles to classroom drama, our students absolutely nailed their performances! It takes a lot of guts and creativity to perform like this, and we couldn’t be prouder of their growth. At EduSky, we believe learning should be as engaging as a standing ovation. We provide the tools, the environment, and the support students need to truly excel. Ready to reach for the clouds? ☁️✨ Enroll with EduSky now! #EduSky #TeachersDay2026 #StudentLife #CreativeLearning #PerformanceArt created by eduskyprivateschool with ZydSounds’s Great Job" [ref=e123]'
+                  - img [ref=e958]
+                  - generic [ref=e961]:
+                    - img [ref=e962]
+                    - strong [ref=e964]: "454"
+            - button "Watch in full screen" [ref=e126] [cursor=pointer]:
+              - 'link "Big futures start in small classrooms. 🎓✨ At Edusky, we celebrated Teacher’s Day by reflecting on the incredible growth of our students. Our secret? Small class settings that allow for one-on-one attention from our dedicated educators. We make private education affordable without compromising on the quality of care and instruction your child deserves. Seeing the smiles on our students'' faces as they thank their mentors says it all! Enrolment is always open! Give your child the focused environment they need to thrive. #Edusky #PrivateSchoolLife #TeachersDay #StudentSuccess #AffordableSchooling created by eduskyprivateschool with DJ Reverb & Ads’s Infantil educacional 393" [ref=e965]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7641174118401936648
+                - generic [ref=e130]:
+                  - 'img "Big futures start in small classrooms. 🎓✨ At Edusky, we celebrated Teacher’s Day by reflecting on the incredible growth of our students. Our secret? Small class settings that allow for one-on-one attention from our dedicated educators. We make private education affordable without compromising on the quality of care and instruction your child deserves. Seeing the smiles on our students'' faces as they thank their mentors says it all! Enrolment is always open! Give your child the focused environment they need to thrive. #Edusky #PrivateSchoolLife #TeachersDay #StudentSuccess #AffordableSchooling created by eduskyprivateschool with DJ Reverb & Ads’s Infantil educacional" [ref=e134]'
+                  - img [ref=e967]
+                  - generic [ref=e970]:
+                    - img [ref=e971]
+                    - strong [ref=e973]: "393"
+            - button "Watch in full screen" [ref=e137] [cursor=pointer]:
+              - link "Selamat Hari Guru 🌸 “Guru Bitara Nadi Negara” Terima kasih cikgu atas segala ilmu, pengorbanan dan kasih sayang dalam mendidik generasi masa depan. 💙📚 Hari ini kita raikan insan yang tidak pernah jemu membimbing. Selamat Hari Guru buat semua pendidik hebat! ✨👩‍🏫👨‍🏫 created by eduskyprivateschool with Aqmal Daniel’s KAMI GURU MALAYSIA VIOLIN COVER BY AQMAL DANIEL 392" [ref=e974]:
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7640295945191640328
+                - generic [ref=e141]:
+                  - img "Selamat Hari Guru 🌸 “Guru Bitara Nadi Negara” Terima kasih cikgu atas segala ilmu, pengorbanan dan kasih sayang dalam mendidik generasi masa depan. 💙📚 Hari ini kita raikan insan yang tidak pernah jemu membimbing. Selamat Hari Guru buat semua pendidik hebat! ✨👩‍🏫👨‍🏫 created by eduskyprivateschool with Aqmal Daniel’s KAMI GURU MALAYSIA VIOLIN COVER BY AQMAL DANIEL" [ref=e145]
+                  - img [ref=e976]
+                  - generic [ref=e979]:
+                    - img [ref=e980]
+                    - strong [ref=e982]: "392"
+            - button "Watch in full screen" [ref=e148] [cursor=pointer]:
+              - 'link "As we approach Teacher’s Day, our students wantto take a moment to celebrate the heartbeat of our school—our dedicated educators. Thank you for your tireless commitment to shaping the leaders of tomorrow! 🌟 #TeachersDay #SchoolPride\" created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 496" [ref=e983]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7639661661476932871
+                - generic [ref=e152]:
+                  - 'img "As we approach Teacher’s Day, our students wantto take a moment to celebrate the heartbeat of our school—our dedicated educators. Thank you for your tireless commitment to shaping the leaders of tomorrow! 🌟 #TeachersDay #SchoolPride\" created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e156]'
+                  - generic [ref=e984]:
+                    - img [ref=e985]
+                    - strong [ref=e987]: "496"
+            - button "Watch in full screen" [ref=e159] [cursor=pointer]:
+              - 'link "Get to know the bright minds at Edusky Private School! 💡 From playing with cats to practicing karate, our students have diverse interests and a passion for learning. 🌟 We offer a nurturing environment with small classes and affordable fees, making quality education a reality for every family. 🏫 Discover the Edusky difference! #EduskyAcademy #StudentLife #FutureLeaders #AffordableSchooling #HolisticEducation\" created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 778" [ref=e988]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7638913289455406343
+                - generic [ref=e163]:
+                  - 'img "Get to know the bright minds at Edusky Private School! 💡 From playing with cats to practicing karate, our students have diverse interests and a passion for learning. 🌟 We offer a nurturing environment with small classes and affordable fees, making quality education a reality for every family. 🏫 Discover the Edusky difference! #EduskyAcademy #StudentLife #FutureLeaders #AffordableSchooling #HolisticEducation\" created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e167]'
+                  - generic [ref=e989]:
+                    - img [ref=e990]
+                    - strong [ref=e992]: "778"
+            - button "Watch in full screen" [ref=e170] [cursor=pointer]:
+              - 'link "Ready, Set, Learn! 🚀 Our Edusky stars are starting their day by matching words to actions. First up: identifying body parts! From \"Head\" to \"Toe\" in English! 👣 Watch our students show off their vocabulary and pronunciation skills. Learning English is much more fun when you get to move! Point, Speak, Repeat! 🗣️ We’re building our English word bank one finger at a time. High fives all around for these superstars! 👋 created by eduskyprivateschool with SILVANA INSPIRA’s happy children 429" [ref=e993]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7638530346425797896
+                - generic [ref=e174]:
+                  - 'img "Ready, Set, Learn! 🚀 Our Edusky stars are starting their day by matching words to actions. First up: identifying body parts! From \"Head\" to \"Toe\" in English! 👣 Watch our students show off their vocabulary and pronunciation skills. Learning English is much more fun when you get to move! Point, Speak, Repeat! 🗣️ We’re building our English word bank one finger at a time. High fives all around for these superstars! 👋 created by eduskyprivateschool with SILVANA INSPIRA’s happy children" [ref=e178]'
+                  - generic [ref=e994]:
+                    - img [ref=e995]
+                    - strong [ref=e997]: "429"
+            - button "Watch in full screen" [ref=e181] [cursor=pointer]:
+              - 'link "A mother is her child''s first teacher. 📚❤️ Today, we honor the first and most important educators in our students'' lives. Happy Mother’s Day to the incredible moms of Edusky Private School. Your support makes all the difference! #FirstTeachers #EduskySuccess #MothersDay2026 #EducationStartsAtHome created by eduskyprivateschool with Taf30’s MOM I LOVE YOU 366" [ref=e998]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7638103113626324242
+                - generic [ref=e185]:
+                  - 'img "A mother is her child''s first teacher. 📚❤️ Today, we honor the first and most important educators in our students'' lives. Happy Mother’s Day to the incredible moms of Edusky Private School. Your support makes all the difference! #FirstTeachers #EduskySuccess #MothersDay2026 #EducationStartsAtHome created by eduskyprivateschool with Taf30’s MOM I LOVE YOU" [ref=e189]'
+                  - img [ref=e1000]
+                  - generic [ref=e1003]:
+                    - img [ref=e1004]
+                    - strong [ref=e1006]: "366"
+            - button "Watch in full screen" [ref=e192] [cursor=pointer]:
+              - 'link "Our students took center stage and absolutely dazzled us with their creativity! From traditional cultural performances to whimsical storybook characters, the talent on display was nothing short of magical. Seeing our young learners express themselves through costume, dance, and drama is a reminder of why we love what we do at Edusky. 📸 #Edusky #StudentShowcase #CreativeLearning #ArtsInEducation #ProudSchoolMoments created by eduskyprivateschool with ’s original sound - eduskyprivateschool 390" [ref=e1007]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7637306740333153544
+                - generic [ref=e196]:
+                  - 'img "Our students took center stage and absolutely dazzled us with their creativity! From traditional cultural performances to whimsical storybook characters, the talent on display was nothing short of magical. Seeing our young learners express themselves through costume, dance, and drama is a reminder of why we love what we do at Edusky. 📸 #Edusky #StudentShowcase #CreativeLearning #ArtsInEducation #ProudSchoolMoments created by eduskyprivateschool with ’s original sound - eduskyprivateschool" [ref=e200]'
+                  - img [ref=e1009]
+                  - generic [ref=e1012]:
+                    - img [ref=e1013]
+                    - strong [ref=e1015]: "390"
+            - button "Watch in full screen" [ref=e203] [cursor=pointer]:
+              - link "Di Edusky, kami bukan sekadar rakan sekelas, kami adalah satu keluarga besar. ✨ Momen kebersamaan di luar bilik darjah seperti ini yang membina ikatan persahabatan yang kuat antara pelajar. Bergembira bersama, membesar bersama! ✨Melihat mereka ketawa dan bermain bersama di taman mengingatkan kita bahawa sokongan rakan sebaya adalah motivasi terbaik untuk belajar. created by eduskyprivateschool with Lil Dreaux’s Good Day Energy 375" [ref=e1016]:
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7636634833136946450
+                - generic [ref=e207]:
+                  - img "Di Edusky, kami bukan sekadar rakan sekelas, kami adalah satu keluarga besar. ✨ Momen kebersamaan di luar bilik darjah seperti ini yang membina ikatan persahabatan yang kuat antara pelajar. Bergembira bersama, membesar bersama! ✨Melihat mereka ketawa dan bermain bersama di taman mengingatkan kita bahawa sokongan rakan sebaya adalah motivasi terbaik untuk belajar. created by eduskyprivateschool with Lil Dreaux’s Good Day Energy" [ref=e211]
+                  - img [ref=e1018]
+                  - generic [ref=e1021]:
+                    - img [ref=e1022]
+                    - strong [ref=e1024]: "375"
+            - button "Watch in full screen" [ref=e214] [cursor=pointer]:
+              - 'link "Small Classes = Big Progress. 📈 Watch our students tackle new words with ease! At Edusky, we believe in the power of a focused environment. No crowded classrooms here—just tailored support, a peaceful atmosphere, and affordable tuition that puts your child first. See the difference that personalized attention makes. Join the Edusky family today! 🌟 #Edusky #ConduciveLearning #StudentSuccess #SmartSavings created by eduskyprivateschool with Official Sound Studio’s My Class 430" [ref=e1025]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7636299228158889224
+                - generic [ref=e218]:
+                  - 'img "Small Classes = Big Progress. 📈 Watch our students tackle new words with ease! At Edusky, we believe in the power of a focused environment. No crowded classrooms here—just tailored support, a peaceful atmosphere, and affordable tuition that puts your child first. See the difference that personalized attention makes. Join the Edusky family today! 🌟 #Edusky #ConduciveLearning #StudentSuccess #SmartSavings created by eduskyprivateschool with Official Sound Studio’s My Class" [ref=e222]'
+                  - generic [ref=e1026]:
+                    - img [ref=e1027]
+                    - strong [ref=e1029]: "430"
+            - button "Watch in full screen" [ref=e225] [cursor=pointer]:
+              - 'link "Every role matters. Every effort counts. Today, we salute the passion and perseverance of workers from all walks of life. Happy Labour Day! 👏 #ThankYouWorkers #LabourDay2026 #Edusky created by eduskyprivateschool with ’s original sound - eduskyprivateschool 394" [ref=e1030]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7634733866099559688
+                - generic [ref=e229]:
+                  - 'img "Every role matters. Every effort counts. Today, we salute the passion and perseverance of workers from all walks of life. Happy Labour Day! 👏 #ThankYouWorkers #LabourDay2026 #Edusky created by eduskyprivateschool with ’s original sound - eduskyprivateschool" [ref=e233]'
+                  - img [ref=e1032]
+                  - generic [ref=e1035]:
+                    - img [ref=e1036]
+                    - strong [ref=e1038]: "394"
+            - button "Watch in full screen" [ref=e236] [cursor=pointer]:
+              - 'link "🚀 We’re Hiring: Student Recruitment & Marketing Executive! Edusky Private School is looking for a motivated individual with a flair for marketing and a passion for education. Why join us? 👍🏻 Rewards:Competitive salary + performance incentives. 👍🏻 Growth: Real career advancement and professional training. 👍🏻 Culture: A friendly, supportive work environment. Details: 👍🏻 Type: Full-Time. 👍🏻 Location: Taman Adda Heights, Johor Bahru. Apply Now: Send your resume to: eduskyacademy@gmail.com or WhatsApp: 018-7661288. #JohorBahruJobs #Hiring #Marketing #Edusky #EducationJobs created by eduskyprivateschool with Akira Okuyama’s A refreshing, fashionable and funky guitar song(1135075) 464" [ref=e1039]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7634036622635339015
+                - generic [ref=e240]:
+                  - 'img "🚀 We’re Hiring: Student Recruitment & Marketing Executive! Edusky Private School is looking for a motivated individual with a flair for marketing and a passion for education. Why join us? 👍🏻 Rewards:Competitive salary + performance incentives. 👍🏻 Growth: Real career advancement and professional training. 👍🏻 Culture: A friendly, supportive work environment. Details: 👍🏻 Type: Full-Time. 👍🏻 Location: Taman Adda Heights, Johor Bahru. Apply Now: Send your resume to: eduskyacademy@gmail.com or WhatsApp: 018-7661288. #JohorBahruJobs #Hiring #Marketing #Edusky #EducationJobs created by eduskyprivateschool with Akira Okuyama’s A refreshing, fashionable and funky guitar song(1135075)" [ref=e244]'
+                  - img [ref=e1041]
+                  - generic [ref=e1044]:
+                    - img [ref=e1045]
+                    - strong [ref=e1047]: "464"
+            - button "Watch in full screen" [ref=e247] [cursor=pointer]:
+              - 'link "Math is more than just numbers—it''s an adventure! 🚀 At Edusky Private School, we believe in hands-on education. Whether it’s mastering multi-digit addition or tackling complex subtractions, our students don''t just sit behind desks—they take the lead at the board! By using colorful, interactive tools, we make abstract concepts tangible and fun. 🌷Small class sizes for personalized attention. 🌷Interactive methods that build real understanding. 🌷Confident students ready to take on any challenge. Building a stronger foundation, one digit at a time. ✨ #EduskyPrivateSchool #HandsOnLearning #MathIsFun #FutureLeaders #EducationReimagined created by eduskyprivateschool with FASSounds’s Kids Activity 416" [ref=e1048]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7633969401359846674
+                - generic [ref=e251]:
+                  - 'img "Math is more than just numbers—it''s an adventure! 🚀 At Edusky Private School, we believe in hands-on education. Whether it’s mastering multi-digit addition or tackling complex subtractions, our students don''t just sit behind desks—they take the lead at the board! By using colorful, interactive tools, we make abstract concepts tangible and fun. 🌷Small class sizes for personalized attention. 🌷Interactive methods that build real understanding. 🌷Confident students ready to take on any challenge. Building a stronger foundation, one digit at a time. ✨ #EduskyPrivateSchool #HandsOnLearning #MathIsFun #FutureLeaders #EducationReimagined created by eduskyprivateschool with FASSounds’s Kids Activity" [ref=e255]'
+                  - img [ref=e1050]
+                  - generic [ref=e1053]:
+                    - img [ref=e1054]
+                    - strong [ref=e1056]: "416"
+            - button "Watch in full screen" [ref=e258] [cursor=pointer]:
+              - 'link "Good morning! ☀️ At Edusky, we believe that a child’s development doesn’t stop at the desk. Whether it''s building confidence on the field, staying hydrated and healthy, or forming lifelong friendships, we are committed to nurturing the \"whole\" student. Seeing our students active, engaged, and smiling is the best testament to our mission: Better One''s Life. > #Edusky #ELA #HolisticEducation #ActiveLearning #studentlife created by eduskyprivateschool with SILVANA INSPIRA’s Kids Happy 409" [ref=e1057]':
+                - /url: https://www.tiktok.com/@eduskyprivateschool/photo/7633600840128859400
+                - generic [ref=e262]:
+                  - 'img "Good morning! ☀️ At Edusky, we believe that a child’s development doesn’t stop at the desk. Whether it''s building confidence on the field, staying hydrated and healthy, or forming lifelong friendships, we are committed to nurturing the \"whole\" student. Seeing our students active, engaged, and smiling is the best testament to our mission: Better One''s Life. > #Edusky #ELA #HolisticEducation #ActiveLearning #studentlife created by eduskyprivateschool with SILVANA INSPIRA’s Kids Happy" [ref=e266]'
+                  - img [ref=e1059]
+                  - generic [ref=e1062]:
+                    - img [ref=e1063]
+                    - strong [ref=e1065]: "409"
+            - button "Watch in full screen" [ref=e269] [cursor=pointer]:
+              - link "Aktiviti Pendidikan Jasmani memberi fokus kepada kemahiran pergerakan seperti naik turun tangga dan menyusup bagi meningkatkan kecergasan fizikal murid. Lompat, panjat, menyusup—aktif itu seronok! 🏃‍♂️🎉 Dalam Pendidikan Kesihatan, pula murid didedahkan kepada kesan buruk pengambilan alkohol secara berlebihan demi membentuk gaya hidup sihat. Bijak pilih, hidup sihat—katakan tidak pada alkohol berlebihan! 🚫💚 created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 361" [ref=e1066]:
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7632247991398731015
+                - generic [ref=e273]:
+                  - img "Aktiviti Pendidikan Jasmani memberi fokus kepada kemahiran pergerakan seperti naik turun tangga dan menyusup bagi meningkatkan kecergasan fizikal murid. Lompat, panjat, menyusup—aktif itu seronok! 🏃‍♂️🎉 Dalam Pendidikan Kesihatan, pula murid didedahkan kepada kesan buruk pengambilan alkohol secara berlebihan demi membentuk gaya hidup sihat. Bijak pilih, hidup sihat—katakan tidak pada alkohol berlebihan! 🚫💚 created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e277]
+                  - generic [ref=e1067]:
+                    - img [ref=e1068]
+                    - strong [ref=e1070]: "361"
+            - button "Watch in full screen" [ref=e280] [cursor=pointer]:
+              - link "Do you like a fun way to learn? Do you enjoy building skills and confidence? If your answer is “Yes, I do”… Then Edusky Private School is the place for you! So tell us… Do you like learning in a supportive and exciting environment? We’re guessing… YES! Psssssttt… Guess her answer at the end of the video 😁🤔 created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool 421" [ref=e1071]:
+                - /url: https://www.tiktok.com/@eduskyprivateschool/video/7631874502040767752
+                - generic [ref=e284]:
+                  - img "Do you like a fun way to learn? Do you enjoy building skills and confidence? If your answer is “Yes, I do”… Then Edusky Private School is the place for you! So tell us… Do you like learning in a supportive and exciting environment? We’re guessing… YES! Psssssttt… Guess her answer at the end of the video 😁🤔 created by eduskyprivateschool with eduskyprivateschool’s original sound - eduskyprivateschool" [ref=e288]
+                  - generic [ref=e1072]:
+                    - img [ref=e1073]
+                    - strong [ref=e1075]: "421"
+      - generic [ref=e1078]:
+        - button [ref=e1081] [cursor=pointer]:
+          - img [ref=e1083]
+        - button [ref=e1088] [cursor=pointer]:
+          - img [ref=e1090]
+        - button "Log in" [ref=e1095] [cursor=pointer]:
+          - generic [ref=e1097]: Log in
