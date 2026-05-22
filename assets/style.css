@@ -59,6 +59,7 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .section-label{font-family:var(--font-display);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:16px}
 .section-title{font-family:var(--font-display);font-size:clamp(30px,4vw,44px);font-weight:700;letter-spacing:-0.02em;line-height:1.1;margin-bottom:20px}
 .section-subtitle{font-size:clamp(15px,1.8vw,18px);color:var(--gray);line-height:1.6;max-width:600px;margin-bottom:48px}
+.section-bg-photo .section-label,.section-bg-photo .section-title,.section-bg-photo .section-subtitle{color:#fff}
 
 /* ----- SCROLL REVEAL ----- */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity 0.8s var(--ease-fluid),transform 0.8s var(--ease-fluid)}
