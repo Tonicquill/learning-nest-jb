@@ -160,7 +160,7 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .section-sky .section-subtitle{color:rgba(255,255,255,0.8)}
 .section-dark{background:var(--ink-soft);color:var(--white)}
 .section-dark .section-label{color:var(--sunrise)}
-.section-bg-photo{position:relative;background-image:var(--bg);background-size:cover;background-position:center;background-attachment:fixed}
+.section-bg-photo{position:relative;background-image:var(--bg);background-size:cover;background-position:center;background-attachment:fixed;background-color:transparent !important}
 .section-bg-photo::before{content:'';position:absolute;inset:0;background:rgba(17,24,39,0.82);z-index:0}
 .section-bg-photo .container{position:relative;z-index:1}
 @media(max-width:768px){.section-bg-photo{background-attachment:scroll}}
@@ -178,7 +178,7 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 /* ----- CARDS ----- */
 .card{background:var(--white);border:1px solid var(--gray-border);border-radius:14px;padding:32px;transition:all 0.3s var(--ease-fluid)}
 .card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);border-color:transparent;transform:translateY(-2px)}
-.card-bg{position:relative;overflow:hidden;color:#fff;border:none}
+.card-bg{position:relative;overflow:hidden;color:#fff;border:none;background:transparent !important}
 .card-bg::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;opacity:0.25;transition:opacity 0.5s var(--ease-fluid);background-image:var(--bg)}
 .card-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0.75) 100%);z-index:1}
 .card-bg:hover::before{opacity:0.35}
