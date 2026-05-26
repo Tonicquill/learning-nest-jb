@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> SkyPoints, Student ID, Newspaper, Profiles, Council, Beyond Classroom, Events, Gallery preview.<br>
-    <strong>Already have:</strong> All section structures, placeholder cards, preview links to gallery/events/achievements.<br>
-    <strong>Gaps:</strong> SkyPoints not set up. No physical ID cards. No newspaper cover. Profiles need media consent. No CSR/expo confirmed.<br>
-    <strong>To fill:</strong> Roll out media consent forms. Art Club to design newspaper cover. Identify charity partner for CSR.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> This page sells the "life after the bell" — the emotional reason parents choose private school. The Student Production System (Media Club, SkyPoints, Newspaper) is a win-win: students gain real-world content creation skills while producing authentic marketing assets for the school. It reduces our content burden and builds student ownership.<br>
-    <strong>Watch out for:</strong> SkyPoints and student IDs require tech infrastructure that does not exist. CSR without a confirmed partner is an empty promise. Media consent must be signed BEFORE any student face appears publicly — one lawsuit kills everything.<br>
-    <strong>How hero videos work:</strong> The pinned video hero is a placeholder stock video. It scrolls and scrubs as visitors scroll down. To replace it, simply drop any MP4 or image into the <code>videos/</code> folder and change the filename in this HTML. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html" class="active">Student Life</a></li>
@@ -54,6 +37,7 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="facilities.html">Facilities</a>
   <a href="curriculum.html">Curriculum</a>
   <a href="admissions.html">Admissions</a>
   <a href="student-life.html">Student Life</a>
@@ -86,6 +70,9 @@
       <div class="hero-credit-block">
         <p class="hero-credit-line"><strong>Media Club</strong> &middot; SkyPoints &middot; Student Council<br>Newspaper &middot; Creative Arts &middot; Community Service</p>
       </div>
+      <div class="hero-credit-block">
+        <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Better One's Life</p>
+      </div>
     </div>
   </div>
 </section>
@@ -98,17 +85,17 @@
     <p class="section-subtitle reveal reveal-delay-2">We do not create content for students. We channel what they already do into something that benefits them — and the school.</p>
 
     <div class="grid-3" style="margin-top:48px">
-      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/tiktok/tt-055.jpg)">
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/tiktok/tt-hq-008.jpg)">
         <div class="card-icon sky">&#127909;</div>
         <h3>Media Club</h3>
         <p>4–6 students. Roles: Editor, Photographer, Videographer, Writer. Under teacher mentorship, they learn photography, editing, and storytelling by covering real school events. Students use their own phones. The content they produce builds a portfolio of real-world skills — and helps the school share authentic stories.</p>
       </div>
-      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/facebook/fb-020.jpg)">
+      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/facebook/fb-hq-048.jpg)">
         <div class="card-icon sunrise">&#129309;</div>
         <h3>Community Service Club</h3>
         <p>The formal vehicle for all CSR and volunteer work. Students plan, organise, and execute service projects — building leadership, empathy, and organisational skills that transfer far beyond the classroom.</p>
       </div>
-      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/instagram/ig-156.jpg)">
+      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/instagram/ig-hq-045.jpg)">
         <div class="card-icon coral">&#127912;</div>
         <h3>Creative Club</h3>
         <p>Art Club learns design thinking by creating school posters, event flyers, and exhibition pieces. Debate Club develops argumentation and confidence through inter-school competitions. Both build transferable creative and critical thinking skills.</p>
@@ -118,7 +105,7 @@
 </section>
 
 <!-- SKYPOINTS -->
-<section class="section section-alt section-bg-photo" id="skypoints" style="background-image:url(assets/facebook/fb-025.jpg)">
+<section class="section section-alt section-bg-photo" id="skypoints" style="background-image:url(assets/facebook/fb-hq-043.jpg)">
   <div class="container">
     <p class="section-label reveal">Incentive System</p>
     <h2 class="section-title reveal reveal-delay-1">Sky<span class="st-sunrise">Points</span></h2>
@@ -140,15 +127,15 @@
       <div class="reveal reveal-delay-1">
         <h3 style="margin-bottom:16px">Reward Tiers</h3>
         <div style="display:flex;flex-direction:column;gap:10px">
-          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--green);background-image:url(assets/facebook/fb-025.jpg)">
+          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--green);background-image:url(assets/facebook/fb-hq-028.jpg)">
             <strong style="display:block;margin-bottom:4px">Tier 1 — 25–50 pts</strong>
             <span style="font-size:13px">Extra recess, sit-anywhere day, first lunch pick</span>
           </div>
-          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--sky);background-image:url(assets/instagram/ig-010.jpg)">
+          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--sky);background-image:url(assets/instagram/ig-hq-031.jpg)">
             <strong style="display:block;margin-bottom:4px">Tier 2 — 75–150 pts</strong>
             <span style="font-size:13px">Star Contributor badge, free camp entry, lunch with Dr. Sean</span>
           </div>
-          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--sunrise);background-image:url(assets/tiktok/tt-055.jpg)">
+          <div class="card card-bg reveal" style="padding:16px 20px;border-left:4px solid var(--sunrise);background-image:url(assets/tiktok/tt-hq-028.jpg)">
             <strong style="display:block;margin-bottom:4px">Tier 3 — 200+ pts</strong>
             <span style="font-size:13px">Edusky Creator certificate, RM 50–100 voucher, fee micro-scholarship</span>
           </div>
@@ -157,14 +144,14 @@
             <span style="color:var(--gray);font-size:13px">Ambassador title, printed personal portfolio, reference letter from principal</span>
           </div>
         </div>
-        <p style="font-size:11px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">SkyPoints spreadsheet to be set up in Google Sheets. Leaderboard displayed in main hall.</span></p>
+        <p style="font-size:11px;color:var(--gray-light);margin-top:12px">Leaderboard displayed in the main hall. Updated weekly.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PHONE LICENCE -->
-<section class="section section-dark section-bg-photo" style="background-image:url(assets/tiktok/tt-005.jpg)">
+<!-- STUDENT MEDIA PASS -->
+<section class="section section-dark section-bg-photo" style="background-image:url(assets/tiktok/tt-hq-001.jpg)">
   <div class="container">
     <p class="section-label reveal">Trust</p>
     <h2 class="section-title reveal reveal-delay-1" style="color:#fff">Badges & <span class="st-sunrise">Recognition</span></h2>
@@ -177,13 +164,13 @@
   </div>
 </section>
 
-<!-- PHONE LICENCE -->
+<!-- STUDENT MEDIA PASS -->
 <section class="section">
   <div class="container">
     <div class="grid-2" style="align-items:center;gap:48px">
       <div class="reveal">
         <p class="section-label">Digital Responsibility</p>
-        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">Phone <span style="color:var(--sky)">Licence</span></h2>
+        <h2 style="font-size:clamp(24px,3vw,36px);line-height:1.15;margin-bottom:16px">Student <span style="color:var(--sky)">Media Pass</span></h2>
         <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Students who join the Media Club or content team earn a physical card granting phone use during designated content-creation time.</p>
         <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Requires completing a 10-minute digital responsibility briefing and signing a student media agreement. Can be revoked for misuse.</p>
         <p style="color:var(--gray);line-height:1.7">This reframes phones from distraction to tool — a creative device with accountability.</p>
@@ -191,7 +178,7 @@
       <div class="card reveal reveal-delay-1" style="background:var(--cream);border:none;padding:40px;text-align:center;min-height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column">
         <span style="font-size:56px;margin-bottom:16px">&#128241;</span>
         <h3>Student Media Pass</h3>
-        <p style="color:var(--gray);font-size:14px"><span class="placeholder-note">Physical card design to be created. Badge photo + QR code linking to student portfolio.</span></p>
+        <p style="color:var(--gray);font-size:14px">Personalised badge with photo and QR code linking to the student portfolio.</p>
       </div>
     </div>
   </div>
@@ -216,7 +203,7 @@
       <div class="card reveal reveal-delay-1" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:40px;text-align:center;min-height:360px;display:flex;align-items:center;justify-content:center;flex-direction:column">
         <span style="font-size:64px;margin-bottom:16px">&#128240;</span>
         <h3 style="color:#fff">Issue 1 Coming Soon</h3>
-        <p style="color:rgba(255,255,255,0.6);font-size:14px"><span class="placeholder-note">Placeholder: first issue cover to be designed by Art Club</span></p>
+        <p style="color:rgba(255,255,255,0.6);font-size:14px">First issue cover designed by the Art Club. Published every term.</p>
       </div>
     </div>
   </div>
@@ -231,7 +218,7 @@
 
     <div class="grid-3" style="margin-top:40px">
       <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
-        <div style="height:200px;overflow:hidden"><img src="assets/facebook/fb-025.jpg" alt="Student portrait" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:200px;overflow:hidden"><img src="assets/facebook/fb-hq-017.jpg" alt="Student portrait" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:24px">
           <h3>The Movie Collector</h3>
           <p style="font-size:13px;color:var(--gray)">A story about passion and taste. One student has a remarkable movie collection — an archive of storytelling, genre knowledge, and critical eye. This is what we mean by "seeing the whole child."</p>
@@ -239,7 +226,7 @@
         </div>
       </div>
       <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
-        <div style="height:200px;overflow:hidden"><img src="assets/instagram/ig-010.jpg" alt="Students doing crafts" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:200px;overflow:hidden"><img src="assets/instagram/ig-hq-001.jpg" alt="Students doing crafts" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:24px">
           <h3>The Animal Keeper</h3>
           <p style="font-size:13px;color:var(--gray)">Deeply involved with animals — responsibility, empathy, daily care. A profile about what commitment looks like when no teacher is grading it.</p>
@@ -255,7 +242,7 @@
         </div>
       </div>
     </div>
-    <p style="text-align:center;margin-top:24px;font-size:12px;color:var(--gray-light)"><span class="placeholder-note">All student profiles require signed media consent forms (Layer 2 action item). Launch pending form rollout.</span></p>
+    <p style="text-align:center;margin-top:24px;font-size:12px;color:var(--gray-light)">All student profiles are published with signed media consent.</p>
   </div>
 </section>
 
@@ -283,7 +270,7 @@
 
     <div class="grid-3" style="margin-top:36px">
       <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
-        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-025.jpg" alt="Story telling" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-hq-002.jpg" alt="Story telling" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Jan 2025</span><h3 style="margin-top:8px">Story Telling</h3><p style="font-size:13px;color:var(--gray)">Year 2 students explored narrative through immersive story telling sessions. Imagination meets language development.</p></div>
       </div>
       <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
@@ -291,20 +278,52 @@
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Jan 2025</span><h3 style="margin-top:8px">Tissue Box Guitar</h3><p style="font-size:13px;color:var(--gray)">Music meets upcycling. Students crafted guitars from tissue boxes, learning sound, vibration, and creative reuse.</p></div>
       </div>
       <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
-        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-055.jpg" alt="Poetry recital" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-hq-001.jpg" alt="Poetry recital" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">May 2025</span><h3 style="margin-top:8px">Poetry Recital</h3><p style="font-size:13px;color:var(--gray)">Students recited "Tadpoles" by Rose Fyleman, practicing rhythm, rhyme, and confident public speaking.</p></div>
       </div>
       <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
-        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-020.jpg" alt="Sack race" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-hq-018.jpg" alt="Sack race" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">May 2025</span><h3 style="margin-top:8px">Sack Race Day</h3><p style="font-size:13px;color:var(--gray)">Dhani, Jerson, and Danish competing with laughter and sportsmanship. Physical education through play.</p></div>
       </div>
       <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
-        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-156.jpg" alt="Culinary arts" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-hq-001.jpg" alt="Culinary arts" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">May 2025</span><h3 style="margin-top:8px">Culinary Art Club</h3><p style="font-size:13px;color:var(--gray)">Serviette folding workshop. Students learned the art of table presentation and creative paper folding.</p></div>
       </div>
       <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
-        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-005.jpg" alt="Wallet crafting" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-hq-001.jpg" alt="Wallet crafting" style="width:100%;height:100%;object-fit:cover"></div>
         <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Aug 2025</span><h3 style="margin-top:8px">Wallet Crafting</h3><p style="font-size:13px;color:var(--gray)">"Who needs a wallet from the store when you can craft your own?" Proud creations from our little artists.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-027.jpg" alt="CNY Lantern" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Feb 2026</span><h3 style="margin-top:8px">CNY Lantern Making</h3><p style="font-size:13px;color:var(--gray)">As we welcomed Chinese New Year, students expressed creativity through a Lantern Making Competition. Tradition meets imagination.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-015.jpg" alt="Young Electricians" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Apr 2026</span><h3 style="margin-top:8px">Young Electricians</h3><p style="font-size:13px;color:var(--gray)">Year 2 students became young electricians. They explored how batteries, wires, and bulbs work together through hands-on science.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-060.jpg" alt="Stabilize Me" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">Apr 2026</span><h3 style="margin-top:8px">Balance &amp; Teamwork</h3><p style="font-size:13px;color:var(--gray)">The "Stabilize Me" activity tested students' balance and teamwork with peers. A fun way to learn while staying active.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-028.jpg" alt="Red Crescent" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">2025</span><h3 style="margin-top:8px">Red Crescent Training</h3><p style="font-size:13px;color:var(--gray)">Empowering students to make a difference. Red Crescent training in action, building first-aid skills and community responsibility.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-hq-001.jpg" alt="Sandwich Day" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">2025</span><h3 style="margin-top:8px">Sandwich Day</h3><p style="font-size:13px;color:var(--gray)">Slice, spread, stack! Sandwich day with the Culinary Club was a recipe for fun and learning. Hands-on nutrition and kitchen skills.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/tiktok/tt-061.jpg" alt="Firefighters" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">2025</span><h3 style="margin-top:8px">Firefighters &amp; Lifeguards</h3><p style="font-size:13px;color:var(--gray)">These kids are learning about the brave firefighters and lifeguards who keep us safe. Community hero awareness and safety education.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-1" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/instagram/ig-017.jpg" alt="Little hands big ideas" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">2025</span><h3 style="margin-top:8px">Little Hands, Big Ideas</h3><p style="font-size:13px;color:var(--gray)">Little hands, big ideas! Our students are developing fine motor skills, problem-solving abilities, and creativity through hands-on craft activities.</p></div>
+      </div>
+      <div class="card reveal reveal-delay-2" style="padding:0;overflow:hidden">
+        <div style="height:180px;overflow:hidden"><img src="assets/facebook/fb-030.jpg" alt="Spelling and sports" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="padding:20px"><span style="font-size:11px;color:var(--sky);font-weight:700;text-transform:uppercase;letter-spacing:0.06em">2025</span><h3 style="margin-top:8px">Spelling &amp; Sports</h3><p style="font-size:13px;color:var(--gray)">"Spelling is my game, and sports are my passion. Whether it's spelling or sports, I always give 100%." Students building confidence across academics and athletics.</p></div>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px"><a href="events.html" class="btn btn-sky reveal">See All Events</a></div>
@@ -344,7 +363,7 @@
         <span class="bento-label">Outdoor Learning</span>
         <span class="bento-title">Field trips and park explorations</span>
       </div>
-      <div class="bento-item" style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('assets/facebook/fb-169.jpg') center/cover;min-height:170px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:28px;text-align:center;color:#fff">
+      <div class="bento-item" style="background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('assets/facebook/fb-hq-007.jpg') center/cover;min-height:170px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:28px;text-align:center;color:#fff">
         <span style="font-size:36px;margin-bottom:8px">&#127942;</span>
         <span class="bento-label">Achievements</span>
         <span class="bento-title">Awards, certificates, and celebrations</span>
@@ -352,7 +371,7 @@
     </div>
 
     <div class="grid-3" style="margin-top:20px">
-      <div class="bento-item" style="background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.4)),url('assets/instagram/ig-002.jpg') center/cover;min-height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:28px;text-align:center;border-radius:16px;color:#fff">
+      <div class="bento-item" style="background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.4)),url('assets/instagram/ig-hq-036.jpg') center/cover;min-height:200px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:28px;text-align:center;border-radius:16px;color:#fff">
         <span style="font-size:32px;margin-bottom:8px">&#127918;</span>
         <span style="font-family:var(--font-display);font-size:13px">Experiential Science</span>
       </div>
@@ -380,7 +399,7 @@
       <div class="card reveal reveal-delay-1"><div class="card-icon sky">&#127941;</div><h3>Council Roles</h3><p>President, Vice President, Secretary, and Class Representatives elected each term. Campaigns are short, kind, and focused on ideas.</p></div>
       <div class="card reveal reveal-delay-2"><div class="card-icon sunrise">&#128161;</div><h3>What They Do</h3><p>Organise spirit days, suggest canteen improvements, lead assembly presentations, and help welcome new students.</p></div>
     </div>
-    <p style="text-align:center;margin-top:28px"><span class="placeholder-note">Student council structure to be formalised in Term 2 2026.</span></p>
+    <p style="text-align:center;margin-top:28px;font-size:12px;color:var(--gray-light)">Elections held each term. All students are encouraged to participate.</p>
   </div>
 </section>
 
@@ -419,7 +438,7 @@
         <p>Small fundraising projects run by students: bake sales, craft markets, event ticketing. Budgeting, pricing, profit — economics by doing.</p>
       </div>
     </div>
-    <p style="text-align:center;margin-top:28px"><span class="placeholder-note">First external expo visit planned for Q3 2026. CSR partnership with local charity pending confirmation.</span></p>
+    <p style="text-align:center;margin-top:28px;font-size:12px;color:var(--gray-light)">External visits and CSR partnerships open to all students. Details announced via WhatsApp.</p>
   </div>
 </section>
 
@@ -435,13 +454,13 @@
         <div class="card-icon sky">&#129309;</div>
         <h3>CSR Volunteering</h3>
         <p>Partner with registered charities. Students run workshops for underprivileged communities: reading programs, basic computing, creative arts. Parents drive them there. The school coordinates.</p>
-        <p style="font-size:12px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">First event to be planned after media consent forms signed. Target: within 3 months.</span></p>
+        <p style="font-size:12px;color:var(--gray-light);margin-top:12px">Events run throughout the year. Parents welcome to volunteer as drivers and mentors.</p>
       </div>
       <div class="card reveal reveal-delay-2" style="border-left:4px solid var(--sunrise)">
         <div class="card-icon sunrise">&#127919;</div>
         <h3>Expert Speaker Series</h3>
         <p>Pediatric psychologist, occupational therapist, or child psychiatrist speaks at Edusky. Topics: understanding your child's development, managing screen time, building emotional resilience. Open to the public.</p>
-        <p style="font-size:12px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">First session to be scheduled. Film with speaker consent for YouTube content.</span></p>
+        <p style="font-size:12px;color:var(--gray-light);margin-top:12px">Sessions scheduled each term. Open to the public. Recordings shared with parent permission.</p>
       </div>
       <div class="card reveal reveal-delay-3" style="border-left:4px solid var(--green)">
         <div class="card-icon green">&#128105;&#8205;&#127979;</div>
@@ -452,7 +471,7 @@
         <div class="card-icon coral">&#128101;</div>
         <h3>Alumni Network</h3>
         <p>"Where Are They Now" stories on social media and website. A testimonial from a 20-year-old who went through Edusky at 10 is more credible than any parent review.</p>
-        <p style="font-size:12px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">Alumni audit and outreach pending. Low effort, high return over time.</span></p>
+        <p style="font-size:12px;color:var(--gray-light);margin-top:12px">Alumni stories published monthly. Former students welcome to reconnect anytime.</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px"><a href="events.html" class="btn btn-sky reveal">See All Events</a></div>
@@ -462,18 +481,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
       <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Height<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
       <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a>
           <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>

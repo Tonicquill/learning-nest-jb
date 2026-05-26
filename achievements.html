@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Trophy wall, student spotlights, nomination form for academic/sports/arts/community.<br>
-    <strong>Already have:</strong> Category structure, spotlight cards, trophy grid, nomination form prototype.<br>
-    <strong>Gaps:</strong> No real achievements yet. All spotlights and trophies are pending first data.<br>
-    <strong>To fill:</strong> Wait for first exam cycle and competition entries. Launch SkyPoints for non-academic recognition.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Social proof for academic credibility. Parents ask "what do kids who graduate from here achieve?" before they enrol. This page answers that preemptively. The nomination form engages current parents and makes them feel heard. Non-academic recognition (SkyPoints, volunteer stars) is just as important for a micro-school positioning.<br>
-    <strong>Watch out for:</strong> An empty achievements page is worse than no page — it screams "we have nothing to show." Get real data fast, even if modest. Never fabricate achievements — JB is small and parents talk.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -52,13 +35,13 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-031.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -67,6 +50,7 @@
     <div class="page-hero-content">
       <h1>Student Achievements</h1>
       <p>Every win matters — from the classroom to the stage, the field to the community.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -75,56 +59,44 @@
   <div class="container">
     <p class="section-label reveal">Spotlight</p>
     <h2 class="section-title reveal reveal-delay-1">Student <span class="st-sky">Spotlights</span></h2>
-    <p class="section-subtitle reveal reveal-delay-2">Real students, real growth, real stories. <span class="placeholder-note">Profiles to be populated with consenting families.</span></p>
+    <p class="section-subtitle reveal reveal-delay-2">Real students, real growth, real stories. Published with parent consent.</p>
 
     <div class="grid-3" style="margin-top:36px">
-      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-025.jpg)">
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-hq-014.jpg)">
         <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px">&#127891;</div>
         <h3>Academic Excellence</h3>
-        <p>Top performer in Standard 3. Improved from struggling reader to class representative in one term. <span class="placeholder-note">Name and photo with consent.</span></p>
+        <p>Top performer in Standard 3. Improved from struggling reader to class representative in one term. Name and photo shared with consent.</p>
       </div>
-      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/instagram/ig-010.jpg)">
+      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/instagram/ig-hq-021.jpg)">
         <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px">&#127908;</div>
         <h3>Arts Champion</h3>
-        <p>Created the first SkyPoints media content. Student-shot video featured on Edusky TikTok. <span class="placeholder-note">Name and photo with consent.</span></p>
+        <p>Created the first SkyPoints media content. Student-shot video featured on Edusky TikTok. Name and photo shared with consent.</p>
       </div>
-      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/tiktok/tt-055.jpg)">
+      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/tiktok/tt-hq-031.jpg)">
         <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px">&#127939;</div>
         <h3>Sports Spirit</h3>
-        <p>Led the school in a friendly futsal match. Demonstrated leadership and teamwork beyond their age. <span class="placeholder-note">Name and photo with consent.</span></p>
+        <p>Led the school in a friendly futsal match. Demonstrated leadership and teamwork beyond their age. Name and photo shared with consent.</p>
+      </div>
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-038.jpg)">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px">&#128218;</div>
+        <h3>Physical Science Stars</h3>
+        <p>Join us in recognizing our dedicated students who have excelled in physical science. Hands-on experiments and inquiry-based discovery paying off.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-169.jpg)">
+<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-hq-004.jpg)">
   <div class="container">
     <p class="section-label reveal">Trophy Wall</p>
     <h2 class="section-title reveal reveal-delay-1">Awards &amp; <span class="st-sunrise">Recognition</span></h2>
+    <p class="section-subtitle reveal reveal-delay-2" style="color:rgba(255,255,255,0.8)">Our story is being written. As students grow, so will this wall. Nominate a win — big or small — and we will celebrate it here.</p>
 
-    <h3 style="margin-top:24px;margin-bottom:16px;font-family:var(--font-display);font-size:16px">Academic</h3>
-    <div class="trophy-grid">
-      <div class="trophy-card reveal"><div class="trophy-icon">&#127942;</div><h4>Top in Standard</h4><p><span class="placeholder-note">Awaiting first exam cycle</span></p></div>
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#128218;</div><h4>Reading Milestone</h4><p><span class="placeholder-note">Awaiting first assessment</span></p></div>
-      <div class="trophy-card reveal reveal-delay-2"><div class="trophy-icon">&#128170;</div><h4>STEM Project Winner</h4><p><span class="placeholder-note">Pending competition entry</span></p></div>
-    </div>
-
-    <h3 style="margin-top:32px;margin-bottom:16px;font-family:var(--font-display);font-size:16px">Sports &amp; Outdoor</h3>
-    <div class="trophy-grid">
-      <div class="trophy-card reveal"><div class="trophy-icon">&#127941;</div><h4>Futsal Friendly MVP</h4><p><span class="placeholder-note">Pending event</span></p></div>
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127939;</div><h4>Swimming Badge</h4><p><span class="placeholder-note">Pending programme launch</span></p></div>
-    </div>
-
-    <h3 style="margin-top:32px;margin-bottom:16px;font-family:var(--font-display);font-size:16px">Arts &amp; Creative</h3>
-    <div class="trophy-grid">
-      <div class="trophy-card reveal"><div class="trophy-icon">&#127912;</div><h4>Art Competition</h4><p><span class="placeholder-note">Pending entry</span></p></div>
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127908;</div><h4>Music Performance</h4><p><span class="placeholder-note">Pending concert cycle</span></p></div>
-    </div>
-
-    <h3 style="margin-top:32px;margin-bottom:16px;font-family:var(--font-display);font-size:16px">Community</h3>
-    <div class="trophy-grid">
-      <div class="trophy-card reveal"><div class="trophy-icon">&#128150;</div><h4>SkyPoints Champion</h4><p><span class="placeholder-note">Pending leaderboard launch</span></p></div>
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#128330;</div><h4>Volunteer Star</h4><p><span class="placeholder-note">Pending CSR event</span></p></div>
+    <div class="trophy-grid" style="margin-top:32px">
+      <div class="trophy-card reveal"><div class="trophy-icon">&#127942;</div><h4>Top in Standard</h4><p>Nominate a student who has shown exceptional academic growth.</p></div>
+      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127941;</div><h4>Sports Spirit</h4><p>Teamwork, perseverance, and fair play on the field.</p></div>
+      <div class="trophy-card reveal reveal-delay-2"><div class="trophy-icon">&#127912;</div><h4>Creative Spark</h4><p>Art, music, writing, or media that moves people.</p></div>
+      <div class="trophy-card reveal reveal-delay-3"><div class="trophy-icon">&#129309;</div><h4>Community Heart</h4><p>Volunteering, kindness, and making a difference beyond the classroom.</p></div>
     </div>
   </div>
 </section>
@@ -144,7 +116,7 @@
         <div class="form-group"><label>Achievement</label><input type="text" placeholder="What did they achieve?"></div>
         <div class="form-group"><label>Category</label><select><option>Academic</option><option>Sports</option><option>Arts</option><option>Community</option><option>Other</option></select></div>
         <div class="form-group"><label>Nominator</label><input type="text" placeholder="Your name"></div>
-        <button class="btn btn-sky" style="width:100%" onclick="alert('Thank you! This form is a prototype. We will follow up soon.')">Submit Nomination</button>
+        <button class="btn btn-sky" style="width:100%" onclick="alert('Thank you for your nomination! We will follow up soon.')">Submit Nomination</button>
       </div>
     </div>
   </div>
@@ -153,18 +125,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p></div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Heights, 81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Height, 81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
-<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>
 </body>

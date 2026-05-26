@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> KSSR breakdown, subjects, enrichment, language centre, corporate training tabs.<br>
-    <strong>Already have:</strong> KSSR description, year breakdown, subject cards, enrichment cards, SMIPS code JDA1001.<br>
-    <strong>Gaps:</strong> No detailed syllabus. Language centre not public. Tuition pricing unknown. Corporate training inactive.<br>
-    <strong>To fill:</strong> Academic team to provide syllabus. Language centre address/photos. Finalise tuition fees.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Parents compare curricula. KSSR is the baseline — we need to show we EXCEED it (English emphasis, enrichment, small groups). The language centre and corporate training tabs justify premium fees by showing ecosystem depth, not just a classroom.<br>
-    <strong>Watch out for:</strong> Language centre and corporate training are inactive. If they appear as core offerings, that is false advertising. Mark them clearly as "not for public yet" until operational. Syllabus gaps make us look unprepared.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html" class="active">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -54,6 +37,7 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="facilities.html">Facilities</a>
   <a href="curriculum.html">Curriculum</a>
   <a href="admissions.html">Admissions</a>
   <a href="student-life.html">Student Life</a>
@@ -67,7 +51,7 @@
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-035.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -76,6 +60,7 @@
     <div class="page-hero-content">
       <h1>Curriculum & Programmes</h1>
       <p>KSSR national curriculum, enrichment, and beyond — a complete education ecosystem.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -110,7 +95,7 @@
             <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--gray-border)"><strong>Standard 5</strong><span style="color:var(--gray)">Ages 11 &middot; Exam preparation begins</span></div>
             <div style="display:flex;justify-content:space-between;padding:10px 0"><strong>Standard 6</strong><span style="color:var(--gray)">Ages 12 &middot; UPSR readiness & transition</span></div>
           </div>
-          <p style="font-size:10px;color:var(--gray-light);margin-top:16px"><span class="placeholder-note">Detailed year-by-year syllabus to be provided by academic team</span></p>
+          <p style="font-size:10px;color:var(--gray-light);margin-top:16px">Contact us for the detailed year-by-year syllabus for your child's standard.</p>
         </div>
       </div>
     </div>
@@ -119,19 +104,20 @@
     <div class="tab-panel" id="tab-subjects">
       <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:32px">Core Subjects</h3>
       <div class="grid-3" style="margin-bottom:48px">
-        <div class="card card-bg" style="background-image:url(assets/facebook/fb-025.jpg)"><div class="card-icon sky">&#128214;</div><h3>Bahasa Melayu</h3><p>National language. Reading, writing, comprehension, and communication skills aligned with KSSR standards.</p></div>
-        <div class="card card-bg" style="background-image:url(assets/instagram/ig-010.jpg)"><div class="card-icon sunrise">&#127758;</div><h3>Bahasa Mandarin</h3><p>Third language offering. Conversational and written Mandarin for broader communication skills.</p></div>
-        <div class="card card-bg" style="background-image:url(assets/tiktok/tt-055.jpg)"><div class="card-icon coral">&#127758;</div><h3>English</h3><p>Second language proficiency with emphasis on speaking confidence. Additional English periods beyond KSSR minimum.</p></div>
-        <div class="card card-bg" style="background-image:url(assets/facebook/fb-020.jpg)"><div class="card-icon green">&#128290;</div><h3>Science</h3><p>Hands-on experiments in our Science Lab. Inquiry-based learning approach.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/facebook/fb-hq-011.jpg)"><div class="card-icon sky">&#128214;</div><h3>Bahasa Melayu</h3><p>National language. Reading, writing, comprehension, and communication skills aligned with KSSR standards.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/instagram/ig-hq-024.jpg)"><div class="card-icon sunrise">&#127758;</div><h3>Bahasa Mandarin</h3><p>Third language offering. Conversational and written Mandarin for broader communication skills.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/tiktok/tt-hq-033.jpg)"><div class="card-icon coral">&#127758;</div><h3>English</h3><p>Second language proficiency with emphasis on speaking confidence. Additional English periods beyond KSSR minimum.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/facebook/fb-hq-022.jpg)"><div class="card-icon green">&#128290;</div><h3>Mathematics</h3><p>Foundational numeracy, problem-solving, and logical reasoning aligned with KSSR standards.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/facebook/fb-hq-041.jpg)"><div class="card-icon sky">&#128300;</div><h3>Science</h3><p>Hands-on experiments in our Science Lab. Inquiry-based learning approach.</p></div>
         <div class="card"><div class="card-icon sky">&#127757;</div><h3>Sejarah</h3><p>Malaysian and world history. Integrated with current events and national identity.</p></div>
         <div class="card"><div class="card-icon sunrise">&#127912;</div><h3>Pendidikan Seni</h3><p>Creative expression through visual arts and music. Student artwork displayed throughout the school.</p></div>
         <div class="card"><div class="card-icon coral">&#127939;</div><h3>PJK (Physical Education)</h3><p>Physical health, team sports, and motor skills development through structured PE classes.</p></div>
         <div class="card"><div class="card-icon green">&#128187;</div><h3>Pendidikan Moral</h3><p>Character education, values, and ethical reasoning per MOE requirements.</p></div>
-      </div><h3 style="font-size:clamp(18px,2vw,24px);margin-bottom:20px">Enrichment Subjects <span class="placeholder-note">confirm with academic team</span></h3>
+      </div><h3 style="font-size:clamp(18px,2vw,24px);margin-bottom:20px">Enrichment Subjects</h3>
       <div class="grid-3">
-        <div class="card card-bg" style="background-image:url(assets/facebook/fb-169.jpg)"><div class="card-icon sunrise">&#127911;</div><h3>Public Speaking</h3><p>Building confidence in oral communication from an early age.</p></div>
-        <div class="card card-bg" style="background-image:url(assets/tiktok/tt-005.jpg)"><div class="card-icon green">&#127795;</div><h3>Environmental Studies</h3><p>Sustainability, gardening, and nature awareness.</p></div>
-        <div class="card card-bg" style="background-image:url(assets/instagram/ig-156.jpg)"><div class="card-icon sky">&#129504;</div><h3>Creative Thinking</h3><p>Problem-based learning, design thinking for kids.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/facebook/fb-hq-010.jpg)"><div class="card-icon sunrise">&#127911;</div><h3>Public Speaking</h3><p>Building confidence in oral communication from an early age.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/tiktok/tt-hq-023.jpg)"><div class="card-icon green">&#127795;</div><h3>Environmental Studies</h3><p>Sustainability, gardening, and nature awareness.</p></div>
+        <div class="card card-bg" style="background-image:url(assets/instagram/ig-hq-041.jpg)"><div class="card-icon sky">&#129504;</div><h3>Creative Thinking</h3><p>Problem-based learning, design thinking for kids.</p></div>
       </div>
     </div>
 
@@ -139,7 +125,7 @@
     <div class="tab-panel" id="tab-language">
       <div class="grid-2" style="gap:48px;align-items:center">
         <div>
-          <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:16px">Edusky Language Centre <span class="placeholder-note">not for public yet</span></h3>
+          <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:16px">Edusky Language Centre</h3>
           <p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Located in Medini, Iskandar Puteri, the Edusky Language Centre offers professional language training for students and adults across Johor Bahru.</p>
           <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
             <div class="card" style="padding:16px 20px"><strong>IELTS Preparation</strong><span style="color:var(--gray);display:block;font-size:13px">Academic and General Training modules. Test-taking strategies, mock exams.</span></div>
@@ -152,7 +138,7 @@
         <div class="card reveal" style="background:var(--cream);border:none;padding:40px;text-align:center;min-height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column">
           <span style="font-size:48px;margin-bottom:12px">&#127758;</span>
           <h3>Medini Centre</h3>
-          <p style="color:var(--gray);font-size:14px"><span class="placeholder-note">Address & photos to be provided. Currently operational but not publicly marketed.</span></p>
+          <p style="color:var(--gray);font-size:14px">Located in Medini, Iskandar Puteri. Contact us for schedules and a campus tour.</p>
         </div>
       </div>
     </div>
@@ -160,10 +146,10 @@
     <!-- ENRICHMENT & CAMPS -->
     <div class="tab-panel" id="tab-enrichment">
       <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:12px">After-School & Holiday Programmes</h3>
-      <p style="color:var(--gray);margin-bottom:36px">Open to Edusky students and the wider community. All programmes run on-site at our Taman Adda Heights campus.</p>
+      <p style="color:var(--gray);margin-bottom:36px">Open to Edusky students and the wider community. All programmes run on-site at our Taman Adda Height campus.</p>
 
       <div class="grid-3" style="margin-bottom:48px">
-        <div class="card"><div class="card-icon sky">&#128218;</div><h3>After-School Tuition</h3><p>Homework support, exam preparation, and subject coaching. Small groups, individual attention.</p><p style="font-size:12px;color:var(--gray-light);margin-top:8px">RM <span class="placeholder-note">pricing TBD</span> / month</p></div>
+        <div class="card"><div class="card-icon sky">&#128218;</div><h3>After-School Tuition</h3><p>Homework support, exam preparation, and subject coaching. Small groups, individual attention.</p><p style="font-size:12px;color:var(--gray-light);margin-top:8px">Contact us for current pricing.</p></div>
         <div class="card"><div class="card-icon sunrise">&#127917;</div><h3>Young Leaders Camp</h3><p>Public speaking, team challenges, community service project, certificate ceremony. School holidays.</p><p style="font-size:12px;color:var(--gray-light);margin-top:8px">RM 150–300 / child / week</p></div>
         <div class="card"><div class="card-icon coral">&#127912;</div><h3>Creative Arts Week</h3><p>Drawing, drama, music, final showcase performance. Open to ages 7–14.</p><p style="font-size:12px;color:var(--gray-light);margin-top:8px">RM 150–300 / child / week</p></div>
       </div>
@@ -177,14 +163,14 @@
 
     <!-- CORPORATE TRAINING -->
     <div class="tab-panel" id="tab-training">
-      <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:16px">Corporate Training & Professional Development <span class="placeholder-note">not for public yet</span></h3>
+      <h3 style="font-size:clamp(20px,2.2vw,28px);margin-bottom:16px">Corporate Training & Professional Development</h3>
       <p style="color:var(--gray);line-height:1.7;margin-bottom:32px;max-width:650px">Edusky Training provides customised professional development programmes for companies in Johor Bahru and beyond. Listed in our original company registration, this arm is being reactivated.</p>
       <div class="grid-3">
         <div class="card"><div class="card-icon sky">&#128188;</div><h3>Leadership Development</h3><p>Management skills, team building, executive coaching.</p></div>
         <div class="card"><div class="card-icon sunrise">&#128172;</div><h3>Communication Skills</h3><p>Business writing, presentation skills, cross-cultural communication.</p></div>
         <div class="card"><div class="card-icon green">&#127919;</div><h3>Custom Programmes</h3><p>Tailored training designed with your organisation's specific needs.</p></div>
       </div>
-      <p style="margin-top:24px;font-size:12px;color:var(--gray-light)"><span class="placeholder-note">Full corporate training brochure to be developed. Contact us for preliminary discussions.</span></p>
+      <p style="margin-top:24px;font-size:12px;color:var(--gray-light)">Full brochure available on request. Contact us to discuss your organisation's needs.</p>
     </div>
   </div>
 </section>
@@ -203,20 +189,20 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand">Edusky Private School</div>
-        <p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p>
-        <p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p>
+        <p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p>
+        <p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p>
       </div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Height<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
       <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a>
           <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>

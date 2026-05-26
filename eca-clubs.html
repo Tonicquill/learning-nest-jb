@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Club catalogue, weekly schedule, student council section.<br>
-    <strong>Already have:</strong> Club cards, schedule table, council section structure.<br>
-    <strong>Gaps:</strong> Coding club not public yet. Eco Warriors need volunteer lead. Council not formalised.<br>
-    <strong>To fill:</strong> Recruit volunteer club leads. Confirm room and equipment. Formalise council in Term 2 2026.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> ECA pages are decision-drivers for parents choosing between schools. "Does my child get to do more than worksheets?" Clubs show breadth and care. The Media Club is the content engine — students learn photography, editing, and storytelling while producing authentic school marketing material. It is a genuine educational win-win: real-world skills plus reduced content burden. The "propose a club" CTA invites parent investment and community ownership.<br>
-    <strong>Watch out for:</strong> Do not promise clubs that lack committed leads. A cancelled club disappoints children and angers parents. STEM and Nature clubs are marked correctly as pilot/proposed — keep those labels until confirmed. The student council must be real, not ceremonial. A fake council undermines student trust.<br>
-    <strong>How hero videos work:</strong> This page shows <em>real Edusky footage</em> in the hero — the "Homeschool Registration 2021" video. For every other page, the hero uses a placeholder stock video. The system is interchangeable: swap the MP4 filename in the HTML, or even use a still image, and the scroll effect works identically. Capture short clips of students running, laughing, presenting — drop them in, done.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -52,13 +35,13 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-036.jpg">
       <source src="videos/hero-eca.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Real Edusky footage. Any video or image can slot in here — just swap the file.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -77,6 +60,9 @@
       <div class="hero-credit-block">
         <p class="hero-credit-line"><strong>Real Edusky footage</strong> above &middot; shot by students and teachers</p>
       </div>
+      <div class="hero-credit-block">
+        <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Better One's Life</p>
+      </div>
     </div>
   </div>
 </section>
@@ -93,11 +79,11 @@
         <div class="club-card-body">
           <p class="club-schedule">Wednesdays &middot; 2:00PM</p>
           <h3>Taekwondo</h3>
-          <p>Martial arts training building discipline, fitness, and self-defence skills. Open to all standards. Emphasis on respect and perseverance.</p>
+          <p>Taekwondo is part of Edusky's extracurricular activities. Kick your way to confidence. Martial arts training building discipline, fitness, and self-defence skills. Open to all standards. Emphasis on respect and perseverance.</p>
         </div>
       </article>
       <article class="club-card reveal reveal-delay-2">
-        <div class="club-card-img"><img src="assets/tiktok/tt-055.jpg" alt="Art & Performances" onerror="this.style.display='none';this.parentElement.textContent='Art & Performances'"></div>
+        <div class="club-card-img"><img src="assets/tiktok/tt-hq-034.jpg" alt="Art & Performances" onerror="this.style.display='none';this.parentElement.textContent='Art & Performances'"></div>
         <div class="club-card-body">
           <p class="club-schedule">Fridays &middot; 2:00PM</p>
           <h3>Art &amp; Performances</h3>
@@ -106,7 +92,7 @@
         </div>
       </article>
       <article class="club-card reveal reveal-delay-3">
-        <div class="club-card-img"><img src="assets/facebook/fb-020.jpg" alt="Red Crescent Society" onerror="this.style.display='none';this.parentElement.textContent='Red Crescent Society'"></div>
+        <div class="club-card-img"><img src="assets/facebook/fb-hq-042.jpg" alt="Red Crescent Society" onerror="this.style.display='none';this.parentElement.textContent='Red Crescent Society'"></div>
         <div class="club-card-body">
           <p class="club-schedule">Thursdays &middot; 2:00PM</p>
           <h3>Red Crescent Society</h3>
@@ -114,7 +100,7 @@
         </div>
       </article>
       <article class="club-card reveal reveal-delay-1">
-        <div class="club-card-img"><img src="assets/tiktok/tt-005.jpg" alt="Design Technology" onerror="this.style.display='none';this.parentElement.textContent='Design Technology'"></div>
+        <div class="club-card-img"><img src="assets/tiktok/tt-hq-024.jpg" alt="Design Technology" onerror="this.style.display='none';this.parentElement.textContent='Design Technology'"></div>
         <div class="club-card-body">
           <p class="club-schedule">Tuesdays &middot; 2:00PM</p>
           <h3>Design Technology</h3>
@@ -122,7 +108,7 @@
         </div>
       </article>
       <article class="club-card reveal reveal-delay-2">
-        <div class="club-card-img"><img src="assets/instagram/ig-002.jpg" alt="Culinary Arts" onerror="this.style.display='none';this.parentElement.textContent='Culinary Arts'"></div>
+        <div class="club-card-img"><img src="assets/instagram/ig-hq-032.jpg" alt="Culinary Arts" onerror="this.style.display='none';this.parentElement.textContent='Culinary Arts'"></div>
         <div class="club-card-body">
           <p class="club-schedule">Mondays &middot; 2:00PM</p>
           <h3>Culinary Arts</h3>
@@ -130,7 +116,7 @@
         </div>
       </article>
       <article class="club-card reveal reveal-delay-3">
-        <div class="club-card-img"><img src="assets/instagram/ig-010.jpg" alt="Field Trip" onerror="this.style.display='none';this.parentElement.textContent='Field Trip'"></div>
+        <div class="club-card-img"><img src="assets/instagram/ig-hq-025.jpg" alt="Field Trip" onerror="this.style.display='none';this.parentElement.textContent='Field Trip'"></div>
         <div class="club-card-body">
           <p class="club-schedule">Select Saturdays</p>
           <h3>Field Trip</h3>
@@ -141,13 +127,13 @@
   </div>
 </section>
 
-<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-025.jpg)">
+<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-hq-023.jpg)">
   <div class="container">
     <p class="section-label reveal">Leadership</p>
     <h2 class="section-title reveal reveal-delay-1">Student <span class="st-sunrise">Council</span></h2>
     <p class="section-subtitle reveal reveal-delay-2">Edusky students learn to lead early. The student council plans events, voices concerns, and represents their peers.</p>
     <div class="grid-2" style="margin-top:32px">
-      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-025.jpg)">
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/tiktok/tt-hq-006.jpg)">
         <div class="card-icon sky">&#127941;</div>
         <h3>Council Roles</h3>
         <p>President, Vice President, Secretary, and Class Representatives elected each term. Campaigns are short, kind, and focused on ideas.</p>
@@ -158,7 +144,7 @@
         <p>Organise spirit days, suggest canteen improvements, lead assembly presentations, and help welcome new students.</p>
       </div>
     </div>
-    <p style="text-align:center;margin-top:28px"><span class="placeholder-note">Student council structure to be formalised in Term 2 2026.</span></p>
+    <p style="text-align:center;margin-top:28px;font-size:12px;color:var(--gray-light)">Elections held each term. All students are encouraged to nominate and vote.</p>
   </div>
 </section>
 
@@ -174,18 +160,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p></div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Heights, 81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Height, 81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
-<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>
 </body>

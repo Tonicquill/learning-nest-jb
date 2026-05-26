@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Fee table, calculator, open day cards, virtual tour, enrol form, FAQ.<br>
-    <strong>Already have:</strong> Table structure, JS calculator, 3 open day cards, form HTML, FAQ accordion.<br>
-    <strong>Gaps:</strong> All fees TBD. Calculator uses estimates. No virtual tour video. Form prototype. No payment details.<br>
-    <strong>To fill:</strong> Finalise 2026 fee schedule with Dr. Sean. Film campus walkthrough. Connect form to Google Forms.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> The funnel flowchart removes friction at every step. The trial week is the killer feature — it removes the biggest barrier to enrollment: uncertainty. The fee calculator lets parents self-qualify before contacting, saving both sides time. FAQ pre-empts objections.<br>
-    <strong>Watch out for:</strong> Fee estimates that are too low create anger when real bills arrive. Too high and you scare people away before they even visit. The form being a dead-end alert() is a conversion killer — high-intent visitors bounce.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html" class="active">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -54,6 +37,7 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="facilities.html">Facilities</a>
   <a href="curriculum.html">Curriculum</a>
   <a href="admissions.html">Admissions</a>
   <a href="student-life.html">Student Life</a>
@@ -67,7 +51,7 @@
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-032.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -76,6 +60,7 @@
     <div class="page-hero-content">
       <h1>Join Edusky</h1>
       <p>2026 enrollment is open. Here is everything you need to know — clearly, honestly, with no hidden surprises.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -142,11 +127,11 @@
 </section>
 
 <!-- FEES -->
-<section class="section section-alt section-bg-photo" id="fees" style="background-image:url(assets/facebook/fb-025.jpg)">
+<section class="section section-alt section-bg-photo" id="fees" style="background-image:url(assets/facebook/fb-hq-021.jpg)">
   <div class="container">
     <p class="section-label reveal">Fee Structure</p>
     <h2 class="section-title reveal reveal-delay-1">Transparent <span class="st-sunrise">pricing</span></h2>
-    <p class="section-subtitle reveal reveal-delay-2">Annual fees range from <span class="placeholder-note">approximately RM 8,000 to RM 15,000</span> depending on year level and programme options. Below is our general structure.</p>
+    <p class="section-subtitle reveal reveal-delay-2">Total fees for new students range from <strong>RM 5,200 to RM 7,000</strong> depending on year level. Monthly tuition is RM 1,000 across all standards. Below is our full structure.</p>
 
     <div class="table-wrap reveal reveal-delay-2" style="margin-top:32px;max-width:800px">
       <table>
@@ -154,22 +139,22 @@
           <tr><th>Fee Component</th><th>Details</th><th>Amount (RM)</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Registration Fee</strong></td><td>One-time, non-refundable</td><td><span class="placeholder-note">TBD</span></td></tr>
-          <tr><td><strong>Annual Tuition</strong></td><td>Per year, by Standard level</td><td>8,000 – 15,000</td></tr>
-          <tr><td><strong>Deposit</strong></td><td>Refundable, one-term notice</td><td><span class="placeholder-note">TBD</span></td></tr>
-          <tr><td><strong>Materials & Books</strong></td><td>Per year</td><td><span class="placeholder-note">TBD</span></td></tr>
-          <tr><td><strong>Meals (Optional)</strong></td><td>Per term</td><td><span class="placeholder-note">TBD</span></td></tr>
-          <tr><td><strong>Transport (Optional)</strong></td><td>Per term, zone-based</td><td><span class="placeholder-note">TBD</span></td></tr>
-          <tr><td><strong>Uniform</strong></td><td>Set of 2</td><td><span class="placeholder-note">TBD</span></td></tr>
+          <tr><td><strong>Registration Fee</strong></td><td>One-time, non-refundable</td><td>200</td></tr>
+          <tr><td><strong>Security Deposit</strong></td><td>Refundable with one-term notice</td><td>800 – 1,200</td></tr>
+          <tr><td><strong>Monthly Tuition</strong></td><td>Per month, all standards</td><td>1,000</td></tr>
+          <tr><td><strong>Laboratory Fee</strong></td><td>Annual</td><td>300</td></tr>
+          <tr><td><strong>School Uniform</strong></td><td>Set of 5 pcs</td><td>800 – 1,200</td></tr>
+          <tr><td><strong>Extracurricular Fee</strong></td><td>Annual, by programme</td><td>300 – 600</td></tr>
+          <tr><td><strong>December Fee</strong></td><td>Special term fee</td><td>1,000 – 1,300</td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:11px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">Full fee breakdown to be finalised. These ranges reflect current market data for Edusky (source: EduSwasta 2026). Contact us for exact figures for your child's Standard.</span></p>
+    <p style="font-size:11px;color:var(--gray-light);margin-top:12px">Figures from Edusky fee structure brochure. Contact us for exact figures for your child's standard.</p>
 
     <div class="grid-3" style="margin-top:48px">
-      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/instagram/ig-002.jpg)"><div class="card-icon green">&#128105;&#8205;&#128103;&#8205;&#128102;</div><h3>Sibling Discount</h3><p>5–10% off for second child, 10–15% for third. Ask us about family packages.</p></div>
-      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/facebook/fb-169.jpg)"><div class="card-icon sky">&#127942;</div><h3>Scholarship</h3><p>Partial scholarships available on a case-by-case basis. Contact Dr. Sean directly to discuss.</p></div>
-      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/tiktok/tt-055.jpg)"><div class="card-icon sunrise">&#128176;</div><h3>Referral Credit</h3><p>Current parents who refer a new enrollment receive RM 200–500 fee credit. The cheapest, most trusted marketing in education.</p></div>
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/instagram/ig-hq-031.jpg)"><div class="card-icon green">&#128105;&#8205;&#128103;&#8205;&#128102;</div><h3>Sibling Discount</h3><p>5–10% off for second child, 10–15% for third. Ask us about family packages.</p></div>
+      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/facebook/fb-hq-002.jpg)"><div class="card-icon sky">&#127942;</div><h3>Scholarship</h3><p>Partial scholarships available on a case-by-case basis. Contact Dr. Sean directly to discuss.</p></div>
+      <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/tiktok/tt-hq-032.jpg)"><div class="card-icon sunrise">&#128176;</div><h3>Referral Credit</h3><p>Current parents who refer a new enrollment receive RM 200–500 fee credit. Our best ambassadors are the families who already know what small feels like.</p></div>
     </div>
   </div>
 </section>
@@ -188,13 +173,13 @@
         <label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="calcSibling" onchange="updateFee()"> Sibling discount (10%)</label>
       </div>
       <div class="fee-calc-total" style="margin-top:24px">Estimated Total: <strong id="feeTotal">RM 0</strong></div>
-      <p style="font-size:11px;color:var(--gray-light);margin-top:12px"><span class="placeholder-note">Calculator uses estimated figures. Contact us for exact pricing.</span></p>
+      <p style="font-size:11px;color:var(--gray-light);margin-top:12px">Figures are estimates. Contact us for exact pricing tailored to your child's standard.</p>
     </div>
   </div>
 </section>
 
 <!-- BADGES -->
-<section class="section section-dark section-bg-photo" style="background-image:url(assets/tiktok/tt-005.jpg)">
+<section class="section section-dark section-bg-photo" style="background-image:url(assets/tiktok/tt-hq-021.jpg)">
   <div class="container">
     <p class="section-label reveal">Trust</p>
     <h2 class="section-title reveal reveal-delay-1" style="color:#fff">Badges & <span class="st-sunrise">Recognition</span></h2>
@@ -215,13 +200,13 @@
 
     <div style="max-width:750px;margin-top:32px">
       <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What curriculum does Edusky follow?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">We follow the KSSR (Kurikulum Standard Sekolah Rendah), Malaysia's national primary curriculum approved by the Ministry of Education. Our SMIPS registration code is JDA1001. Medium of instruction is Bahasa Malaysia with English.</div></div></div>
-      <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What are the school hours?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">School runs Monday to Friday, 8:00 AM to 6:00 PM. Extended hours accommodate working parents — your child is supervised the entire time.</div></div></div>
-      <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What is the maximum class size?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">We maintain a maximum teacher-student ratio of approximately 1:15. This is core to our philosophy — every child is known individually, not processed in batches.</div></div></div>
+      <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What are the school hours?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">School runs Mon–Thu 8:30 AM – 1:00 PM with Enrichment 2:00 PM – 4:00 PM, and Fri 8:30 AM – 12:00 PM.</div></div></div>
+      <div class="accordion reveal reveal-delay-1"><button class="accordion-header">What is the maximum class size?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">We maintain a maximum teacher-student ratio of approximately 1:15. This is core to our philosophy — every child is known individually, taught personally, and supported fully.</div></div></div>
       <div class="accordion reveal reveal-delay-2"><button class="accordion-header">Does Edusky accept children who need extra support?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Yes. We are an intentionally small school, which means teachers have the time and space to understand each child individually. Children who learn at a different pace, need extra patience, or benefit from a calmer environment often thrive here. Our small class sizes let us differentiate instruction naturally — not as a special programme, but as standard practice.</div></div></div>
       <div class="accordion reveal reveal-delay-2"><button class="accordion-header">What ages does Edusky accept?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Standard 1 through Standard 6, typically ages 7 to 12. For younger children or secondary-level needs, please contact us — we can discuss options within the Edusky Education Group ecosystem.</div></div></div>
       <div class="accordion reveal reveal-delay-2"><button class="accordion-header">Is there a trial period?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Yes. We offer a trial week — your child attends real classes before you make any long-term commitment. This removes the biggest barrier to enrollment: uncertainty. You see if Edusky fits; your child experiences it firsthand.</div></div></div>
-      <div class="accordion reveal reveal-delay-3"><button class="accordion-header">How do I pay fees?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Fees can be paid by bank transfer, cheque, or online banking. We issue official receipts for all payments. <span class="placeholder-note">Payment details to be confirmed.</span></div></div></div>
-      <div class="accordion reveal reveal-delay-3"><button class="accordion-header">Is there after-school care?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Our school day runs until 6:00 PM, which already covers working-parent hours. After-school tuition and enrichment programmes are available on-site for children who stay beyond regular hours.</div></div></div>
+      <div class="accordion reveal reveal-delay-3"><button class="accordion-header">How do I pay fees?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Fees can be paid by bank transfer, cheque, or online banking. We issue official receipts for all payments.</div></div></div>
+      <div class="accordion reveal reveal-delay-3"><button class="accordion-header">Is there after-school care?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Enrichment programmes and after-school tuition are available on-site for children who stay beyond regular hours.</div></div></div>
       <div class="accordion reveal reveal-delay-3"><button class="accordion-header">Are you affiliated with Wilford Private School?<span class="acc-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">No. Edusky and Wilford are separate, independently operated schools. We happen to be on the same street — we are at No. 71, they are at No. 65. We respect our neighbours and focus on what makes Edusky unique: our micro-school philosophy.</div></div></div>
     </div>
   </div>
@@ -233,8 +218,8 @@
     <p class="section-label reveal">Visit Us</p>
     <h2 class="section-title reveal reveal-delay-1">Upcoming <span class="st-sunrise">Open Days</span></h2>
     <div class="grid-3" style="margin-top:32px">
-      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-025.jpg)"><h3>12 July 2026</h3><p>Saturday morning tour. Meet teachers, see classrooms, ask questions. No appointment needed.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2012%20July" class="btn btn-outline" target="_blank">RSVP</a></div>
-      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/instagram/ig-010.jpg)"><h3>15 August 2026</h3><p>Enrolment clinic. Bring documents, get on-the-spot assessment, and secure a place for 2026.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2015%20August" class="btn btn-outline" target="_blank">RSVP</a></div>
+      <div class="card card-bg reveal reveal-delay-1" style="background-image:url(assets/facebook/fb-hq-013.jpg)"><h3>12 July 2026</h3><p>Saturday morning tour. Meet teachers, see classrooms, ask questions. No appointment needed.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2012%20July" class="btn btn-outline" target="_blank">RSVP</a></div>
+      <div class="card card-bg reveal reveal-delay-2" style="background-image:url(assets/instagram/ig-hq-022.jpg)"><h3>15 August 2026</h3><p>Enrolment clinic. Bring documents, get on-the-spot assessment, and secure a place for 2026.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%2015%20August" class="btn btn-outline" target="_blank">RSVP</a></div>
       <div class="card card-bg reveal reveal-delay-3" style="background-image:url(assets/tiktok/tt-055.jpg)"><h3>5 September 2026</h3><p>Student-led campus tour. See the school through the eyes of current students.</p><a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20register%20for%20the%20open%20day%20on%205%20September" class="btn btn-outline" target="_blank">RSVP</a></div>
     </div>
   </div>
@@ -249,8 +234,8 @@
     <div class="reveal reveal-delay-3" style="margin-top:24px">
       <div style="max-width:700px;margin:0 auto;border-radius:16px;overflow:hidden;background:var(--gray-bg);min-height:320px;display:flex;align-items:center;justify-content:center;flex-direction:column">
         <span style="font-size:48px;margin-bottom:12px">&#127909;</span>
-        <p style="color:var(--gray)"><span class="placeholder-note">Virtual tour video placeholder</span></p>
-        <p style="font-size:12px;color:var(--gray-light);margin-top:8px"><span class="placeholder-note">Film campus walkthrough and upload to YouTube / embed here</span></p>
+        <p style="color:var(--gray)">Virtual tour coming soon.</p>
+        <p style="font-size:12px;color:var(--gray-light);margin-top:8px">In the meantime, book a real visit and see the campus in person.</p>
       </div>
     </div>
   </div>
@@ -267,7 +252,7 @@
         <div style="display:flex;flex-direction:column;gap:12px;color:rgba(255,255,255,0.8);font-size:14px">
           <p><strong>WhatsApp:</strong> <a href="https://wa.me/60167733518" style="color:var(--sunrise)">016-773 3518</a></p>
           <p><strong>Phone:</strong> <a href="tel:+6073642678" style="color:var(--sunrise)">07-364 2678</a></p>
-          <p><strong>Email:</strong> <a href="mailto:enquiries@edusky.com.my" style="color:var(--sunrise)">enquiries@edusky.com.my</a></p>
+          <p><strong>Email:</strong> <a href="mailto:eduskyacademy@gmail.com" style="color:var(--sunrise)">eduskyacademy@gmail.com</a></p>
         </div>
       </div>
       <div class="card reveal reveal-delay-1" style="padding:36px">
@@ -278,7 +263,6 @@
         <div class="form-group"><label for="contactNumber">Contact Number *</label><input type="tel" id="contactNumber" placeholder="e.g., 012-345 6789"></div>
         <div class="form-group"><label for="message">Message (Optional)</label><textarea id="message" placeholder="Tell us anything you'd like us to know..."></textarea></div>
         <button class="btn btn-sky" style="width:100%" onclick="alert('Thank you! We will contact you within 24 hours. For immediate inquiries, please WhatsApp us at 016-773 3518.')">Submit Inquiry</button>
-        <p style="font-size:11px;color:var(--gray-light);margin-top:12px;text-align:center"><span class="placeholder-note">This form is a prototype. Connect to Google Forms or backend for live data collection.</span></p>
       </div>
     </div>
   </div>
@@ -287,18 +271,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS: JDA1001 &middot; MOE-Registered</p></div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Heights, 81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" target="_blank">&#9835;</a>
-          <a href="https://www.youtube.com/@eduskylearningacademy6728" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Height, 81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a>
+          <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>

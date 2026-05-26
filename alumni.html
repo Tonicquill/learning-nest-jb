@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Alumni profiles, "Where Are They Now" stories, achievement wall, story submission form.<br>
-    <strong>Already have:</strong> Profile structure, form prototype, trophy grid.<br>
-    <strong>Gaps:</strong> No alumni data. First graduating cohort is years away (Std 6 now).<br>
-    <strong>To fill:</strong> Reach out to early leavers/transfer students as interim alumni. Add "Share Your Story" to WhatsApp community.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Alumni are the ultimate trust signal — proof that Edusky graduates become capable young people. Even a modest profile ("now at SMK XYZ, loves robotics") answers the parent question "what happens after Edusky?" The alumni form collects stories we can turn into blog content. Linking to Edusky Education Group shows parents there is a pipeline beyond primary.<br>
-    <strong>Watch out for:</strong> Do not fabricate alumni. An empty alumni page is better than a fake one — parents will verify. Get consent before posting any student name or photo. Respect privacy of transfer students who may not want to be featured.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -52,13 +35,13 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-033.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -67,6 +50,7 @@
     <div class="page-hero-content">
       <h1>Alumni Network</h1>
       <p>Once an Edusky student, always part of the family. See where our graduates go.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -80,35 +64,35 @@
     <div class="grid-3" style="margin-top:36px">
       <div class="alumni-card reveal reveal-delay-1">
         <div class="alumni-avatar">&#127891;</div>
-        <h3>First Graduate Spot</h3>
-        <p class="alumni-meta">Class of 2028 &middot; <span class="placeholder-note">Placeholder</span></p>
-        <p><span class="placeholder-note">First alumni profile to be added here.</span> This card will feature the graduate's photo, current secondary school, and a quote about their Edusky experience.</p>
+        <h3>Our Story Is Being Written</h3>
+        <p class="alumni-meta">Class of 2028 &middot; Coming soon</p>
+        <p>Edusky's first graduates are still with us, growing every day. As they move on to secondary school and beyond, their stories will appear here.</p>
       </div>
       <div class="alumni-card reveal reveal-delay-2">
         <div class="alumni-avatar">&#127891;</div>
         <h3>Future Leader</h3>
-        <p class="alumni-meta">Class of 2029 &middot; <span class="placeholder-note">Placeholder</span></p>
-        <p><span class="placeholder-note">Profile to be provided.</span> Showcase notable achievements, scholarships, or unique paths taken after Edusky.</p>
+        <p class="alumni-meta">Class of 2029 &middot; Coming soon</p>
+        <p>Every path is worth celebrating. When our second cohort graduates, we will feature their achievements, scholarships, and unique journeys here.</p>
       </div>
       <div class="alumni-card reveal reveal-delay-3">
         <div class="alumni-avatar">&#127891;</div>
         <h3>Creative Path</h3>
-        <p class="alumni-meta">Class of 2030 &middot; <span class="placeholder-note">Placeholder</span></p>
-        <p><span class="placeholder-note">Profile to be provided.</span> Art, music, tech, entrepreneurship — every path is worth celebrating.</p>
+        <p class="alumni-meta">Class of 2030 &middot; Coming soon</p>
+        <p>Art, music, tech, entrepreneurship. We follow our students wherever their dreams take them. Profiles will be added as they unfold.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-169.jpg)">
+<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-hq-005.jpg)">
   <div class="container">
     <p class="section-label reveal">Achievements</p>
     <h2 class="section-title reveal reveal-delay-1">Alumni <span class="st-sunrise">Achievement Wall</span></h2>
     <div class="trophy-grid" style="margin-top:32px">
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127942;</div><h4>Scholarship Award</h4><p><span class="placeholder-note">Pending first graduate</span></p></div>
-      <div class="trophy-card reveal reveal-delay-2"><div class="trophy-icon">&#127941;</div><h4>Academic Excellence</h4><p><span class="placeholder-note">Pending first graduate</span></p></div>
-      <div class="trophy-card reveal reveal-delay-3"><div class="trophy-icon">&#127908;</div><h4>Arts Recognition</h4><p><span class="placeholder-note">Pending first graduate</span></p></div>
-      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127939;</div><h4>Sports Medal</h4><p><span class="placeholder-note">Pending first graduate</span></p></div>
+      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127942;</div><h4>Scholarship Award</h4><p>We aspire to see our graduates earn scholarships to top secondary schools and beyond.</p></div>
+      <div class="trophy-card reveal reveal-delay-2"><div class="trophy-icon">&#127941;</div><h4>Academic Excellence</h4><p>Recognition for outstanding academic achievement and growth after leaving Edusky.</p></div>
+      <div class="trophy-card reveal reveal-delay-3"><div class="trophy-icon">&#127908;</div><h4>Arts Recognition</h4><p>Celebrating creative accomplishments in music, visual arts, drama, and media.</p></div>
+      <div class="trophy-card reveal reveal-delay-1"><div class="trophy-icon">&#127939;</div><h4>Sports Medal</h4><p>Honouring athletic achievement and sportsmanship at secondary level and beyond.</p></div>
     </div>
   </div>
 </section>
@@ -122,7 +106,7 @@
         <p style="color:var(--gray);line-height:1.7;margin-bottom:24px">We want to hear from you. Tell us where you are, what you're doing, and how Edusky shaped your path. Your story inspires the next generation.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
           <a href="https://wa.me/60167733518?text=Hi%2C%20I%20am%20an%20Edusky%20alumni%20and%20want%20to%20share%20my%20story" class="btn btn-sky" target="_blank">Share via WhatsApp</a>
-          <a href="mailto:enquiries@edusky.com.my?subject=Alumni%20Story" class="btn btn-outline">Email Us</a>
+          <a href="mailto:eduskyacademy@gmail.com?subject=Alumni%20Story" class="btn btn-outline">Email Us</a>
         </div>
       </div>
       <div class="card reveal reveal-delay-1" style="padding:36px">
@@ -131,7 +115,7 @@
         <div class="form-group"><label>Graduation Year</label><input type="text" placeholder="e.g., 2028"></div>
         <div class="form-group"><label>Current School / Work</label><input type="text" placeholder="Where are you now?"></div>
         <div class="form-group"><label>Your Story</label><textarea placeholder="A few sentences about your journey..."></textarea></div>
-        <button class="btn btn-sky" style="width:100%" onclick="alert('Thank you! This form is a prototype. We will contact you soon.')">Submit Story</button>
+        <button class="btn btn-sky" style="width:100%" onclick="alert('Thank you for sharing your story! We will contact you soon.')">Submit Story</button>
       </div>
     </div>
   </div>
@@ -149,19 +133,19 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p></div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Heights, 81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Height, 81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="lightbox" id="lightbox"><div class="lightbox-close" id="lightboxClose">&times;</div><div class="lightbox-prev" id="lightboxPrev">&#8249;</div><img class="lightbox-img" id="lightboxImg" src="" alt=""><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-next" id="lightboxNext">&#8250;</div></div>
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
-<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>
 </body>

@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Calendar of upcoming and past events — open days, camps, workshops, concerts.<br>
-    <strong>Already have:</strong> Open Day cards, camp cards, workshop cards, past archive structure.<br>
-    <strong>Gaps:</strong> Dates are preliminary. No live registration. Past archive empty. No confirmed speakers.<br>
-    <strong>To fill:</strong> Confirm Q3/Q4 event dates with Dr. Sean. Set up WhatsApp RSVP or Eventbrite. Book speakers.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Events are lead magnets. Open days convert browsers into visitors. Holiday camps generate non-enrolment revenue and expose non-Edusky families to the brand. The calendar creates urgency: "next open day is 12 July — I need to decide by then." Each event is a new page Google can index.<br>
-    <strong>Watch out for:</strong> Announcing events without confirmed dates = broken trust if cancelled. Empty past-archive makes us look like we never do anything. Overpromising speakers who bail = disappointment.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -52,13 +35,13 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-037.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -67,6 +50,7 @@
     <div class="page-hero-content">
       <h1>School Events</h1>
       <p>Open days, camps, concerts, and community moments. Something is always happening at Edusky.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -85,7 +69,7 @@
     <div id="calGrid" class="calendar-view active">
       <div class="grid-3" style="margin-top:24px">
         <article class="event-card reveal reveal-delay-1">
-          <div class="event-card-img"><img src="assets/tiktok/tt-055.jpg" alt="Open Day" onerror="this.style.display='none';this.parentElement.textContent='Open Day'"></div>
+          <div class="event-card-img"><img src="assets/tiktok/tt-hq-035.jpg" alt="Open Day" onerror="this.style.display='none';this.parentElement.textContent='Open Day'"></div>
           <div class="event-card-body">
             <span class="event-date">&#128197; 12 July 2026</span>
             <h3>Open Day &amp; Campus Tour</h3>
@@ -95,7 +79,7 @@
           </div>
         </article>
         <article class="event-card reveal reveal-delay-2">
-          <div class="event-card-img"><img src="assets/facebook/fb-169.jpg" alt="Holiday Camp" onerror="this.style.display='none';this.parentElement.textContent='Holiday Camp'"></div>
+          <div class="event-card-img"><img src="assets/facebook/fb-hq-024.jpg" alt="Holiday Camp" onerror="this.style.display='none';this.parentElement.textContent='Holiday Camp'"></div>
           <div class="event-card-body">
             <span class="event-date">&#128197; 18–22 Aug 2026</span>
             <h3>Young Leaders Holiday Camp</h3>
@@ -105,7 +89,7 @@
           </div>
         </article>
         <article class="event-card reveal reveal-delay-3">
-          <div class="event-card-img"><img src="assets/instagram/ig-156.jpg" alt="Creative Arts" onerror="this.style.display='none';this.parentElement.textContent='Creative Arts'"></div>
+          <div class="event-card-img"><img src="assets/instagram/ig-hq-042.jpg" alt="Creative Arts" onerror="this.style.display='none';this.parentElement.textContent='Creative Arts'"></div>
           <div class="event-card-body">
             <span class="event-date">&#128197; 25–29 Aug 2026</span>
             <h3>Creative Arts Camp</h3>
@@ -115,7 +99,7 @@
           </div>
         </article>
         <article class="event-card reveal reveal-delay-1">
-          <div class="event-card-img"><img src="assets/facebook/fb-020.jpg" alt="Concert" onerror="this.style.display='none';this.parentElement.textContent='Concert'"></div>
+          <div class="event-card-img"><img src="assets/facebook/fb-hq-043.jpg" alt="Concert" onerror="this.style.display='none';this.parentElement.textContent='Concert'"></div>
           <div class="event-card-body">
             <span class="event-date">&#128197; 14 Nov 2026</span>
             <h3>Mid-Year Concert 2026</h3>
@@ -154,13 +138,40 @@
   </div>
 </section>
 
-<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-169.jpg)">
+<section class="section section-alt section-bg-photo" style="background-image:url(assets/facebook/fb-hq-023.jpg)">
   <div class="container">
     <p class="section-label reveal">Past Events</p>
     <h2 class="section-title reveal reveal-delay-1">Moments We <span class="st-sunrise">Shared</span></h2>
     <div class="grid-3" style="margin-top:32px">
       <div class="event-card reveal reveal-delay-1">
-        <div class="event-card-img"><img src="assets/facebook/fb-169.jpg" alt="Hari Raya Celebration" onerror="this.style.display='none';this.parentElement.textContent='Hari Raya'"></div>
+        <div class="event-card-img"><img src="assets/instagram/ig-hq-026.jpg" alt="Teacher's Day" onerror="this.style.display='none';this.parentElement.textContent='Teacher\'s Day'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; 15 May 2026</span>
+          <h3>Teacher's Day Celebration</h3>
+          <p>Students celebrated the heartbeat of our school — our dedicated educators. From "Canteen" chronicles to classroom drama, performances that showed deep appreciation.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-2">
+        <div class="event-card-img"><img src="assets/facebook/fb-020.jpg" alt="Mother's Day" onerror="this.style.display='none';this.parentElement.textContent='Mother\'s Day'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; 9 May 2026</span>
+          <h3>Mother's Day Celebration</h3>
+          <p>Honouring the first and most important educators in our students' lives. Cards, performances, and heartfelt moments with Edusky moms.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-3">
+        <div class="event-card-img"><img src="assets/tiktok/tt-055.jpg" alt="Labour Day" onerror="this.style.display='none';this.parentElement.textContent='Labour Day'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; 30 Apr 2026</span>
+          <h3>Labour Day Celebration</h3>
+          <p>Celebrating the strength of every hand, the dedication of every heart, and the spirit of every worker. Student crafts and appreciation activities.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-1">
+        <div class="event-card-img"><img src="assets/facebook/fb-hq-024.jpg" alt="Hari Raya Celebration" onerror="this.style.display='none';this.parentElement.textContent='Hari Raya'"></div>
         <div class="event-card-body">
           <span class="event-date">&#128197; 31 Mar 2026</span>
           <h3>Selamat Hari Raya Celebration</h3>
@@ -169,7 +180,7 @@
         </div>
       </div>
       <div class="event-card reveal reveal-delay-2">
-        <div class="event-card-img"><img src="assets/tiktok/tt-055.jpg" alt="First Assessment" onerror="this.style.display='none';this.parentElement.textContent='Assessment'"></div>
+        <div class="event-card-img"><img src="assets/tiktok/tt-062.jpg" alt="First Assessment" onerror="this.style.display='none';this.parentElement.textContent='Assessment'"></div>
         <div class="event-card-body">
           <span class="event-date">&#128197; Mar 2026</span>
           <h3>First Assessment 2026</h3>
@@ -178,7 +189,43 @@
         </div>
       </div>
       <div class="event-card reveal reveal-delay-3">
-        <div class="event-card-img"><img src="assets/instagram/ig-010.jpg" alt="Culinary Art Club" onerror="this.style.display='none';this.parentElement.textContent='Culinary'"></div>
+        <div class="event-card-img"><img src="assets/facebook/fb-hq-012.jpg" alt="Year-End Concert" onerror="this.style.display='none';this.parentElement.textContent='Concert'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; Nov 2025</span>
+          <h3>Year-End Concert 2025</h3>
+          <p>White &amp; Denim themed concert. Drama, musical acts, dances, and creative displays. Every child stepped onto the stage with confidence.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-1">
+        <div class="event-card-img"><img src="assets/facebook/fb-032.jpg" alt="Deepavali" onerror="this.style.display='none';this.parentElement.textContent='Deepavali'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; Oct 2025</span>
+          <h3>Deepavali Celebration</h3>
+          <p>Wishing you and your family a bright and joyful Deepavali filled with love, laughter, and light. Students celebrated the festival of lights with crafts and cultural sharing.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-2">
+        <div class="event-card-img"><img src="assets/tiktok/tt-063.jpg" alt="Merdeka" onerror="this.style.display='none';this.parentElement.textContent='Merdeka'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; Aug 2025</span>
+          <h3>Retro Fever: Merdeka Edition</h3>
+          <p>KITALAH JUARA! MERDEKA! MERDEKA! MERDEKA! Students celebrated Malaysia's independence with retro-themed costumes, performances, and patriotic spirit.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-3">
+        <div class="event-card-img"><img src="assets/facebook/fb-033.jpg" alt="10 Years" onerror="this.style.display='none';this.parentElement.textContent='10 Years'"></div>
+        <div class="event-card-body">
+          <span class="event-date">&#128197; 2025</span>
+          <h3>10 Years of Edusky</h3>
+          <p>Celebrating 10 years of fun and engaging learning at Edusky Private School. A decade of small classes, big hearts, and countless student success stories.</p>
+          <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
+        </div>
+      </div>
+      <div class="event-card reveal reveal-delay-1">
+        <div class="event-card-img"><img src="assets/instagram/ig-018.jpg" alt="Culinary Art Club" onerror="this.style.display='none';this.parentElement.textContent='Culinary'"></div>
         <div class="event-card-body">
           <span class="event-date">&#128197; May 2025</span>
           <h3>Culinary Art Club: Serviette Folding</h3>
@@ -186,17 +233,17 @@
           <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
         </div>
       </div>
-      <div class="event-card reveal reveal-delay-1">
-        <div class="event-card-img"><img src="assets/facebook/fb-020.jpg" alt="Sack Race" onerror="this.style.display='none';this.parentElement.textContent='Sports'"></div>
+      <div class="event-card reveal reveal-delay-2">
+        <div class="event-card-img"><img src="assets/facebook/fb-034.jpg" alt="Origami Sampan" onerror="this.style.display='none';this.parentElement.textContent='Origami'"></div>
         <div class="event-card-body">
           <span class="event-date">&#128197; May 2025</span>
-          <h3>Sack Race Day</h3>
-          <p>Students competed in sack races — Dhani, Jerson, and Danish giving their best. Sportsmanship and laughter filled the field.</p>
+          <h3>Origami Sampan Craft</h3>
+          <p>Proud creations from our little artists. Students crafted origami sampan boats as part of Pendidikan Kesenian, blending tradition with hands-on creativity.</p>
           <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
         </div>
       </div>
-      <div class="event-card reveal reveal-delay-2">
-        <div class="event-card-img"><img src="assets/tiktok/tt-005.jpg" alt="Poem Recital" onerror="this.style.display='none';this.parentElement.textContent='Poetry'"></div>
+      <div class="event-card reveal reveal-delay-3">
+        <div class="event-card-img"><img src="assets/tiktok/tt-hq-025.jpg" alt="Poem Recital" onerror="this.style.display='none';this.parentElement.textContent='Poetry'"></div>
         <div class="event-card-body">
           <span class="event-date">&#128197; May 2025</span>
           <h3>Poetry Recital: Tadpoles</h3>
@@ -204,12 +251,12 @@
           <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
         </div>
       </div>
-      <div class="event-card reveal reveal-delay-3">
-        <div class="event-card-img"><img src="assets/facebook/fb-025.jpg" alt="Assembly" onerror="this.style.display='none';this.parentElement.textContent='Assembly'"></div>
+      <div class="event-card reveal reveal-delay-1">
+        <div class="event-card-img"><img src="assets/instagram/ig-hq-033.jpg" alt="Deepavali 2024" onerror="this.style.display='none';this.parentElement.textContent='Deepavali'"></div>
         <div class="event-card-body">
-          <span class="event-date">&#128197; Jan 2025</span>
-          <h3>School Assembly</h3>
-          <p>Weekly assembly on 20 January 2025. Student presentations, announcements, and community building in the school hall.</p>
+          <span class="event-date">&#128197; Oct 2024</span>
+          <h3>Deepavali 2024</h3>
+          <p>Wish you a lovely festival filled with joy and prosperity. Students celebrated Deepavali with traditional crafts, colourful rangoli, and festive sharing.</p>
           <a href="gallery.html" class="btn btn-outline" style="padding:10px 20px;font-size:13px">View Photos</a>
         </div>
       </div>
@@ -220,18 +267,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p></div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Heights, 81100 Johor Bahru</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1, Taman Adda Height, 81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
-<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience.</span><button id="cookieAccept">Got it</button></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
+<div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
 <script src="assets/main.js?v=11"></script>
 </body>

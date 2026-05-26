@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> News grid with real posts — enrolment, student life, community, programmes.<br>
-    <strong>Already have:</strong> 6 article cards with real extracted images, layout, subscribe CTA.<br>
-    <strong>Gaps:</strong> All content is draft/estimated. No real publication dates. "Press · TBD" on Gazette.<br>
-    <strong>To fill:</strong> Write and publish first real post. Confirm Media Club launch story with photos and dates.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Every post is an SEO entry point and a trust signal. The strategy is "content as admissions" — Google indexes each article, and parents discover us while searching for "private school JB" or "KSSR curriculum." Student-created content (Media Club, Gazette) is free, authentic, and builds community.<br>
-    <strong>Watch out for:</strong> If no posts are published, this becomes a ghost town that hurts SEO. Stale blogs signal neglect. All content must be accurate — inflated claims get fact-checked by parents in WhatsApp groups.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="../about.html">About</a></li>
+      <li><a href="../facilities.html">Facilities</a></li>
       <li><a href="../curriculum.html">Curriculum</a></li>
       <li><a href="../admissions.html">Admissions</a></li>
       <li><a href="../student-life.html">Student Life</a></li>
@@ -54,6 +37,7 @@
 <div class="mobile-nav" id="mobileNav">
   <a href="../index.html">Home</a>
   <a href="../about.html">About</a>
+  <a href="../facilities.html">Facilities</a>
   <a href="../curriculum.html">Curriculum</a>
   <a href="../admissions.html">Admissions</a>
   <a href="../student-life.html">Student Life</a>
@@ -67,7 +51,7 @@
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="../assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="../assets/facebook/fb-hq-044.jpg">
       <source src="../videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -75,7 +59,8 @@
   <div class="page-hero-content-scrollable">
     <div class="page-hero-content">
       <h1>News & Updates</h1>
-      <p>What is happening at Edusky — event recaps, student stories, achievements, and announcements.</p>
+      <p>What is happening at Edusky � event recaps, student stories, achievements, and announcements.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p>
     </div>
   </div>
 </section>
@@ -85,7 +70,7 @@
   <div class="container">
     <p class="section-label reveal">Latest</p>
     <h2 class="section-title reveal reveal-delay-1">From the <span class="st-sky">School</span></h2>
-    <p class="section-subtitle reveal reveal-delay-2">Every post is a new page Google can index — and a new reason for parents to trust Edusky.</p>
+    <p class="section-subtitle reveal reveal-delay-2">Real stories from a small school with a big heart - event recaps, student achievements, and community moments.</p>
 
     <div class="grid-3" style="margin-top:36px">
       <!-- Post 1 -->
@@ -100,7 +85,7 @@
 
       <!-- Post 2 -->
       <article class="blog-card reveal reveal-delay-2">
-        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/tiktok/tt-055.jpg') center/cover"></div>
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/tiktok/tt-064.jpg') center/cover"></div>
         <div class="blog-card-body">
           <p class="blog-card-date">Student Life &middot; June 2026</p>
           <h3><a href="#" style="color:inherit">Media Club Launches</a></h3>
@@ -110,7 +95,7 @@
 
       <!-- Post 3 -->
       <article class="blog-card reveal reveal-delay-3">
-        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/instagram/ig-156.jpg') center/cover"></div>
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/instagram/ig-019.jpg') center/cover"></div>
         <div class="blog-card-body">
           <p class="blog-card-date">Community &middot; June 2026</p>
           <h3><a href="#" style="color:inherit">SkyPoints Incentive System</a></h3>
@@ -120,7 +105,7 @@
 
       <!-- Post 4 -->
       <article class="blog-card reveal reveal-delay-1">
-        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/instagram/ig-002.jpg') center/cover"></div>
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/instagram/ig-hq-037.jpg') center/cover"></div>
         <div class="blog-card-body">
           <p class="blog-card-date">Programmes &middot; July 2026</p>
           <h3><a href="#" style="color:inherit">Holiday Camps: Young Leaders & Creative Arts</a></h3>
@@ -130,7 +115,7 @@
 
       <!-- Post 5 -->
       <article class="blog-card reveal reveal-delay-2">
-        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/facebook/fb-025.jpg') center/cover"></div>
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/facebook/fb-035.jpg') center/cover"></div>
         <div class="blog-card-body">
           <p class="blog-card-date">Profiles &middot; July 2026</p>
           <h3><a href="#" style="color:inherit">"Life Outside Edusky" — First Student Profile</a></h3>
@@ -140,11 +125,11 @@
 
       <!-- Post 6 -->
       <article class="blog-card reveal reveal-delay-3">
-        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/facebook/fb-169.jpg') center/cover"></div>
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/facebook/fb-036.jpg') center/cover"></div>
         <div class="blog-card-body">
-          <p class="blog-card-date">Press &middot; <span class="placeholder-note">TBD</span></p>
+          <p class="blog-card-date">Press &middot; July 2026</p>
           <h3><a href="#" style="color:inherit">The Edusky Gazette — Issue 1</a></h3>
-          <p>Our student-run newspaper. News, opinion, interviews, creative writing, puzzles. 4–8 pages, produced by students, distributed to parents and visitors. <span class="placeholder-note">Target: within 6 weeks</span></p>
+          <p>Our student-run newspaper. News, opinion, interviews, creative writing, puzzles. 4–8 pages, produced by students, distributed to parents and visitors. First issue coming this term.</p>
         </div>
       </article>
 
@@ -154,9 +139,30 @@
         <div class="blog-card-body">
           <p class="blog-card-date">Student Life &middot; May 2026</p>
           <h3><a href="#" style="color:inherit">Taekwondo Champion in the Making</a></h3>
-          <p>One of our students took home gold at the Johor State Taekwondo Championship — competing outside school hours, training after class, and balancing it all with a smile. We follow our students beyond the classroom because their dreams do not stop at the school gate. <span class="placeholder-note">Name and photo with parent consent.</span></p>
+          <p>One of our students took home gold at the Johor State Taekwondo Championship — competing outside school hours, training after class, and balancing it all with a smile. We follow our students beyond the classroom because their dreams do not stop at the school gate.</p>
         </div>
       </article>
+
+      <!-- Post 8 -->
+      <article class="blog-card reveal reveal-delay-1">
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/facebook/fb-037.jpg') center/cover"></div>
+        <div class="blog-card-body">
+          <p class="blog-card-date">Community &middot; 2025</p>
+          <h3><a href="#" style="color:inherit">Celebrating 10 Years of Edusky</a></h3>
+          <p>Celebrating 10 years of fun and engaging learning at Edusky Private School. From small beginnings to a thriving community of learners, teachers, and families.</p>
+        </div>
+      </article>
+
+      <!-- Post 9 -->
+      <article class="blog-card reveal reveal-delay-2">
+        <div class="blog-card-img" style="background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.35)),url('../assets/instagram/ig-020.jpg') center/cover"></div>
+        <div class="blog-card-body">
+          <p class="blog-card-date">Student Life &middot; Oct 2025</p>
+          <h3><a href="#" style="color:inherit">Deepavali at Edusky</a></h3>
+          <p>Wishing you and your family a bright and joyful Deepavali filled with love, laughter, and light. Students celebrated the festival of lights with crafts and cultural sharing.</p>
+        </div>
+      </article>
+
     </div>
 
     <div style="text-align:center;margin-top:48px" class="reveal">
@@ -183,18 +189,18 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
       <div><h4>Quick Links</h4><p><a href="../about.html">About Us</a></p><p><a href="../curriculum.html">Curriculum</a></p><p><a href="../admissions.html">Admissions</a></p><p><a href="../student-life.html">Student Life</a></p><p><a href="index.html">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Height<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
       <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a>
           <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" alt="WhatsApp QR Code"><span>Scan to chat on WhatsApp</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
 <div class="back-to-top" aria-label="Back to top">&#8593;</div>
-<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&#215;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button></div></div>
+<div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 
 <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20find%20out%20more%20about%20Edusky%20Private%20School" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>

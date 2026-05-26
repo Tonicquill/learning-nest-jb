@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<div class="planning-overlay" id="planningOverlay"></div>
-<div class="planning-modal" id="planningModal">
-  <div class="planning-badge">NOT FOR PUBLIC — PLANNING DRAFT</div>
-  <h2>Builder Team Briefing</h2>
-  <p>This site is currently a comprehensive planning draft. Review the sections below before proceeding.</p>
-  <div class="planning-list">
-    <strong>Plans:</strong> Masonry grid of curated images across 6 categories, filter tabs, lightbox.<br>
-    <strong>Already have:</strong> ~60 curated images, lightbox JS, CSS masonry, category filters.<br>
-    <strong>Gaps:</strong> Some images are low-res Facebook thumbnails. Missing captions. Not all 700+ images included.<br>
-    <strong>To fill:</strong> Replace thumbnail-only images with full-res originals. Write captions per image. Expand categories.
-  </div>
-  <div class="planning-rationale">
-    <strong>Why this matters:</strong> Visual proof beats any copy. 60 real images of smiling children and actual classrooms remove doubt faster than a thousand words. Parents filter by category to find what THEY care about: a sports parent checks "Outdoor/Sports," an arts parent checks "Celebrations." It is self-service persuasion.<br>
-    <strong>Watch out for:</strong> Low-res thumbnails make us look cheap. Images without media consent are a legal risk. A gallery full of stock photos kills authenticity — every photo must be ours.
-    <br><strong>How hero videos work:</strong> The pinned video hero uses a placeholder stock video. Drop any MP4 or image into the <code>videos/</code> folder, update the filename in the HTML, and the scroll effect works automatically. No coding needed. The ECA page already uses real Edusky footage as a demo.
-  </div>
-  <button class="btn-planning" id="planningClose">I Understand — Enter Site</button>
-</div>
 
 <nav class="nav scrolled" id="nav">
   <div class="nav-inner">
@@ -38,6 +20,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="student-life.html">Student Life</a></li>
@@ -52,13 +35,13 @@
   </div>
 </nav>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html">Home</a><a href="about.html">About</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="facilities.html">Facilities</a><a href="curriculum.html">Curriculum</a><a href="admissions.html">Admissions</a><a href="student-life.html">Student Life</a><a href="eca-clubs.html">ECA &amp; Clubs</a><a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="blog/">News</a><a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero" data-sticky-video-container>
   <div class="page-hero-sticky">
-    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-025.jpg">
+    <video class="hero-video" data-scroll-video muted preload="auto" playsinline poster="assets/facebook/fb-hq-039.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
     <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
@@ -67,6 +50,7 @@
     <div class="page-hero-content">
       <h1>Edusky in Pictures</h1>
       <p>Real moments from a small school with a big heart. Classrooms, concerts, celebrations, and everyday joy.</p>
+      <p style="font-size:13px;color:var(--sky);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-top:8px">Better One's Life</p> Classrooms, concerts, celebrations, and everyday joy.</p>
     </div>
   </div>
 </section>
@@ -89,53 +73,53 @@
     </div>
 
     <div class="masonry reveal reveal-delay-3">
-      <div class="masonry-item" data-category="events"><img src="assets/tiktok/tt-055.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">Year End Concert</div></div>
-      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-169.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Concert Backstage</div></div>
-      <div class="masonry-item" data-category="events"><img src="assets/facebook/fb-084.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">School Event</div></div>
+      <div class="masonry-item" data-category="events"><img src="assets/tiktok/tt-hq-004.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">Year End Concert</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-hq-001.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Concert Backstage</div></div>
+      <div class="masonry-item" data-category="events"><img src="assets/facebook/fb-hq-026.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">School Event</div></div>
       <div class="masonry-item" data-category="events"><img src="assets/facebook/fb-081.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">Performance Night</div></div>
-      <div class="masonry-item" data-category="classrooms"><img src="assets/facebook/fb-025.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Learning in Action</div></div>
-      <div class="masonry-item" data-category="classrooms"><img src="assets/instagram/ig-010.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Classroom Moments</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/facebook/fb-038.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Learning in Action</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/instagram/ig-021.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Classroom Moments</div></div>
       <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-003.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Student Work</div></div>
-      <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-005.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Lab Session</div></div>
+      <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-066.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Lab Session</div></div>
       <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-172.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Student Portrait</div></div>
-      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-178.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Smile &amp; Study</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-hq-028.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Smile &amp; Study</div></div>
       <div class="masonry-item" data-category="students"><img src="assets/facebook/fb-030.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Day in the Life</div></div>
       <div class="masonry-item" data-category="students"><img src="assets/facebook/fb-196.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Proud Moment</div></div>
-      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-020.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Celebration Day</div></div>
-      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-002.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Festive Spirit</div></div>
-      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-156.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Achievement Ceremony</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-hq-045.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Celebration Day</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-hq-035.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Festive Spirit</div></div>
+      <div class="masonry-item" data-category="celebrations"><img src="assets/instagram/ig-023.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Achievement Ceremony</div></div>
       <div class="masonry-item" data-category="outdoor"><img src="assets/facebook/fb-079.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Playground</div></div>
-      <div class="masonry-item" data-category="outdoor"><img src="assets/facebook/fb-080.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Outdoor Fun</div></div>
-      <div class="masonry-item" data-category="outdoor"><img src="assets/instagram/ig-010.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">School Grounds</div></div>
-      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-079.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Sports Day</div></div>
-      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-080.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Team Play</div></div>
-      <div class="masonry-item" data-category="sports"><img src="assets/instagram/ig-172.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Active Students</div></div>
-      <div class="masonry-item" data-category="sports"><img src="assets/tiktok/tt-267.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Game On</div></div>
-      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-005.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Science Corner</div></div>
-      <div class="masonry-item" data-category="facilities"><img src="assets/instagram/ig-156.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">School Hall</div></div>
-      <div class="masonry-item" data-category="facilities"><img src="assets/facebook/fb-025.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Resource Room</div></div>
-      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-003.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Creative Space</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/facebook/fb-hq-006.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Outdoor Fun</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/instagram/ig-022.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">School Grounds</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-040.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Sports Day</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/facebook/fb-042.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Team Play</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/instagram/ig-024.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Active Students</div></div>
+      <div class="masonry-item" data-category="sports"><img src="assets/tiktok/tt-hq-027.jpg" alt="Sports" onerror="this.style.opacity=0"><div class="masonry-cap">Game On</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-067.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Science Corner</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/instagram/ig-025.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">School Hall</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/facebook/fb-039.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Resource Room</div></div>
+      <div class="masonry-item" data-category="facilities"><img src="assets/tiktok/tt-068.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Creative Space</div></div>
       <div class="masonry-item" data-category="events"><img src="assets/instagram/ig-178.jpg" alt="Event" onerror="this.style.opacity=0"><div class="masonry-cap">School Gathering</div></div>
-      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-156.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Happy Learner</div></div>
+      <div class="masonry-item" data-category="students"><img src="assets/instagram/ig-019.jpg" alt="Student" onerror="this.style.opacity=0"><div class="masonry-cap">Happy Learner</div></div>
       <div class="masonry-item" data-category="classrooms"><img src="assets/tiktok/tt-267.jpg" alt="Classroom" onerror="this.style.opacity=0"><div class="masonry-cap">Group Study</div></div>
       <div class="masonry-item" data-category="celebrations"><img src="assets/facebook/fb-084.jpg" alt="Celebration" onerror="this.style.opacity=0"><div class="masonry-cap">Award Time</div></div>
-      <div class="masonry-item" data-category="outdoor"><img src="assets/tiktok/tt-055.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Campus Walk</div></div>
+      <div class="masonry-item" data-category="outdoor"><img src="assets/tiktok/tt-065.jpg" alt="Outdoor" onerror="this.style.opacity=0"><div class="masonry-cap">Campus Walk</div></div>
       <div class="masonry-item" data-category="facilities"><img src="assets/instagram/ig-002.jpg" alt="Facility" onerror="this.style.opacity=0"><div class="masonry-cap">Reading Nook</div></div>
     </div>
 
-    <p style="font-size:11px;color:var(--gray-light);margin-top:20px;text-align:center"><span class="placeholder-note">Gallery curation in progress. Replace missing thumbnails with full-resolution images once sorted.</span></p>
+    <p style="font-size:11px;color:var(--gray-light);margin-top:20px;text-align:center">More moments added every week. Follow us on social for the latest.</p>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Heights, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
+      <div><div class="footer-brand">Edusky Private School</div><p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p><p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p></div>
       <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
-      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Heights<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:enquiries@edusky.com.my">enquiries@edusky.com.my</a></p></div>
+      <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Height<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="https://wa.me/60167733518">016-773 3518</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
       <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a><a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
-    <div class="footer-bottom"><span>&copy; 2025 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
+    <div class="footer-bottom"><span>&copy; 2026 Edusky Private School. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
 </footer>
 
@@ -155,7 +139,7 @@
     <h3>Stay in the Loop</h3>
     <p>Get Edusky updates, event invites, and student stories in your inbox.</p>
     <div class="form-group"><input type="email" placeholder="Your email address"></div>
-    <button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you! This is a prototype.')">Subscribe</button>
+    <button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button>
   </div>
 </div>
 
