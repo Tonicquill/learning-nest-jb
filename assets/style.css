@@ -552,6 +552,20 @@ tr:hover{background:rgba(74,144,217,0.04)}
 /* Decorative orb */
 .orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:0.35;pointer-events:none;will-change:transform}
 
+/* ----- CRAYON & GUIDE ARROW STYLES ----- */
+@keyframes crayonWiggle{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes crayonFloat{0%,100%{transform:translateY(0)rotate(0deg)}25%{transform:translateY(-6px)rotate(2deg)}75%{transform:translateY(4px)rotate(-2deg)}}
+@keyframes crayonBounce{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.crayon-star{display:inline-block;width:18px;height:18px;fill:var(--sunrise);animation:crayonWiggle 3s ease-in-out infinite;transform-origin:center}
+.crayon-squiggle{display:inline-block;width:32px;height:12px;stroke:var(--sky);stroke-width:2.5;stroke-linecap:round;fill:none;animation:crayonFloat 4s ease-in-out infinite}
+.crayon-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--coral);animation:crayonBounce 2s ease-in-out infinite}
+.guide-arrow{position:absolute;pointer-events:none;z-index:3}
+.guide-arrow svg{overflow:visible}
+.guide-arrow path{fill:none;stroke:var(--sunrise);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:6 4;animation:crayonFloat 5s ease-in-out infinite}
+.guide-arrow-head{fill:var(--sunrise);animation:crayonFloat 5s ease-in-out infinite}
+.primary-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,161,7,0.12);border:2px dashed var(--sunrise);color:var(--sunrise-deep);font-family:var(--font-display);font-size:13px;font-weight:700;padding:8px 18px;border-radius:30px;animation:crayonWiggle 6s ease-in-out infinite}
+.primary-badge .crayon-star{width:14px;height:14px;animation:crayonBounce 2s ease-in-out infinite}
+
 /* ----- PRINT STYLES ----- */
 @media print{
   .nav,.mobile-nav,.whatsapp-float,.back-to-top,.newsletter-modal,.cookie-banner,.planning-overlay,.planning-modal,.btn-planning,.builder-credit{display:none!important}
