@@ -171,6 +171,13 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .section-bg-photo .container{position:relative;z-index:1}
 @media(max-width:768px){.section-bg-photo{background-attachment:scroll}}
 
+/* Crayon section top accent */
+.section{position:relative}
+.section::after{content:'';position:absolute;top:0;left:10%;width:80%;height:4px;background:linear-gradient(90deg,transparent,var(--sunrise)20%,var(--sky)50%,var(--coral)80%,transparent);border-radius:2px;opacity:0.6;pointer-events:none;z-index:2}
+.section-alt::after{background:linear-gradient(90deg,transparent,var(--coral)20%,var(--sunrise)50%,var(--sky)80%,transparent);opacity:0.5}
+.section-dark::after{background:linear-gradient(90deg,transparent,var(--sunrise)20%,var(--coral)50%,var(--sunrise)80%,transparent);opacity:0.4}
+.section-bg-photo::after{height:0}
+
 /* ----- BADGES ----- */
 .badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;align-items:center;justify-items:center}
 @media(max-width:768px){.badge-grid{grid-template-columns:repeat(2,1fr);gap:24px}}
