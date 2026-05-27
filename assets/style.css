@@ -763,6 +763,28 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--sunrise)
 table thead th{position:relative}
 table thead th::after{content:'';position:absolute;bottom:0;left:8px;right:8px;height:2px;background:linear-gradient(90deg,var(--sunrise),var(--sky));border-radius:2px}
 
+/* ===== CRAYON PROCESS STEPS ===== */
+.process-step{position:relative;overflow:hidden}
+.process-step::before{content:'';position:absolute;top:8px;right:8px;width:24px;height:24px;background:url('doodles/splotch-blue.webp') no-repeat center/contain;opacity:0.35;pointer-events:none}
+
+/* ===== CRAYON TIMELINE ITEMS ===== */
+.timeline-item{position:relative}
+.timeline-item::before{content:'';position:absolute;left:-8px;top:6px;width:16px;height:16px;background:url('doodles/star-orange.webp') no-repeat center/contain;opacity:0.4;pointer-events:none}
+
+/* ===== CRAYON BLOG CARDS ===== */
+.blog-card{position:relative;overflow:hidden}
+.blog-card::before{content:'';position:absolute;top:12px;right:12px;width:32px;height:32px;background:url('doodles/splat-coral.webp') no-repeat center/contain;opacity:0.25;pointer-events:none;z-index:2}
+
+/* ===== CRAYON GLOBAL LINKS ===== */
+.container a:not(.btn):not(.badge):not(.nav-brand):not(.nav-links a):not(.footer-social a){position:relative;display:inline-block}
+.container a:not(.btn):not(.badge):not(.nav-brand):not(.nav-links a):not(.footer-social a)::after{content:'';position:absolute;bottom:-1px;left:0;width:0;height:3px;background:url('doodles/underline-orange.webp') no-repeat left center/120% auto;opacity:0;transition:width 0.3s var(--ease-fluid),opacity 0.2s}
+.container a:not(.btn):not(.badge):not(.nav-brand):not(.nav-links a):not(.footer-social a):hover::after{width:100%;opacity:0.7}
+
+/* ===== CRAYON LINK UNDERLINES ===== */
+.crayon-link{position:relative;display:inline-block}
+.crayon-link::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:6px;background:url('doodles/underline-orange.webp') no-repeat left center/100% auto;opacity:0;transition:opacity 0.25s}
+.crayon-link:hover::after{opacity:0.7}
+
 /* ===== CRAYON QUOTE MARKS ===== */
 .crayon-quote{position:relative;padding:28px 32px;background:var(--cream);border-radius:16px}
 .crayon-quote::before{content:'';position:absolute;top:-12px;left:20px;width:40px;height:40px;background:url('doodles/splat-coral.webp') no-repeat center/contain;opacity:0.4;transform:rotate(-15deg)}
