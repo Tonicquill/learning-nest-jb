@@ -575,7 +575,7 @@ tr:hover{background:rgba(74,144,217,0.04)}
 @keyframes swirl{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 
 /* Organic blobs that breathe */
-.doodle-blob{position:absolute;pointer-events:none;z-index:0;opacity:0.35;filter:blur(40px);animation:blobPulse 8s ease-in-out infinite}
+.doodle-blob{position:absolute;pointer-events:none;z-index:0;opacity:0.6;filter:blur(40px);animation:blobPulse 8s ease-in-out infinite}
 .doodle-blob-sky{background:var(--sky);width:200px;height:200px}
 .doodle-blob-sunrise{background:var(--sunrise);width:160px;height:160px;animation-delay:-2s}
 .doodle-blob-coral{background:var(--coral);width:140px;height:140px;animation-delay:-4s}
@@ -588,10 +588,10 @@ tr:hover{background:rgba(74,144,217,0.04)}
 
 /* Scribble card border */
 .scribble-card{position:relative}
-.scribble-card::before{content:'';position:absolute;inset:-3px;border-radius:18px;background:linear-gradient(135deg,var(--sunrise),var(--sky),var(--coral));opacity:0.5;z-index:-1;animation:rotateSlow 20s linear infinite}
+.scribble-card::before{content:'';position:absolute;inset:-3px;border-radius:18px;background:linear-gradient(135deg,var(--sunrise),var(--sky),var(--coral));opacity:0.75;z-index:-1;animation:rotateSlow 20s linear infinite}
 
 /* Hand-drawn section divider */
-.doodle-divider{height:24px;margin:48px auto;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24'%3E%3Cpath d='M0 12 Q20 6 40 12 T80 12 T120 12 T160 12 T200 12' stroke='%23f9a107' stroke-width='3' fill='none' stroke-linecap='round' stroke-dasharray='4 6' opacity='0.9'/%3E%3C/svg%3E") center no-repeat;max-width:300px}
+.doodle-divider{height:32px;margin:48px auto;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24'%3E%3Cpath d='M0 12 Q20 6 40 12 T80 12 T120 12 T160 12 T200 12' stroke='%23f9a107' stroke-width='4' fill='none' stroke-linecap='round' stroke-dasharray='4 6' opacity='1'/%3E%3C/svg%3E") center no-repeat;max-width:400px}
 
 /* Scroll-reveal doodle that draws itself */
 .doodle-svg{position:absolute;pointer-events:none;z-index:2}
@@ -599,7 +599,7 @@ tr:hover{background:rgba(74,144,217,0.04)}
 .doodle-svg.visible path{stroke-dashoffset:0}
 
 /* Crayon scribble accent marks */
-.crayon-circle{width:40px;height:40px;border:2.5px solid var(--sunrise);border-radius:50%;animation:crayonWiggle 5s ease-in-out infinite;opacity:0.6}
+.crayon-circle{width:40px;height:40px;border:2.5px solid var(--sunrise);border-radius:50%;animation:crayonWiggle 5s ease-in-out infinite;opacity:0.9}
 .crayon-cross{position:relative;width:20px;height:20px;animation:crayonBounce 3s ease-in-out infinite}
 .crayon-cross::before,.crayon-cross::after{content:'';position:absolute;background:var(--sky);border-radius:2px}
 .crayon-cross::before{width:2px;height:100%;left:50%;transform:translateX(-50%)}
@@ -636,7 +636,7 @@ tr:hover{background:rgba(74,144,217,0.04)}
 .crayon-splat{position:absolute;pointer-events:none;z-index:0;opacity:0.9;width:220px;height:160px;background:url('doodles/splat-coral.webp') no-repeat center/contain;image-rendering:auto;animation:wobbleBlob 7s ease-in-out infinite}
 
 /* Fingerprint-like concentric smudge */
-.crayon-smudge{position:absolute;pointer-events:none;z-index:0;opacity:0.3;width:140px;height:140px;border-radius:50%;background:repeating-radial-gradient(circle at 45% 45%,var(--sky) 0 8px,transparent 10px 20px);filter:blur(16px);animation:blobPulse 10s ease-in-out infinite}
+.crayon-smudge{position:absolute;pointer-events:none;z-index:0;opacity:0.65;width:140px;height:140px;border-radius:50%;background:repeating-radial-gradient(circle at 45% 45%,var(--sky) 0 8px,transparent 10px 20px);filter:blur(16px);animation:blobPulse 10s ease-in-out infinite}
 
 /* Jagged crayon underline — sharp irregular */
 .scribble-underline-jagged{position:relative;display:inline-block}
