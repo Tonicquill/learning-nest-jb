@@ -359,6 +359,26 @@ document.addEventListener('DOMContentLoaded',function(){
     onScrollScrub();
   }
 
+  /* ===== CRAYON CURSOR TRAIL ===== */
+  const trailColors=['#4A90D9','#F9A107','#FF6B6B','#669F38'];
+  let trailIdx=0,lastTrail=0;
+  document.addEventListener('mousemove',e=>{
+    const now=performance.now();
+    if(now-lastTrail<40)return;
+    lastTrail=now;
+    const d=document.createElement('div');
+    d.className='crayon-trail';
+    const size=Math.random()*10+6;
+    d.style.width=size+'px';
+    d.style.height=size+'px';
+    d.style.left=(e.clientX-size/2)+'px';
+    d.style.top=(e.clientY-size/2)+'px';
+    d.style.background=trailColors[trailIdx%trailColors.length];
+    trailIdx++;
+    document.body.appendChild(d);
+    setTimeout(()=>d.remove(),900);
+  });
+
   /* ===== STAGGER REVEAL OBSERVER ===== */
   document.querySelectorAll('.stagger-reveal').forEach(el=>{
     const io=new IntersectionObserver(entries=>{
