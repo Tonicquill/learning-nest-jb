@@ -206,7 +206,11 @@ h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:-0.02em;line-height:1
 .badge-sublabel{font-size:11px;color:var(--gray-light);margin-top:4px}
 
 /* ----- CARDS ----- */
-.card{background:var(--white);border:1px solid var(--gray-border);border-radius:14px;padding:32px;transition:all 0.3s var(--ease-fluid)}
+.card{background:var(--white);border:1px solid var(--gray-border);border-radius:14px;padding:32px;transition:all 0.3s var(--ease-fluid);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;inset:0;background:url('doodles/texture-crayon.webp') no-repeat center/cover;opacity:0;transition:opacity 0.4s;z-index:0;pointer-events:none}
+.card:hover::before{opacity:0.06}
+.card:hover{border-color:rgba(249,161,7,0.4);transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,0.06)}
+.card > *{position:relative;z-index:1}
 .card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.06);border-color:transparent;transform:translateY(-2px)}
 .card-bg{position:relative;overflow:hidden;color:#fff;border:none;background-color:transparent;background-size:cover;background-position:center}
 .card-bg::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.70) 100%);z-index:1}
