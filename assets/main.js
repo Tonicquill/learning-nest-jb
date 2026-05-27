@@ -364,19 +364,21 @@ document.addEventListener('DOMContentLoaded',function(){
   let trailIdx=0,lastTrail=0;
   document.addEventListener('mousemove',e=>{
     const now=performance.now();
-    if(now-lastTrail<40)return;
+    if(now-lastTrail<75)return;
     lastTrail=now;
     const d=document.createElement('div');
     d.className='crayon-trail';
-    const size=Math.random()*10+6;
+    const size=Math.random()*6+4;
+    const offsetX=(Math.random()-0.5)*4;
+    const offsetY=(Math.random()-0.5)*4;
     d.style.width=size+'px';
     d.style.height=size+'px';
-    d.style.left=(e.clientX-size/2)+'px';
-    d.style.top=(e.clientY-size/2)+'px';
+    d.style.left=(e.clientX-size/2+offsetX)+'px';
+    d.style.top=(e.clientY-size/2+offsetY)+'px';
     d.style.background=trailColors[trailIdx%trailColors.length];
     trailIdx++;
     document.body.appendChild(d);
-    setTimeout(()=>d.remove(),900);
+    setTimeout(()=>d.remove(),800);
   });
 
   /* ===== STAGGER REVEAL OBSERVER ===== */
