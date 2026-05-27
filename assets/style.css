@@ -731,6 +731,20 @@ tr:hover{background:rgba(74,144,217,0.04)}
 .crayon-list li{position:relative;padding-left:28px;margin-bottom:10px}
 .crayon-list li::before{content:'';position:absolute;left:0;top:6px;width:14px;height:14px;background:url('doodles/splotch-blue.webp') no-repeat center/contain;opacity:0.6}
 
+/* ===== CRAYON FORM FOCUS ===== */
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--sunrise);box-shadow:0 0 0 3px rgba(249,161,7,0.25)}
+
+/* ===== CRAYON ACCORDION BORDERS ===== */
+.accordion{border-left:3px solid var(--sunrise);border-radius:0 12px 12px 0}
+
+/* ===== CRAYON BADGE SWATCHES ===== */
+.badge-crayon{position:relative;overflow:hidden}
+.badge-crayon::after{content:'';position:absolute;inset:0;background:url('doodles/splotch-blue.webp') no-repeat center/80% auto;opacity:0.15;pointer-events:none}
+
+/* ===== CRAYON TABLE HEADERS ===== */
+table thead th{position:relative}
+table thead th::after{content:'';position:absolute;bottom:0;left:8px;right:8px;height:2px;background:linear-gradient(90deg,var(--sunrise),var(--sky));border-radius:2px}
+
 /* ===== CRAYON QUOTE MARKS ===== */
 .crayon-quote{position:relative;padding:28px 32px;background:var(--cream);border-radius:16px}
 .crayon-quote::before{content:'';position:absolute;top:-12px;left:20px;width:40px;height:40px;background:url('doodles/splat-coral.webp') no-repeat center/contain;opacity:0.4;transform:rotate(-15deg)}
