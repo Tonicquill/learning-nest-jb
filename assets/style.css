@@ -601,10 +601,9 @@ tr:hover{background:rgba(74,144,217,0.04)}
 @keyframes swirl{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 
 /* ===== FLIP-BOOK SQUIGGLE ENGINE ===== */
-@keyframes drawOn{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
-.drawn .scribble-underline-jagged::after,.drawn .scribble-underline-jagged::before,.drawn .scribble-underline-wavy::after,.drawn .scribble-underline-wavy::before,.drawn .scribble-underline-double::after,.drawn .scribble-underline-double::before,.drawn .pencil-underline::after,.drawn .pencil-underline::before{transform-origin:left center;animation:drawOn 0.5s var(--ease-fluid) forwards,flipBook var(--flip-duration,0.4s) steps(1) infinite;animation-delay:0s,var(--flip-delay,0s)}
-.drawn .art-highlight::before,.drawn .art-highlight-messy::before{transform-origin:left center;animation:drawOn 0.5s var(--ease-fluid) forwards,artHighlightFlip var(--flip-duration,0.4s) steps(1) infinite;animation-delay:0s,var(--flip-delay,0s)}
-.drawn .crayon-star-hand::before,.drawn .crayon-star-hand::after{transform-origin:center;animation:drawOn 0.4s var(--ease-fluid) forwards,flipBook var(--flip-duration,0.4s) steps(1) infinite;animation-delay:0s,var(--flip-delay,0s)}
+/* Underlines & highlights start fully clipped; parent .drawn reveals left-to-right */
+.scribble-underline-jagged::before,.scribble-underline-jagged::after,.scribble-underline-wavy::before,.scribble-underline-wavy::after,.scribble-underline-double::before,.scribble-underline-double::after,.pencil-underline::before,.pencil-underline::after,.art-highlight::before,.art-highlight-messy::before{clip-path:inset(0 100% 0 0)}
+.drawn .scribble-underline-jagged::before,.drawn .scribble-underline-jagged::after,.drawn .scribble-underline-wavy::before,.drawn .scribble-underline-wavy::after,.drawn .scribble-underline-double::before,.drawn .scribble-underline-double::after,.drawn .pencil-underline::before,.drawn .pencil-underline::after,.drawn .art-highlight::before,.drawn .art-highlight-messy::before{clip-path:inset(0 0 0 0);transition:clip-path 0.5s var(--ease-fluid)}
 @keyframes flipBook{0%,49%{opacity:1}50%,100%{opacity:0}}
 @keyframes flipBookReverse{0%,49%{opacity:0}50%,100%{opacity:1}}
 .crayon-flip{position:relative}

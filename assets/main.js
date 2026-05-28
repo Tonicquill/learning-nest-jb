@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 
   /* ===== SCROLL DRAW-ON OBSERVER ===== */
-  const drawOnSelectors=['.scribble-underline-jagged','.scribble-underline-wavy','.scribble-underline-double','.pencil-underline','.art-highlight','.art-highlight-messy','.crayon-star-hand'];
+  const drawOnSelectors=['.scribble-underline-jagged','.scribble-underline-wavy','.scribble-underline-double','.pencil-underline','.art-highlight','.art-highlight-messy'];
   drawOnSelectors.forEach(sel=>{
     document.querySelectorAll(sel).forEach(el=>{
       const parent=el.closest('section')||el.closest('div')||el.parentElement;
