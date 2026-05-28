@@ -381,6 +381,14 @@ document.addEventListener('DOMContentLoaded',function(){
     setTimeout(()=>d.remove(),800);
   });
 
+  /* ===== FLIP-BOOK RANDOM DELAYS ===== */
+  const flipSelectors=['.scribble-underline-jagged','.scribble-underline-wavy','.scribble-underline-double','.pencil-underline','.art-highlight','.art-highlight-messy','.crayon-star-hand','.crayon-star','.crayon-smudge','.crayon-circle-hand','.crayon-box','.crayon-stamp','.crayon-check','.crayon-quote','.crayon-dot'];
+  flipSelectors.forEach(sel=>{
+    document.querySelectorAll(sel).forEach(el=>{
+      el.style.setProperty('--flip-delay',(Math.random()*0.4).toFixed(3)+'s');
+    });
+  });
+
   /* ===== STAGGER REVEAL OBSERVER ===== */
   document.querySelectorAll('.stagger-reveal').forEach(el=>{
     const io=new IntersectionObserver(entries=>{
@@ -388,5 +396,24 @@ document.addEventListener('DOMContentLoaded',function(){
     },{threshold:0.1});
     io.observe(el);
   });
+
+  /* ===== SCROLL DRAW-ON OBSERVER ===== */
+  const drawOnSelectors=['.scribble-underline-jagged','.scribble-underline-wavy','.scribble-underline-double','.pencil-underline','.art-highlight','.art-highlight-messy','.crayon-star-hand'];
+  drawOnSelectors.forEach(sel=>{
+    document.querySelectorAll(sel).forEach(el=>{
+      const parent=el.closest('section')||el.closest('div')||el.parentElement;
+      if(!parent)return;
+      parent.classList.add('draw-on-target');
+    });
+  });
+  const drawIo=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('drawn');
+        drawIo.unobserve(e.target);
+      }
+    });
+  },{threshold:0.15,rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.draw-on-target').forEach(el=>drawIo.observe(el));
 
 });
