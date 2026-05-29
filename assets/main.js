@@ -2,6 +2,13 @@
 
 document.addEventListener('DOMContentLoaded',function(){
 
+  /* ===== CRAYON SCRATCH BACKGROUND ===== */
+  if(document.body.classList.contains('crayon-theme')){
+    const scratch=document.createElement('div');
+    scratch.className='crayon-scratch';
+    document.body.appendChild(scratch);
+  }
+
   /* ===== SCROLL REVEAL ===== */
   const reveals=document.querySelectorAll('.reveal');
   if(reveals.length){
