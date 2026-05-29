@@ -54,12 +54,21 @@ body.crayon-theme {
   --chalk: #F0F0F0;
 
   font-family: var(--font-body);
-  background: var(--paper);
+  background:
+    radial-gradient(ellipse at 10% 20%, rgba(249,161,7,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 80%, rgba(74,144,217,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(255,107,107,0.03) 0%, transparent 60%),
+    var(--paper);
+  background-attachment: fixed;
   color: var(--ink);
 }
 
 /* Texture utilities */
 .bg-paper { background: var(--paper) !important; }
+.bg-sky-soft { background: linear-gradient(135deg, rgba(74,144,217,0.08), rgba(74,144,217,0.03)) !important; }
+.bg-sunrise-soft { background: linear-gradient(135deg, rgba(249,161,7,0.08), rgba(249,161,7,0.03)) !important; }
+.bg-coral-soft { background: linear-gradient(135deg, rgba(255,107,107,0.08), rgba(255,107,107,0.03)) !important; }
+.bg-green-soft { background: linear-gradient(135deg, rgba(102,159,56,0.08), rgba(102,159,56,0.03)) !important; }
 .bg-notebook {
   background: var(--paper);
   background-image: repeating-linear-gradient(
