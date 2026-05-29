@@ -40,6 +40,275 @@
   --container-max: 1280px;
 }
 
+/* ============================================
+   CRAYON THEME — Full Hand-Drawn Override
+   Applied via <body class="crayon-theme">
+   ============================================ */
+
+body.crayon-theme {
+  --font-display: 'Caveat', cursive;
+  --font-body: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+  --paper: #FDFBF7;
+  --paper-line: rgba(74, 144, 217, 0.07);
+  --chalkboard: #2D2D2D;
+  --chalk: #F0F0F0;
+
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Texture utilities */
+.bg-paper { background: var(--paper) !important; }
+.bg-notebook {
+  background: var(--paper);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    var(--paper-line) 31px,
+    var(--paper-line) 32px
+  );
+  background-attachment: local;
+}
+.bg-chalkboard {
+  background: var(--chalkboard) !important;
+  color: var(--chalk) !important;
+}
+.bg-chalkboard .section-label,
+.bg-chalkboard .section-title,
+.bg-chalkboard .section-subtitle,
+.bg-chalkboard h1,
+.bg-chalkboard h2,
+.bg-chalkboard h3,
+.bg-chalkboard p,
+.bg-chalkboard li { color: var(--chalk); }
+.bg-chalkboard .section-label { color: var(--sunrise); }
+
+/* Nav — paper instead of frosted glass */
+body.crayon-theme .nav {
+  background: var(--paper);
+  border-bottom: 2.5px solid var(--sunrise);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+body.crayon-theme .nav.scrolled {
+  box-shadow: 0 2px 12px rgba(249, 161, 7, 0.12);
+  border-bottom-color: var(--sunrise);
+}
+body.crayon-theme .nav-brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+body.crayon-theme .nav-links {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+body.crayon-theme .nav-cta {
+  font-size: 15px;
+  border-radius: 10px 14px 8px 12px;
+  letter-spacing: 0.02em;
+}
+body.crayon-theme .mobile-nav {
+  background: var(--paper);
+  border-top: 2px solid var(--sunrise);
+}
+
+/* Cards — wobbly hand-drawn border default */
+body.crayon-theme .card {
+  border: 2.5px solid var(--sunrise);
+  border-radius: 12px 16px 10px 14px;
+  background: var(--paper);
+}
+body.crayon-theme .card:hover {
+  border-color: var(--sunrise-deep);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(249, 161, 7, 0.1);
+}
+
+/* Buttons — hand-drawn border default */
+body.crayon-theme .btn {
+  font-family: var(--font-display);
+  font-weight: 700;
+  border: 2.5px solid var(--sunrise);
+  border-radius: 10px 14px 8px 12px;
+  letter-spacing: 0.02em;
+}
+body.crayon-theme .btn-primary {
+  background: var(--sunrise);
+}
+body.crayon-theme .btn-sky {
+  border-color: var(--sky);
+}
+body.crayon-theme .btn-coral {
+  border-color: var(--coral);
+}
+body.crayon-theme .btn-outline {
+  border: 2.5px solid var(--sky);
+}
+body.crayon-theme .btn-white {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Headings — handwritten weight */
+body.crayon-theme h1,
+body.crayon-theme h2,
+body.crayon-theme h3,
+body.crayon-theme h4 {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+body.crayon-theme .hero-headline {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+}
+body.crayon-theme .section-title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+body.crayon-theme .section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+body.crayon-theme .hero-badge,
+body.crayon-theme .hero-badges .hbadge {
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+}
+body.crayon-theme .hero-stats .hs-val,
+body.crayon-theme .hero-stats .hs-label {
+  font-family: var(--font-display);
+}
+body.crayon-theme .hero-scroll {
+  font-family: var(--font-display);
+}
+
+/* Scribble-filled icon container */
+.crayon-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.crayon-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scribble-filled nav icons — pure CSS, no HTML changes */
+body.crayon-theme .nav-links a,
+body.crayon-theme .mobile-nav a {
+  display: inline-flex;
+  align-items: center;
+}
+body.crayon-theme .nav-links a::before,
+body.crayon-theme .mobile-nav a::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Icon variants — cycle 4 colors */
+body.crayon-theme .nav-links li:nth-child(1) a::before,
+body.crayon-theme .mobile-nav a[href="index.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(2) a::before,
+body.crayon-theme .mobile-nav a[href="about.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(3) a::before,
+body.crayon-theme .mobile-nav a[href="facilities.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(4) a::before,
+body.crayon-theme .mobile-nav a[href="curriculum.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(5) a::before,
+body.crayon-theme .mobile-nav a[href="admissions.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(6) a::before,
+body.crayon-theme .mobile-nav a[href="student-life.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(7) a::before,
+body.crayon-theme .mobile-nav a[href="eca-clubs.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(8) a::before,
+body.crayon-theme .mobile-nav a[href="gallery.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23669F38%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(9) a::before,
+body.crayon-theme .mobile-nav a[href="events.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23F9A107%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(10) a::before,
+body.crayon-theme .mobile-nav a[href="blog/"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%234A90D9%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme .nav-links li:nth-child(11) a::before,
+body.crayon-theme .mobile-nav a[href="contact.html"]::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2718%27%20height%3D%2718%27%20viewBox%3D%270%200%2018%2018%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%277%27%20fill%3D%27none%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M2%2C16L16%2C2%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M4%2C16L16%2C4%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3Cpath%20d%3D%27M0%2C12L12%2C0%27%20stroke%3D%27%23FF6B6B%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%20opacity%3D%27.7%27%2F%3E%3C%2Fsvg%3E");
+}
+body.crayon-theme ul:not(.nav-links):not(.tabs):not(.breadcrumbs) li {
+  position: relative;
+  padding-left: 22px;
+}
+body.crayon-theme ul:not(.nav-links):not(.tabs):not(.breadcrumbs) li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--sunrise);
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: rotate(3deg);
+}
+
+/* Section textures under crayon theme */
+body.crayon-theme .section-alt {
+  background: var(--paper);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    var(--paper-line) 31px,
+    var(--paper-line) 32px
+  );
+  background-attachment: local;
+}
+body.crayon-theme .section-dark:not(.section-bg-photo) {
+  background: var(--chalkboard);
+  color: var(--chalk);
+}
+body.crayon-theme .section-dark:not(.section-bg-photo) .section-label,
+body.crayon-theme .section-dark:not(.section-bg-photo) .section-title,
+body.crayon-theme .section-dark:not(.section-bg-photo) h1,
+body.crayon-theme .section-dark:not(.section-bg-photo) h2,
+body.crayon-theme .section-dark:not(.section-bg-photo) h3 { color: var(--chalk); }
+body.crayon-theme .section-dark:not(.section-bg-photo) .section-label { color: var(--sunrise); }
+body.crayon-theme .bg-chalkboard .badge-sublabel { color: rgba(255, 255, 255, 0.6); }
+
+@media (max-width: 768px) {
+  body.crayon-theme .nav-brand { font-size: 18px; }
+}
+
 /* ----- RESET ----- */
 *,*::before,*::after{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
