@@ -361,24 +361,25 @@ document.addEventListener('DOMContentLoaded',function(){
 
   /* ===== CRAYON CURSOR TRAIL ===== */
   const trailColors=['#4A90D9','#F9A107','#FF6B6B','#669F38'];
+  const trailShapes=['✦','⭐','✨','\u{1F31F}','\u{1F4AB}'];
   let trailIdx=0,lastTrail=0;
   document.addEventListener('mousemove',e=>{
     const now=performance.now();
-    if(now-lastTrail<75)return;
+    if(now-lastTrail<30)return;
     lastTrail=now;
     const d=document.createElement('div');
     d.className='crayon-trail';
-    const size=Math.random()*6+4;
-    const offsetX=(Math.random()-0.5)*4;
-    const offsetY=(Math.random()-0.5)*4;
-    d.style.width=size+'px';
-    d.style.height=size+'px';
-    d.style.left=(e.clientX-size/2+offsetX)+'px';
-    d.style.top=(e.clientY-size/2+offsetY)+'px';
-    d.style.background=trailColors[trailIdx%trailColors.length];
+    const size=Math.random()*24+20;
+    d.style.fontSize=size+'px';
+    d.style.left=e.clientX+'px';
+    d.style.top=e.clientY+'px';
+    d.style.color=trailColors[trailIdx%trailColors.length];
+    d.textContent=trailShapes[Math.floor(Math.random()*trailShapes.length)];
+    d.style.transform=`translate(-50%,-50%) rotate(${Math.random()*360}deg)`;
+    d.style.animation=`trailSpinFade ${0.6+Math.random()*0.4}s cubic-bezier(0.16,1,0.3,1) forwards`;
     trailIdx++;
     document.body.appendChild(d);
-    setTimeout(()=>d.remove(),800);
+    setTimeout(()=>d.remove(),1100);
   });
 
   /* ===== FLIP-BOOK RANDOM DELAYS ===== */
