@@ -194,13 +194,20 @@ document.addEventListener('DOMContentLoaded',function(){
         btn.classList.add('active');
         const filter=btn.dataset.filter||'all';
         allItems.forEach(it=>{
-          it.el.style.display=(filter==='all'||it.cat===filter)?'block':'none';
+          const show=filter==='all'||it.cat===filter;
+          it.el.classList.toggle('masonry-hidden',!show);
+          if(show){it.el.classList.add('visible');}
+        });
+        // force masonry reflow for CSS columns
+        masonryWrap.style.transform='translateZ(0)';
+        requestAnimationFrame(()=>{
+          masonryWrap.style.transform='';
         });
       });
     });
     items.forEach((it,idx)=>{
       it.addEventListener('click',()=>{
-        const visible=allItems.filter(x=>x.el.style.display!=='none');
+        const visible=allItems.filter(x=>!x.el.classList.contains('masonry-hidden'));
         const vIdx=visible.findIndex(x=>x.el===it);
         openLightbox(allItems[idx].src,allItems[idx].caption,vIdx,visible);
       });
@@ -318,53 +325,6 @@ document.addEventListener('DOMContentLoaded',function(){
       }
     },{passive:true});
   });
-
-  /* ===== SCROLL-SCRUB VIDEOS (Sticky) ===== */
-  const scrubVideos=Array.from(document.querySelectorAll('video[data-scroll-video]'));
-  if(scrubVideos.length){
-    const scrubData=[];
-    let readyCount=0;
-    function initScrub(v,section){
-      v.pause();v.muted=true;v.playsInline=true;v.preload='auto';
-      const rect=section.getBoundingClientRect();
-      const sectionTop=rect.top+window.scrollY;
-      const sectionHeight=section.offsetHeight;
-      scrubData.push({v,section,sectionTop,sectionHeight});
-    }
-    scrubVideos.forEach(v=>{
-      const section=v.closest('[data-sticky-video-container]')||v.closest('section');
-      if(!section)return;
-      if(v.readyState>=1){initScrub(v,section);}
-      else{v.addEventListener('loadedmetadata',()=>initScrub(v,section),{once:true});}
-    });
-    let ticking=false;
-    function onScrollScrub(){
-      if(!ticking){
-        requestAnimationFrame(()=>{
-          const wh=window.innerHeight;
-          const sy=window.scrollY;
-          scrubData.forEach(d=>{
-            if(!d.v.duration)return;
-            const progress=Math.max(0,Math.min(1,(sy-d.sectionTop)/(d.sectionHeight-wh)));
-            const target=progress*d.v.duration;
-            if(Math.abs(d.v.currentTime-target)>0.03){d.v.currentTime=target;}
-          });
-          ticking=false;
-        });
-        ticking=true;
-      }
-    }
-    window.addEventListener('scroll',onScrollScrub,{passive:true});
-    window.addEventListener('resize',()=>{
-      scrubData.forEach(d=>{
-        const rect=d.section.getBoundingClientRect();
-        d.sectionTop=rect.top+window.scrollY;
-        d.sectionHeight=d.section.offsetHeight;
-      });
-      onScrollScrub();
-    },{passive:true});
-    onScrollScrub();
-  }
 
   /* ===== CRAYON CURSOR TRAIL ===== */
   const trailColors=['#4A90D9','#F9A107','#FF6B6B','#669F38'];
