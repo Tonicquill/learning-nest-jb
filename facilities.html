@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Facilities | EduskyPrivate School</title>
 <meta name="description" content="Explore EduskyPrivate School's purpose-built campus — computer lab, science lab, library, hall, classrooms, discussion rooms, and more.">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Pangolin&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=26">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Pangolin&family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=Walter+Turncoat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=30">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="crayon-theme">
 
@@ -26,7 +27,7 @@
       <li><a href="eca-clubs.html">ECA &amp; Clubs</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="events.html">Events</a></li>
-      <li><a href="blog/">News</a></li>
+      <li><a href="blog/">Follow Us</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <a href="admissions.html#enrol" class="nav-cta">Enrol Now</a>
@@ -43,17 +44,16 @@
   <a href="eca-clubs.html">ECA &amp; Clubs</a>
   <a href="gallery.html">Gallery</a>
   <a href="events.html">Events</a>
-  <a href="blog/">News</a>
+  <a href="blog/">Follow Us</a>
   <a href="contact.html">Contact</a>
   <a href="admissions.html#enrol" class="mobile-cta">Enrol Now</a>
 </div>
 
 <section class="page-hero">
   <div class="page-hero-sticky">
-    <video class="hero-video" muted preload="auto" playsinline poster="assets/photos/SoloBookClassroom-26.jpg">
+    <video class="hero-video" muted preload="auto" playsinline poster="assets/photos/SoloStudentarrivingsportsbokeh2-26.jpg">
       <source src="videos/hero-home.mp4" type="video/mp4">
     </video>
-    <div class="hero-video-notice" id="heroVideoNotice"><span>&#127909; Placeholder video — replace with any MP4, photo, or even a still image. Works the same way.</span> <button onclick="document.getElementById('heroVideoNotice').style.display='none'">&times;</button></div>
   </div>
   <div class="page-hero-content-scrollable">
     <div class="page-hero-content">
@@ -125,18 +125,19 @@
           <p style="font-size:13px;color:var(--gray)">Prayer space supporting spiritual development and religious observance. Respect and inclusion woven into daily life.</p>
         </div>
       </div>
-      <div class="card reveal reveal-delay-3" style="padding:0;overflow:hidden">
-        <div style="height:200px;overflow:hidden"><img src="assets/photos/DuoSprintingSportsHero-26.jpg" alt="Outdoor Area" style="width:100%;height:100%;object-fit:cover"></div>
-        <div style="padding:20px">
-          <h3 style="font-size:16px">Outdoor Space</h3>
-          <p style="font-size:13px;color:var(--gray)">Open-air area for physical activity, play, and outdoor learning. Fresh air and movement between lessons.</p>
-        </div>
-      </div>
     </div>
 
-    <div class="micro-callout reveal crayon-box" style="margin-top:60px;background:linear-gradient(135deg,var(--coral),var(--sunrise))">
-      <h2>Visit Our Campus</h2><p>See the spaces for yourself. Book a tour with Dr. Ng and experience what small feels like.</p>
-      <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20book%20a%20campus%20tour" class="btn btn-white" target="_blank">Book a Tour via WhatsApp</a>
+    <div class="tour-split reveal">
+      <div class="tour-video-wrap">
+        <video autoplay muted loop playsinline preload="none" poster="assets/videos/poster-tour.jpg">
+          <source src="assets/videos/SchoolVirtualTour-25.MOV" type="video/mp4">
+        </video>
+      </div>
+      <div class="tour-cta">
+        <h2>Visit Our Campus</h2>
+        <p>Prefer to visit in person? Book a guided tour with Dr. Ng and experience what small feels like — every classroom, every corner, every smile.</p>
+        <a href="https://wa.me/60167733518?text=Hi%2C%20I%20want%20to%20book%20a%20campus%20tour" class="btn btn-sky" target="_blank">Book a Tour via WhatsApp</a>
+      </div>
     </div>
   </div>
 </section>
@@ -151,14 +152,10 @@
         <p style="font-size:13px;color:var(--gray)">Yes. All classrooms, the computer lab, and the library are fully air-conditioned for comfortable learning.</p>
       </div>
       <div class="card reveal reveal-delay-2">
-        <h3 style="margin-bottom:8px">Is there a school canteen?</h3>
-        <p style="font-size:13px;color:var(--gray)">Students may bring their own packed lunch or opt for our meal programme. Meals are arranged through a trusted local provider.</p>
-      </div>
-      <div class="card reveal reveal-delay-1">
         <h3 style="margin-bottom:8px">Is transport available?</h3>
         <p style="font-size:13px;color:var(--gray)">Optional transport is available covering Taman Adda Height, Bandar Dato' Onn, and nearby estates. Routes are finalised based on demand each term.</p>
       </div>
-      <div class="card reveal reveal-delay-2">
+      <div class="card reveal reveal-delay-1">
         <h3 style="margin-bottom:8px">Can parents visit?</h3>
         <p style="font-size:13px;color:var(--gray)">Absolutely. We encourage campus tours before enrollment. Contact us to schedule a visit with Dr. Ng.</p>
       </div>
@@ -174,10 +171,10 @@
         <p style="margin-bottom:12px">An intentional micro-school in Taman Adda Height, Johor Bahru. Small by design. Big on heart.</p>
         <p style="font-size:11px;color:var(--gray-light)">SMIPS Code: JDA1001 &middot; MOE-Registered</p><p style="font-size:10px;color:rgba(255,255,255,0.25);margin-top:4px">Operated by Edusky Learning Academy Sdn Bhd (2014)</p>
       </div>
-      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">News</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="about.html">About Us</a></p><p><a href="curriculum.html">Curriculum</a></p><p><a href="admissions.html">Admissions</a></p><p><a href="student-life.html">Student Life</a></p><p><a href="blog/">Follow Us</a></p></div>
       <div><h4>Contact</h4><p>71, Jalan Adda 3/1<br>Taman Adda Height<br>81100 Johor Bahru, Johor</p><p><a href="tel:+6073642678">07-364 2678</a></p><p><a href="mailto:eduskyacademy@gmail.com">eduskyacademy@gmail.com</a></p></div>
-      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank">f</a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank">&#8255;</a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank">&#9835;</a>
-          <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank">&#9654;</a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
+      <div><h4>Follow Us</h4><div class="footer-social"><a href="https://www.facebook.com/ela.johor.bahru/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/eduskyjb/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.tiktok.com/@eduskyprivateschool" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/@eduskylearningacademy6728" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a></div><div class="footer-qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=https://www.edusky.com.my" alt="QR" width="80" height="80"><span>Scan to visit our site on mobile</span></div></div>
     </div>
     <div class="footer-bottom"><span>&copy; 2026 Edusky<span class="nav-brand-full"> Private School</span>. All rights reserved.</span><span>Built with hope for every child.</span></div>
   </div>
@@ -187,6 +184,6 @@
 <div class="newsletter-modal" id="newsletterModal"><div class="newsletter-box"><div class="nl-close">&times;</div><h3>Stay in the Loop</h3><p>Get Edusky updates, event invites, and student stories in your inbox.</p><div class="form-group"><input type="email" placeholder="Your email address"></div><button class="btn btn-sky" style="width:100%" onclick="localStorage.setItem('nlDismissed','1');document.getElementById('newsletterModal').classList.remove('open');alert('Thank you for subscribing!')">Subscribe</button></div></div>
 <div class="cookie-banner" id="cookieBanner" style="display:none"><span>We use cookies to improve your experience. By continuing, you agree to our use of cookies.</span><button id="cookieAccept">Got it</button></div>
 <a href="https://wa.me/60167733518" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank">&#9993;</a>
-<script src="assets/main.js?v=12"></script>
+<script src="assets/main.js?v=15"></script>
 </body>
 </html>

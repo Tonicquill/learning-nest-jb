@@ -303,6 +303,71 @@ document.addEventListener('DOMContentLoaded',function(){
     });
   }
 
+  /* ===== VIDEO LIGHTBOX (shared) ===== */
+  const vBox=document.getElementById('videoLightbox');
+  const vVideo=vBox?.querySelector('video');
+  const vSource=vVideo?.querySelector('source');
+  const vCaption=vBox?.querySelector('.video-lightbox-caption');
+  const vClose=vBox?.querySelector('.video-lightbox-close');
+  function closeVideoBox(){
+    if(!vBox)return;
+    vBox.classList.remove('open');
+    document.body.style.overflow='';
+    if(vVideo){vVideo.pause();vVideo.currentTime=0;}
+    if(vSource)vSource.src='';
+  }
+  if(vClose)vClose.addEventListener('click',closeVideoBox);
+  if(vBox)vBox.addEventListener('click',e=>{if(e.target===vBox)closeVideoBox();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&vBox?.classList.contains('open'))closeVideoBox();});
+
+  /* ===== VIDEO GALLERY FILTERS ===== */
+  const videoGrid=document.querySelector('.video-grid');
+  if(videoGrid){
+    const vFilters=document.querySelectorAll('.video-filter-btn');
+    const vCards=Array.from(videoGrid.querySelectorAll('.video-card'));
+    vFilters.forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        vFilters.forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const f=btn.dataset.filter||'all';
+        vCards.forEach(c=>{
+          const cat=c.dataset.category||'';
+          c.style.display=(f==='all'||cat===f)?'block':'none';
+        });
+      });
+    });
+    vCards.forEach(card=>{
+      card.addEventListener('click',()=>{
+        const src=card.dataset.src;
+        const cap=card.dataset.caption||'';
+        if(!src||!vBox||!vSource)return;
+        vSource.src=src;
+        vSource.type='video/mp4';
+        vVideo.load();
+        vVideo.play();
+        if(vCaption)vCaption.textContent=cap;
+        vBox.classList.add('open');
+        document.body.style.overflow='hidden';
+      });
+    });
+  }
+
+  /* ===== INLINE & ECA VIDEO CARDS (lightbox) ===== */
+  document.querySelectorAll('.inline-video-card, .eca-video-card').forEach(card=>{
+    card.addEventListener('click',()=>{
+      const src=card.dataset.src;
+      const cap=card.dataset.caption||'';
+      if(!src||!vBox||!vSource)return;
+      vSource.src=src;
+      vSource.type='video/mp4';
+      vVideo.load();
+      vVideo.play();
+      if(vCaption)vCaption.textContent=cap;
+      vBox.classList.add('open');
+      document.body.style.overflow='hidden';
+    });
+  });
+
   /* ===== INJECT BUILDER CREDIT ===== */
   const credit=document.createElement('div');
   credit.className='builder-credit';
