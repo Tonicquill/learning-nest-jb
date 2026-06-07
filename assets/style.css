@@ -121,7 +121,10 @@ body.crayon-theme .nav-links {
   font-family: 'Pangolin', var(--font-display);
 }
 body.crayon-theme .nav-cta,
-body.crayon-theme .mobile-cta {
+body.crayon-theme .mobile-cta,
+body.crayon-theme .btn,
+body.crayon-theme .badge,
+body.crayon-theme .btn-planning {
   font-family: 'Walter Turncoat', cursive;
 }
 body.crayon-theme .nav-links {
